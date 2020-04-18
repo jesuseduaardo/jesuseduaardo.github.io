@@ -1,0 +1,121 @@
+.experience{
+    padding: 20px 0 70px;
+}
+.experience h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {
+    color: rgba(0,0,0,.54);
+}
+.company-and-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.company-and-date h5, .company-and-date p{
+    margin-bottom: 0;
+    
+} 
+.company-and-date h5{
+    color: rgb(0, 140, 255);
+}
+.chronology-list{
+    list-style: none;
+    padding: 0;
+}
+
+.proyects h5{
+    color: rgb(0, 140, 255);
+}
+.proyects h6{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.proyects p{
+    font-size: 14px;
+}
+
+.tecnologies{
+    font-family: monospace;
+}
+.data-card{
+    margin: 5px 0;
+}
+.stats p{
+    margin: 0;
+}
+.stats{
+    margin-bottom: 20px;
+}
+
+.bar{
+    background-color: #cccccc;
+    box-shadow: inset 1px 1px 3px #7d7d7d;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.percent{
+    border-radius: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.percent span{
+    height: 100%;
+    display: block;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.percent span:first-child{
+    border-radius: 50px 0 0 50px;
+    background-color: #008cff;
+}
+.percent span:nth-child(2){
+    background-color: #9400b9;
+}
+.percent span:last-child{
+    border-radius: 0 50px 50px 0;
+    background-color: #00c000;
+}
+
+@keyframes scale-up-hor-left {
+    0% {
+      transform: scaleX(0.4);
+      transform-origin: 0% 0%;
+    }
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
+
+
+@media (max-width: 600px) {
+    .mat-expansion-panel-header-title{
+        margin-right: 5px !important;
+    }
+    .mat-expansion-panel-header-description{
+        margin-right: 5px !important;
+        text-align: right;
+    }
+    .company-and-date h5{
+        font-size: 1rem;
+    }
+    .percent span{
+        font-size: 0.6em;
+    }
+    h3{
+        margin: 15px 0;
+    }
+}
