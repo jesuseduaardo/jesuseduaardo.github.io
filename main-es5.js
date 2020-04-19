@@ -994,6 +994,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       path: '',
       redirectTo: '/home',
       pathMatch: 'full'
+    }, {
+      path: '**',
+      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"]
     }];
 
     var AppModule = function AppModule() {

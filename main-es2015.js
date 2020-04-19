@@ -453,6 +453,7 @@ const rutas = [
     { path: 'experience', component: _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], data: { animation: 'isRight' } },
     { path: 'contact', component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"], data: { animation: 'isLeft' } },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], },
 ];
 let AppModule = class AppModule {
 };
