@@ -1,8 +1,10 @@
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
   /***/
@@ -51,7 +53,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<div class=\"main\">\n    <router-outlet></router-outlet>\n    <app-navbar></app-navbar>\n</div>\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n\n";
+    __webpack_exports__["default"] = "<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->\n<!-- * * * * * * * to get started with your project! * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<div class=\"main\">\n    <main [@routeAnimations]=\"prepareRoute(outlet)\" >\n        <router-outlet #outlet=\"outlet\"></router-outlet>\n    </main>\n    <app-navbar></app-navbar>\n</div>\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->\n<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->\n<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->\n<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->\n\n\n";
     /***/
   },
 
@@ -799,18 +801,36 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
 
-    var AppComponent = function AppComponent() {
-      _classCallCheck(this, AppComponent);
 
-      this.title = 'cv-app';
-    };
+    var _route_animation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../route-animation */
+    "./src/route-animation.ts");
+
+    var AppComponent = /*#__PURE__*/function () {
+      function AppComponent() {
+        _classCallCheck(this, AppComponent);
+
+        this.title = 'J. Eduardo CV online';
+      }
+
+      _createClass(AppComponent, [{
+        key: "prepareRoute",
+        value: function prepareRoute(outlet) {
+          return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+        }
+      }]);
+
+      return AppComponent;
+    }();
 
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-root',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./app.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html"))["default"],
+      animations: [_route_animation__WEBPACK_IMPORTED_MODULE_2__["fader"]],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./app.component.css */
       "./src/app/app.component.css"))["default"]]
@@ -852,27 +872,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/platform-browser/animations */
+    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
-    /* harmony import */
-
-
-    var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! @angular/platform-browser/animations */
-    "./node_modules/@angular/platform-browser/fesm2015/animations.js");
     /* harmony import */
 
 
@@ -948,16 +968,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var rutas = [{
       path: 'home',
-      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"]
+      component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
+      data: {
+        animation: 'isRight'
+      }
     }, {
       path: 'about',
-      component: _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"]
+      component: _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"],
+      data: {
+        animation: 'isLeft'
+      }
     }, {
       path: 'experience',
-      component: _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"]
+      component: _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"],
+      data: {
+        animation: 'isRight'
+      }
     }, {
       path: 'contact',
-      component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"]
+      component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"],
+      data: {
+        animation: 'isLeft'
+      }
     }, {
       path: '',
       redirectTo: '/home',
@@ -968,11 +1000,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _classCallCheck(this, AppModule);
     };
 
-    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"], ngx_typed_js__WEBPACK_IMPORTED_MODULE_10__["NgxTypedJsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_9__["MatExpansionModule"], ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__["NgxSkillBarModule"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(rutas)],
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], ngx_typed_js__WEBPACK_IMPORTED_MODULE_10__["NgxTypedJsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_9__["MatExpansionModule"], ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__["NgxSkillBarModule"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(rutas)],
       providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
     /***/
   },
@@ -1574,6 +1606,151 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_4__["AppModule"])["catch"](function (err) {
       return console.error(err);
     });
+    /***/
+  },
+
+  /***/
+  "./src/route-animation.ts":
+  /*!********************************!*\
+    !*** ./src/route-animation.ts ***!
+    \********************************/
+
+  /*! exports provided: fader, slider, transformer, stepper */
+
+  /***/
+  function srcRouteAnimationTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "fader", function () {
+      return fader;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "slider", function () {
+      return slider;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "transformer", function () {
+      return transformer;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "stepper", function () {
+      return stepper;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/animations */
+    "./node_modules/@angular/animations/fesm2015/animations.js"); // Basic
+
+
+    var fader = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('routeAnimations', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* <=> *', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter, :leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      position: 'absolute',
+      left: 0,
+      width: '100%',
+      opacity: 0,
+      transform: 'scale(0) translateY(100%)'
+    })]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('600ms ease', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      opacity: 1,
+      transform: 'scale(1) translateY(0)'
+    }))])])]); // Positioned
+
+    var slider = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('routeAnimations', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* => isLeft', slideTo('left')), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* => isRight', slideTo('right')), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('isRight => *', slideTo('left')), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('isLeft => *', slideTo('right'))]);
+    var transformer = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('routeAnimations', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* => isLeft', translateTo({
+      x: -100,
+      y: -100,
+      rotate: -720
+    })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* => isRight', translateTo({
+      x: 100,
+      y: -100,
+      rotate: 90
+    })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('isRight => *', translateTo({
+      x: -100,
+      y: -100,
+      rotate: 360
+    })), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('isLeft => *', translateTo({
+      x: 100,
+      y: -100,
+      rotate: -360
+    }))]);
+
+    function slideTo(direction) {
+      var _Object;
+
+      var optional = {
+        optional: true
+      };
+      return [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter, :leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])((_Object = {
+        position: 'absolute',
+        top: 0
+      }, _defineProperty(_Object, direction, 0), _defineProperty(_Object, "width", '100%'), _Object))], optional), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])(_defineProperty({}, direction, '-100%'))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["group"])([Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('600ms ease', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])(_defineProperty({}, direction, '100%')))], optional), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('600ms ease', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])(_defineProperty({}, direction, '0%')))])])];
+    }
+
+    function translateTo(_ref) {
+      var _ref$x = _ref.x,
+          x = _ref$x === void 0 ? 100 : _ref$x,
+          _ref$y = _ref.y,
+          y = _ref$y === void 0 ? 0 : _ref$y,
+          _ref$rotate = _ref.rotate,
+          rotate = _ref$rotate === void 0 ? 0 : _ref$rotate;
+      var optional = {
+        optional: true
+      };
+      return [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter, :leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%'
+      })], optional), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+        transform: "translate(".concat(x, "%, ").concat(y, "%) rotate(").concat(rotate, "deg)")
+      })]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["group"])([Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('600ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+        transform: "translate(".concat(x, "%, ").concat(y, "%) rotate(").concat(rotate, "deg)")
+      }))], optional), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('600ms ease-out', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+        transform: "translate(0, 0) rotate(0)"
+      }))])])];
+    } // Keyframes
+
+
+    var stepper = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["trigger"])('routeAnimations', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["transition"])('* <=> *', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter, :leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      position: 'absolute',
+      left: 0,
+      width: '100%'
+    })]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["group"])([Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('2000ms ease', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["keyframes"])([Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      transform: 'scale(0) translateX(100%)',
+      offset: 0
+    }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      transform: 'scale(0.5) translateX(25%)',
+      offset: 0.3
+    }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      transform: 'scale(1) translateX(0%)',
+      offset: 1
+    })]))]), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["query"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["animate"])('2000ms ease', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["keyframes"])([Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      transform: 'scale(1)',
+      offset: 0
+    }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      transform: 'scale(0.5) translateX(-25%) rotate(0)',
+      offset: 0.35
+    }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_1__["style"])({
+      opacity: 0,
+      transform: 'translateX(-50%) rotate(-180deg) scale(6)',
+      offset: 1
+    })]))])])])]);
     /***/
   },
 
