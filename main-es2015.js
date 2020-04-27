@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-md\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel [disabled]=\"true\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>T&eacute;cnico Superior en Inform&aacute;tica</h5>\n                                    <h6>I.U.T Jos&eacute; Mar&iacute;a Carre&ntilde;o</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Jul/2017</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>Responsive Web Design</h5>\n                                    <h6>FreeCodeCamp.org</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Nov/2018</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p>Developer Certification, representing approximately 300 hours of coursework</p>\n                            <a href=\"https://www.freecodecamp.org/certification/jesuseduaardo/responsive-web-design\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel [disabled]=\"true\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>Fundamentos ReactJS</h5>\n                                    <h6>Education IT</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Ago/2018</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-md\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">create</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>IT Resources S.A.</h5>\n                                    <h6>Programador Java</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Jul/2019 - Actualidad</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p>Proyectos</p>\n                            <ul class=\"proyects\">\n                                <li>\n                                    <div>\n                                        <h5>Banco Santander</h5>\n                                        <p>Desarrollo y mantenimiento de la aplicacion portal del Banco Santander</p>\n                                        <h6>Tecnologias Empleadas</h6>\n                                        <p class=\"tecnologies\">JavaEE | SpringMVC | jQuery | Git/SVN</p>\n                                    </div>\n                                </li>\n                                <li>\n                                    <div>\n                                        <h5>Legal Security</h5>\n                                        <p>Desarrollo y mantenimiento de la aplicacion de seguridad personal \n                                            y empresarial de la Empresa Legal Security</p>\n                                        <h6>Tecnologias Empleadas</h6>\n                                        <p class=\"tecnologies\">JavaEE | SpringMVC | jQuery | Git/SVN</p>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\"(collapsedHeight)=\"90\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>Eglam Argentina S.A</h5>\n                                    <h6>Programador Backend</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Feb/2019 - Jul/2019</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div class=\"proyects\">\n                            <p>Gesti&oacute;n y desarrollo de modulos para e-commerces basados en Magento</p>\n                            <h6>Tecnologias Empleadas</h6>\n                            <p class=\"tecnologies\">PHP5 | Magento | Javascript/jQuery | Git/SVN</p>\n                        </div>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\"(collapsedHeight)=\"90\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>Tecnosoftware S.A</h5>\n                                    <h6>Programador Java</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Jul/2018 - Feb/2019</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p>Proyectos</p>\n                            <ul class=\"proyects\">\n                                <li>\n                                    <div>\n                                        <h5>Banco Provincia</h5>\n                                        <p>Desarrollo y mantenimiento de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia</p>\n                                        <h6>Tecnologias Empleadas</h6>\n                                        <p class=\"tecnologies\">JavaEE | SpringMVC | jQuery | Git/SVN</p>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\"(collapsedHeight)=\"90\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>Arkiteck C.A</h5>\n                                    <h6>Analista de Sistemas 3</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Nov/2017 - Feb/2018</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p>Proyectos</p>\n                            <ul class=\"proyects\">\n                                <li>\n                                    <div>\n                                        <h5>Banco BBVA (Venezuela)</h5>\n                                        <p>Desarrollo y mantenimiento de la plataforma para usuarios corporativos del banco BBVA Provincial</p>\n                                        <h6>Tecnologias Empleadas</h6>\n                                        <p class=\"tecnologies\">JavaEE | SpringMVC | Javascript/jQuery | Bootstrap | Git</p>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                    </mat-expansion-panel>\n                    <mat-expansion-panel \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\"(collapsedHeight)=\"90\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>La Victoria 3021 R.L</h5>\n                                    <h6>Web Developer</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description>\n                                <p>Oct/2013 - Nov/2017</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div class=\"proyects\">\n                            <p>Creacion de sitios web para pymes</p>\n                            <h6>Tecnologias Empleadas</h6>\n                            <p class=\"tecnologies\">PHP5 | Codeigniter | Javascript/jQuery | Bootstrap | Git</p>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                <div class=\"stats\">\n                    <p>Java</p>\n                    <div class=\"bar\">\n                        <div id=\"priority\" class=\"percent\" style=\"width: 40%;\">\n                           <span style=\"width: 50%;\">JavaEE</span> \n                           <span style=\"width: 30%;\">SpringMVC<br>Spring Boot</span> \n                           <span style=\"width: 20%;\">Jpa<br>Hibernate</span> \n                        </div>\n                    </div>\n                </div>\n                <div class=\"stats\">\n                    <p>JavaScript</p>\n                    <div class=\"bar\">\n                        <div class=\"percent\" style=\"width: 70%;\">\n                            <span style=\"width: 45%;\">jQuery</span> \n                            <span style=\"width: 45%;\">ReactJS</span> \n                            <span style=\"width: 10%;\">Angular</span> \n                        </div>\n                    </div>\n                </div>\n                <div class=\"stats\">\n                    <p>HTML5 / CSS3</p>\n                    <div class=\"bar\">\n                        <div class=\"percent\" style=\"width: 85%;\">\n                            <span style=\"width: 60%;\">Bootstrap</span> \n                            <span style=\"width: 40%;\">Material-UI</span> \n                        </div>\n                    </div>\n                </div>\n                <div class=\"stats\">\n                    <p>PHP</p>\n                    <div class=\"bar\">\n                        <div class=\"percent\" style=\"width: 60%;\">\n                            <span style=\"width: 70%;\">Laravel</span> \n                            <span style=\"width: 30%;\">PHP5 / PHP7</span> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let educ of education\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\" \n                        >\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ educ.titulo }}</h5>\n                                    <h6>{{ educ.institucion }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>{{ educ.fechaFin | date:\"MMM-y\" }}</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p *ngIf=\"educ.duracion > 0\">Duracion: {{ educ.duracion }}Hrs</p>\n                            <a href=\"{{educ.certificacionUrl}}\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"empleos\">keyboard</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let experience of experiences\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ experience.empresa }}</h5>\n                                    <h6>{{ experience.puesto }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>\n                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / \n                                    <span *ngIf=\"experience.fechaEgreso\">{{ experience.fechaEgreso | date:'MMM-y' }}</span>\n                                    <span *ngIf=\"!experience.fechaEgreso\">Actualidad</span>\n                                </p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div *ngIf=\"experience.proyectos.length > 0\" class=\"proyects-list\">\n                            <h5>Proyectos</h5>\n                            <hr>\n                            <ul class=\"proyects\">\n                                <li *ngFor=\"let proyect of experience.proyectos\">\n                                    <div>\n                                        <h5>{{ proyect.nombre }}</h5>\n                                        <p>{{ proyect.resumenProyecto }}</p>\n                                        <div class=\"tecnologies\">\n                                            <h6>Tecnologias Empleadas</h6>\n                                            <ul>\n                                                <li *ngFor=\"let tecnologia of proyect.tecnologias\">{{ tecnologia }}</li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div *ngIf=\"experience.proyectos.length == 0 && experience.resumenProyecto.length\">\n                            <p>{{ experience.resumenProyecto }}</p>\n                            <div class=\"tecnologies\">\n                                <h6>Tecnologias Empleadas</h6>\n                                <ul>\n                                    <li *ngFor=\"let tecnologia of experience.tecnologias\">{{ tecnologia }}</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                <div class=\"stats\" *ngFor=\"let hability of habilities\">\n                    <p>{{ hability.language.name }}  <small *ngIf=\"hability.language.version !== 0\">v.{{ hability.language.version }}</small></p>\n                    <div *ngFor=\"let framework of hability.frameworks\" class=\"bar\">\n                        <div [ngStyle]=\"{'width': framework.percent +'%'}\" class=\"percent\">\n                           <span >{{ framework.name }}</span>\n                           <span *ngIf=\"framework.version !== 0\">- v.{{ framework.version }}</span> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\">\n                    <button mat-icon-button id=\"home-icon\" (click)=\"navigate('home')\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </button>\n                    <p>Inicio</p>\n                </div>\n                <div class=\"nav-button\">\n                    <button mat-icon-button id=\"about-icon\" (click)=\"navigate('about')\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </button>\n                    <p>Sobre mi</p>\n                </div>\n                <div class=\"nav-button\">\n                    <button mat-icon-button id=\"experience-icon\" (click)=\"navigate('experience')\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </button>\n                    <p>Experiencia</p>\n                </div>\n                <div class=\"nav-button\">\n                    <button mat-icon-button id=\"contact-icon\" (click)=\"navigate('contact')\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </button>\n                    <p>Contacto</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"home-icon\" [routerLink]=\"['home']\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </a>\n                    <p>Inicio</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"about-icon\" [routerLink]=\"['about']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </a>\n                    <p>Sobre mi</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"experience-icon\" [routerLink]=\"['experience']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </a>\n                    <p>Experiencia</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"contact-icon\" [routerLink]=\"['contact']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </a>\n                    <p>Contacto</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>");
 
 /***/ }),
 
@@ -415,20 +415,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
-/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
-/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm2015/expansion.js");
-/* harmony import */ var ngx_typed_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-typed-js */ "./node_modules/ngx-typed-js/fesm2015/ngx-typed-js.js");
-/* harmony import */ var ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-skill-bar */ "./node_modules/ngx-skill-bar/fesm2015/ngx-skill-bar.js");
-/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
-/* harmony import */ var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/navbar/navbar.component */ "./src/app/components/navbar/navbar.component.ts");
-/* harmony import */ var _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/about/about.component */ "./src/app/components/about/about.component.ts");
-/* harmony import */ var _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pipes/birth-day.pipe */ "./src/app/pipes/birth-day.pipe.ts");
-/* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/experience/experience.component */ "./src/app/components/experience/experience.component.ts");
-/* harmony import */ var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/contact/contact.component */ "./src/app/components/contact/contact.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm2015/expansion.js");
+/* harmony import */ var ngx_typed_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-typed-js */ "./node_modules/ngx-typed-js/fesm2015/ngx-typed-js.js");
+/* harmony import */ var ngx_skill_bar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-skill-bar */ "./node_modules/ngx-skill-bar/fesm2015/ngx-skill-bar.js");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/navbar/navbar.component */ "./src/app/components/navbar/navbar.component.ts");
+/* harmony import */ var _components_about_about_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/about/about.component */ "./src/app/components/about/about.component.ts");
+/* harmony import */ var _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pipes/birth-day.pipe */ "./src/app/pipes/birth-day.pipe.ts");
+/* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/experience/experience.component */ "./src/app/components/experience/experience.component.ts");
+/* harmony import */ var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/contact/contact.component */ "./src/app/components/contact/contact.component.ts");
+/* harmony import */ var _services_experience_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./services/experience.service */ "./src/app/services/experience.service.ts");
+/* harmony import */ var _services_education_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./services/education.service */ "./src/app/services/education.service.ts");
+/* harmony import */ var _services_habilities_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/habilities.service */ "./src/app/services/habilities.service.ts");
+/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
 
 
 
@@ -446,44 +449,79 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+//Servicios
 
-const rutas = [
-    { path: 'home', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], data: { animation: 'isRight' } },
-    { path: 'about', component: _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], data: { animation: 'isLeft' } },
-    { path: 'experience', component: _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], data: { animation: 'isRight' } },
-    { path: 'contact', component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"], data: { animation: 'isLeft' } },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], },
-];
+
+
+//Rutas
+
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"],
-            _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"],
-            _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"],
-            _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"],
-            _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"],
-            _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+            _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+            _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"],
+            _components_about_about_component__WEBPACK_IMPORTED_MODULE_13__["AboutComponent"],
+            _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_14__["BirthDayPipe"],
+            _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_15__["ExperienceComponent"],
+            _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_16__["ContactComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
-            ngx_typed_js__WEBPACK_IMPORTED_MODULE_10__["NgxTypedJsModule"],
-            _angular_material_icon__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"],
-            _angular_material_button__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"],
-            _angular_material_card__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
-            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_9__["MatExpansionModule"],
-            ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__["NgxSkillBarModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(rutas)
+            ngx_typed_js__WEBPACK_IMPORTED_MODULE_9__["NgxTypedJsModule"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"],
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"],
+            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"],
+            ngx_skill_bar__WEBPACK_IMPORTED_MODULE_10__["NgxSkillBarModule"],
+            _app_routes__WEBPACK_IMPORTED_MODULE_20__["app_routing"]
         ],
-        providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+        providers: [
+            _services_experience_service__WEBPACK_IMPORTED_MODULE_17__["ExperienceService"],
+            _services_education_service__WEBPACK_IMPORTED_MODULE_18__["EducationService"],
+            _services_habilities_service__WEBPACK_IMPORTED_MODULE_19__["HabilitiesService"]
+        ],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
 
+
+
+/***/ }),
+
+/***/ "./src/app/app.routes.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.routes.ts ***!
+  \*******************************/
+/*! exports provided: app_routing */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "app_routing", function() { return app_routing; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/home/home.component */ "./src/app/components/home/home.component.ts");
+/* harmony import */ var _components_about_about_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/about/about.component */ "./src/app/components/about/about.component.ts");
+/* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/experience/experience.component */ "./src/app/components/experience/experience.component.ts");
+/* harmony import */ var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/contact/contact.component */ "./src/app/components/contact/contact.component.ts");
+
+
+
+
+
+
+const app_routes = [
+    { path: 'home', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"], data: { animation: 'isRight' } },
+    { path: 'about', component: _components_about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"], data: { animation: 'isLeft' } },
+    { path: 'experience', component: _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_4__["ExperienceComponent"], data: { animation: 'isRight' } },
+    { path: 'contact', component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"], data: { animation: 'isLeft' } },
+    { path: '**', pathMatch: 'full', redirectTo: '/home' }
+];
+const app_routing = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(app_routes);
 
 
 /***/ }),
@@ -541,7 +579,7 @@ AboutComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".contact{\r\n    vertical-align: middle;\r\n    padding: 20px 0 70px;\r\n}\r\n.blue-color{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.col-12:first-of-type{\r\n    margin-bottom: 5rem;\r\n}\r\n.contact h1, .contact h2{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n.contact-data{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: end;\r\n    text-align: center;\r\n}\r\n@media (max-width: 600px) {\r\n    .contact{\r\n        padding: 1rem 0 2rem;\r\n    }\r\n    .col-12:first-of-type{\r\n        margin-bottom: 1.5rem;\r\n    }\r\n    .contact h1{\r\n       font-size: 2em;\r\n    }\r\n    .contact h2{\r\n        font-size: 1.5em;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtJQUN0QixvQkFBb0I7QUFDeEI7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixTQUFTO0FBQ2I7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJO1FBQ0ksb0JBQW9CO0lBQ3hCO0lBQ0E7UUFDSSxxQkFBcUI7SUFDekI7SUFDQTtPQUNHLGNBQWM7SUFDakI7SUFDQTtRQUNJLGdCQUFnQjtJQUNwQjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWN0e1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgIHBhZGRpbmc6IDIwcHggMCA3MHB4O1xyXG59XHJcbi5ibHVlLWNvbG9ye1xyXG4gICAgY29sb3I6IHJnYigwLCAxNDAsIDI1NSk7XHJcbn1cclxuLmNvbC0xMjpmaXJzdC1vZi10eXBle1xyXG4gICAgbWFyZ2luLWJvdHRvbTogNXJlbTtcclxufVxyXG4uY29udGFjdCBoMSwgLmNvbnRhY3QgaDJ7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG5cclxuLmNvbnRhY3QtZGF0YXtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogZW5kO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC5jb250YWN0e1xyXG4gICAgICAgIHBhZGRpbmc6IDFyZW0gMCAycmVtO1xyXG4gICAgfVxyXG4gICAgLmNvbC0xMjpmaXJzdC1vZi10eXBle1xyXG4gICAgICAgIG1hcmdpbi1ib3R0b206IDEuNXJlbTtcclxuICAgIH1cclxuICAgIC5jb250YWN0IGgxe1xyXG4gICAgICAgZm9udC1zaXplOiAyZW07XHJcbiAgICB9XHJcbiAgICAuY29udGFjdCBoMntcclxuICAgICAgICBmb250LXNpemU6IDEuNWVtO1xyXG4gICAgfVxyXG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".contact{\r\n    vertical-align: middle;\r\n    padding: 20px 0 70px;\r\n}\r\n.blue-color{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.col-12:first-of-type{\r\n    margin-bottom: 5rem;\r\n}\r\n.contact h1, .contact h2{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n.contact-data{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    justify-content: flex-start;\r\n    text-align: center;\r\n}\r\n@media (max-width: 600px) {\r\n    .contact{\r\n        padding: 1rem 0 2rem;\r\n    }\r\n    .col-12:first-of-type{\r\n        margin-bottom: 1.5rem;\r\n    }\r\n    .contact h1{\r\n       font-size: 2em;\r\n    }\r\n    .contact h2{\r\n        font-size: 1.5em;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtJQUN0QixvQkFBb0I7QUFDeEI7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixTQUFTO0FBQ2I7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLDJCQUEyQjtJQUMzQixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJO1FBQ0ksb0JBQW9CO0lBQ3hCO0lBQ0E7UUFDSSxxQkFBcUI7SUFDekI7SUFDQTtPQUNHLGNBQWM7SUFDakI7SUFDQTtRQUNJLGdCQUFnQjtJQUNwQjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jb250YWN0L2NvbnRhY3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWN0e1xyXG4gICAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICAgIHBhZGRpbmc6IDIwcHggMCA3MHB4O1xyXG59XHJcbi5ibHVlLWNvbG9ye1xyXG4gICAgY29sb3I6IHJnYigwLCAxNDAsIDI1NSk7XHJcbn1cclxuLmNvbC0xMjpmaXJzdC1vZi10eXBle1xyXG4gICAgbWFyZ2luLWJvdHRvbTogNXJlbTtcclxufVxyXG4uY29udGFjdCBoMSwgLmNvbnRhY3QgaDJ7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG5cclxuLmNvbnRhY3QtZGF0YXtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG5cclxuQG1lZGlhIChtYXgtd2lkdGg6IDYwMHB4KSB7XHJcbiAgICAuY29udGFjdHtcclxuICAgICAgICBwYWRkaW5nOiAxcmVtIDAgMnJlbTtcclxuICAgIH1cclxuICAgIC5jb2wtMTI6Zmlyc3Qtb2YtdHlwZXtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiAxLjVyZW07XHJcbiAgICB9XHJcbiAgICAuY29udGFjdCBoMXtcclxuICAgICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgfVxyXG4gICAgLmNvbnRhY3QgaDJ7XHJcbiAgICAgICAgZm9udC1zaXplOiAxLjVlbTtcclxuICAgIH1cclxufSJdfQ== */");
 
 /***/ }),
 
@@ -585,7 +623,7 @@ ContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.tecnologies{\r\n    font-family: monospace;\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n.stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.bar{\r\n    background-color: #cccccc;\r\n    box-shadow: inset 1px 1px 3px #7d7d7d;\r\n    height: 35px;\r\n    border-radius: 50px;\r\n}\r\n.percent{\r\n    border-radius: 50px;\r\n    height: 100%;\r\n    display: flex;\r\n    flex-direction: row;\r\n    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n            animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n}\r\n.percent span{\r\n    height: 100%;\r\n    display: block;\r\n    font-size: 12px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    text-align: center;\r\n    color: white;\r\n}\r\n.percent span:first-child{\r\n    border-radius: 50px 0 0 50px;\r\n    background-color: #008cff;\r\n}\r\n.percent span:nth-child(2){\r\n    background-color: #9400b9;\r\n}\r\n.percent span:last-child{\r\n    border-radius: 0 50px 50px 0;\r\n    background-color: #00c000;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw4QkFBOEI7QUFDbEM7QUFDQTtJQUNJLGdCQUFnQjs7QUFFcEI7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLFNBQVM7QUFDYjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSx5QkFBeUI7SUFDekIscUNBQXFDO0lBQ3JDLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixxRkFBNkU7WUFBN0UsNkVBQTZFO0FBQ2pGO0FBRUE7SUFDSSxZQUFZO0lBQ1osY0FBYztJQUNkLGVBQWU7SUFDZixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixrQkFBa0I7SUFDbEIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksNEJBQTRCO0lBQzVCLHlCQUF5QjtBQUM3QjtBQUNBO0lBQ0kseUJBQXlCO0FBQzdCO0FBQ0E7SUFDSSw0QkFBNEI7SUFDNUIseUJBQXlCO0FBQzdCO0FBRUE7SUFDSTtNQUNFLHNCQUFzQjtNQUN0Qix1QkFBdUI7SUFDekI7SUFDQTtNQUNFLG9CQUFvQjtNQUNwQix1QkFBdUI7SUFDekI7RUFDRjtBQVRGO0lBQ0k7TUFDRSxzQkFBc0I7TUFDdEIsdUJBQXVCO0lBQ3pCO0lBQ0E7TUFDRSxvQkFBb0I7TUFDcEIsdUJBQXVCO0lBQ3pCO0VBQ0Y7QUFHRjtJQUNJO1FBQ0ksNEJBQTRCO0lBQ2hDO0lBQ0E7UUFDSSw0QkFBNEI7UUFDNUIsaUJBQWlCO0lBQ3JCO0lBQ0E7UUFDSSxlQUFlO0lBQ25CO0lBQ0E7UUFDSSxnQkFBZ0I7SUFDcEI7SUFDQTtRQUNJLGNBQWM7SUFDbEI7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZXhwZXJpZW5jZS9leHBlcmllbmNlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwZXJpZW5jZXtcclxuICAgIHBhZGRpbmc6IDIwcHggMCA3MHB4O1xyXG59XHJcbi5leHBlcmllbmNlIGgxe1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIG1hcmdpbi1ib3R0b206IDI1cHg7XHJcbn1cclxuXHJcbi5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlclthcmlhLWRpc2FibGVkPXRydWVdLCAucGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9uIHtcclxuICAgIGNvbG9yOiByZ2JhKDAsMCwwLC41NCk7XHJcbn1cclxuLmNvbXBhbnktYW5kLWRhdGV7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG4uY29tcGFueS1hbmQtZGF0ZSBoNSwgLmNvbXBhbnktYW5kLWRhdGUgcHtcclxuICAgIG1hcmdpbi1ib3R0b206IDA7XHJcbiAgICBcclxufSBcclxuLmNvbXBhbnktYW5kLWRhdGUgaDV7XHJcbiAgICBjb2xvcjogcmdiKDAsIDE0MCwgMjU1KTtcclxufVxyXG4uY2hyb25vbG9neS1saXN0e1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyBoNXtcclxuICAgIGNvbG9yOiByZ2IoMCwgMTQwLCAyNTUpO1xyXG59XHJcbi5wcm95ZWN0cyBoNntcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG59XHJcblxyXG4ucHJveWVjdHMgcHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG5cclxuLnRlY25vbG9naWVze1xyXG4gICAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcclxufVxyXG4uZGF0YS1jYXJke1xyXG4gICAgbWFyZ2luOiA1cHggMDtcclxufVxyXG4uc3RhdHMgcHtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG4uc3RhdHN7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4uYmFye1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2NjY2NjYztcclxuICAgIGJveC1zaGFkb3c6IGluc2V0IDFweCAxcHggM3B4ICM3ZDdkN2Q7XHJcbiAgICBoZWlnaHQ6IDM1cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xyXG59XHJcblxyXG4ucGVyY2VudHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGFuaW1hdGlvbjogc2NhbGUtdXAtaG9yLWxlZnQgMXMgY3ViaWMtYmV6aWVyKDAuMzkwLCAwLjU3NSwgMC41NjUsIDEuMDAwKSBib3RoO1xyXG59XHJcblxyXG4ucGVyY2VudCBzcGFue1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG59XHJcbi5wZXJjZW50IHNwYW46Zmlyc3QtY2hpbGR7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4IDAgMCA1MHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwOGNmZjtcclxufVxyXG4ucGVyY2VudCBzcGFuOm50aC1jaGlsZCgyKXtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICM5NDAwYjk7XHJcbn1cclxuLnBlcmNlbnQgc3BhbjpsYXN0LWNoaWxke1xyXG4gICAgYm9yZGVyLXJhZGl1czogMCA1MHB4IDUwcHggMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMGMwMDA7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgc2NhbGUtdXAtaG9yLWxlZnQge1xyXG4gICAgMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwLjQpO1xyXG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwJSAwJTtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgxKTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLXRpdGxle1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbiAgICAubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXItZGVzY3JpcHRpb257XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiA1cHggIWltcG9ydGFudDtcclxuICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIH1cclxuICAgIC5jb21wYW55LWFuZC1kYXRlIGg1e1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMXJlbTtcclxuICAgIH1cclxuICAgIC5wZXJjZW50IHNwYW57XHJcbiAgICAgICAgZm9udC1zaXplOiAwLjZlbTtcclxuICAgIH1cclxuICAgIGgze1xyXG4gICAgICAgIG1hcmdpbjogMTVweCAwO1xyXG4gICAgfVxyXG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".fecha-ingreso-egreso{\r\n    flex-flow: row-reverse;\r\n}\r\n.experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\nhr{\r\n    margin: 0.75em 0 0.75em 0;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects{\r\n    padding-left: 0.85em;\r\n}\r\n.proyects-list{\r\n    color: #777777;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.proyects > li{\r\n    padding-bottom: 0.5em;\r\n    margin-bottom: 0.5em;\r\n    border-bottom: 1px solid #e6e6e6;\r\n}\r\n.proyects > li:last-child{\r\n    border-bottom: 0;\r\n}\r\n.tecnologies{\r\n    color: #4b4b4b;\r\n}\r\n.tecnologies ul{\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    flex-direction: unset;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n}\r\n.tecnologies li{\r\n    font-family: monospace;\r\n    margin: 2px;\r\n}\r\n.tecnologies li::after{\r\n    content: \"|\";\r\n    color: #cccccc;\r\n}\r\n.tecnologies li:last-child::after{\r\n    content: \"\";\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n.stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.bar{\r\n    display: flex;\r\n    flex-flow: row;\r\n    align-items: center;\r\n    background-color: #cccccc;\r\n    box-shadow: inset 1px 1px 3px #7d7d7d;\r\n    height: 28px;\r\n    border-radius: 50px;\r\n    margin: 2px 0;\r\n}\r\n.percent{\r\n    border-radius: 50px;\r\n    box-shadow: inset 2px 2px 4px #9a9a9a;\r\n    height: 90%;\r\n    margin-left: 3px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n            animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n    background-color: #00c000;\r\n}\r\n.percent span{\r\n    height: 100%;\r\n    display: block;\r\n    font-size: 12px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    text-align: center;\r\n    color: #000000;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0kseUJBQXlCO0FBQzdCO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxnQkFBZ0I7O0FBRXBCO0FBQ0E7SUFDSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7QUFDQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUVBO0lBQ0ksY0FBYztBQUNsQjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLGdDQUFnQztBQUNwQztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksU0FBUztBQUNiO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixxQ0FBcUM7SUFDckMsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixhQUFhO0FBQ2pCO0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIscUNBQXFDO0lBQ3JDLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIscUZBQTZFO1lBQTdFLDZFQUE2RTtJQUM3RSx5QkFBeUI7QUFDN0I7QUFFQTtJQUNJLFlBQVk7SUFDWixjQUFjO0lBQ2QsZUFBZTtJQUNmLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixjQUFjO0FBQ2xCO0FBRUE7SUFDSTtNQUNFLHNCQUFzQjtNQUN0Qix1QkFBdUI7SUFDekI7SUFDQTtNQUNFLG9CQUFvQjtNQUNwQix1QkFBdUI7SUFDekI7RUFDRjtBQVRGO0lBQ0k7TUFDRSxzQkFBc0I7TUFDdEIsdUJBQXVCO0lBQ3pCO0lBQ0E7TUFDRSxvQkFBb0I7TUFDcEIsdUJBQXVCO0lBQ3pCO0VBQ0Y7QUFHRjtJQUNJO1FBQ0ksNEJBQTRCO0lBQ2hDO0lBQ0E7UUFDSSw0QkFBNEI7UUFDNUIsaUJBQWlCO0lBQ3JCO0lBQ0E7UUFDSSxlQUFlO0lBQ25CO0lBQ0E7UUFDSSxnQkFBZ0I7SUFDcEI7SUFDQTtRQUNJLGNBQWM7SUFDbEI7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZXhwZXJpZW5jZS9leHBlcmllbmNlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmVjaGEtaW5ncmVzby1lZ3Jlc297XHJcbiAgICBmbGV4LWZsb3c6IHJvdy1yZXZlcnNlO1xyXG59XHJcbi5leHBlcmllbmNle1xyXG4gICAgcGFkZGluZzogMjBweCAwIDcwcHg7XHJcbn1cclxuLmV4cGVyaWVuY2UgaDF7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjVweDtcclxufVxyXG5cclxuaHJ7XHJcbiAgICBtYXJnaW46IDAuNzVlbSAwIDAuNzVlbSAwO1xyXG59XHJcblxyXG4ubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXJbYXJpYS1kaXNhYmxlZD10cnVlXSwgLnBhbmVsLWhlYWRlci1kZXNjcmlwdGlvbiB7XHJcbiAgICBjb2xvcjogcmdiYSgwLDAsMCwuNTQpO1xyXG59XHJcbi5jb21wYW55LWFuZC1kYXRle1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbn1cclxuLmNvbXBhbnktYW5kLWRhdGUgaDUsIC5jb21wYW55LWFuZC1kYXRlIHB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xyXG4gICAgXHJcbn0gXHJcbi5jb21wYW55LWFuZC1kYXRlIGg1e1xyXG4gICAgY29sb3I6IHJnYigwLCAxNDAsIDI1NSk7XHJcbn1cclxuLmNocm9ub2xvZ3ktbGlzdHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcbi5wcm95ZWN0c3tcclxuICAgIHBhZGRpbmctbGVmdDogMC44NWVtO1xyXG59XHJcblxyXG4ucHJveWVjdHMtbGlzdHtcclxuICAgIGNvbG9yOiAjNzc3Nzc3O1xyXG59XHJcblxyXG4ucHJveWVjdHMgaDV7XHJcbiAgICBjb2xvcjogcmdiKDAsIDE0MCwgMjU1KTtcclxufVxyXG4ucHJveWVjdHMgaDZ7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxufVxyXG5cclxuLnByb3llY3RzIHB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbn1cclxuLnByb3llY3RzID4gbGl7XHJcbiAgICBwYWRkaW5nLWJvdHRvbTogMC41ZW07XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwLjVlbTtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZTZlNmU2O1xyXG59XHJcblxyXG4ucHJveWVjdHMgPiBsaTpsYXN0LWNoaWxke1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMDtcclxufVxyXG5cclxuLnRlY25vbG9naWVze1xyXG4gICAgY29sb3I6ICM0YjRiNGI7XHJcbn1cclxuLnRlY25vbG9naWVzIHVse1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHVuc2V0O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xyXG59XHJcbi50ZWNub2xvZ2llcyBsaXtcclxuICAgIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7XHJcbiAgICBtYXJnaW46IDJweDtcclxufVxyXG5cclxuLnRlY25vbG9naWVzIGxpOjphZnRlcntcclxuICAgIGNvbnRlbnQ6IFwifFwiO1xyXG4gICAgY29sb3I6ICNjY2NjY2M7XHJcbn1cclxuLnRlY25vbG9naWVzIGxpOmxhc3QtY2hpbGQ6OmFmdGVye1xyXG4gICAgY29udGVudDogXCJcIjtcclxufVxyXG5cclxuLmRhdGEtY2FyZHtcclxuICAgIG1hcmdpbjogNXB4IDA7XHJcbn1cclxuLnN0YXRzIHB7XHJcbiAgICBtYXJnaW46IDA7XHJcbn1cclxuLnN0YXRze1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmJhcntcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWZsb3c6IHJvdztcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2NjY2NjO1xyXG4gICAgYm94LXNoYWRvdzogaW5zZXQgMXB4IDFweCAzcHggIzdkN2Q3ZDtcclxuICAgIGhlaWdodDogMjhweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBtYXJnaW46IDJweCAwO1xyXG59XHJcblxyXG4ucGVyY2VudHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBib3gtc2hhZG93OiBpbnNldCAycHggMnB4IDRweCAjOWE5YTlhO1xyXG4gICAgaGVpZ2h0OiA5MCU7XHJcbiAgICBtYXJnaW4tbGVmdDogM3B4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFuaW1hdGlvbjogc2NhbGUtdXAtaG9yLWxlZnQgMXMgY3ViaWMtYmV6aWVyKDAuMzkwLCAwLjU3NSwgMC41NjUsIDEuMDAwKSBib3RoO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwYzAwMDtcclxufVxyXG5cclxuLnBlcmNlbnQgc3BhbntcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGNvbG9yOiAjMDAwMDAwO1xyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHNjYWxlLXVwLWhvci1sZWZ0IHtcclxuICAgIDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMC40KTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XHJcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAlIDAlO1xyXG4gICAgfVxyXG4gIH1cclxuXHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlci10aXRsZXtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDVweCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9ue1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICB9XHJcbiAgICAuY29tcGFueS1hbmQtZGF0ZSBoNXtcclxuICAgICAgICBmb250LXNpemU6IDFyZW07XHJcbiAgICB9XHJcbiAgICAucGVyY2VudCBzcGFue1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMC42ZW07XHJcbiAgICB9XHJcbiAgICBoM3tcclxuICAgICAgICBtYXJnaW46IDE1cHggMDtcclxuICAgIH1cclxufSJdfQ== */");
 
 /***/ }),
 
@@ -601,45 +639,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExperienceComponent", function() { return ExperienceComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_experience_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/experience.service */ "./src/app/services/experience.service.ts");
+/* harmony import */ var _services_education_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../services/education.service */ "./src/app/services/education.service.ts");
+/* harmony import */ var _services_habilities_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../services/habilities.service */ "./src/app/services/habilities.service.ts");
+
+
+
 
 
 let ExperienceComponent = class ExperienceComponent {
-    constructor() {
-        this.chartType = 'horizontalBar';
-        this.chartDatasets = [
-            { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' }
-        ];
-        this.chartLabels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
-        this.chartColors = [
-            {
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 2,
-            }
-        ];
-        this.chartOptions = {
-            responsive: true
-        };
+    constructor(_experienceService, _educationService, _habilitiesService) {
+        this._experienceService = _experienceService;
+        this._educationService = _educationService;
+        this._habilitiesService = _habilitiesService;
+        this.experiences = [];
+        this.education = [];
+        this.habilities = [];
     }
     ngOnInit() {
+        this.experiences = this._experienceService.getExperience();
+        this.education = this._educationService.getEducation();
+        this.habilities = this._habilitiesService.getHabilities();
+        console.log(this.habilities);
     }
-    chartClicked(e) { }
-    chartHovered(e) { }
 };
+ExperienceComponent.ctorParameters = () => [
+    { type: _services_experience_service__WEBPACK_IMPORTED_MODULE_2__["ExperienceService"] },
+    { type: _services_education_service__WEBPACK_IMPORTED_MODULE_3__["EducationService"] },
+    { type: _services_habilities_service__WEBPACK_IMPORTED_MODULE_4__["HabilitiesService"] }
+];
 ExperienceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-experience',
@@ -785,6 +813,272 @@ BirthDayPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         name: 'birthDay'
     })
 ], BirthDayPipe);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/education.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/education.service.ts ***!
+  \***********************************************/
+/*! exports provided: EducationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EducationService", function() { return EducationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let EducationService = class EducationService {
+    constructor() {
+        this.educations = [
+            {
+                titulo: "Técnico Superior en Informatica",
+                institucion: "I.U.T José María Carreño",
+                fechaInicio: "2007-07-01",
+                fechaFin: "2012-07-01",
+                certificacionUrl: "https://drive.google.com/open?id=0B_kPEZBn5CtldlYzTzBLOVpmRU0",
+                duracion: 0
+            },
+            {
+                titulo: "Responsive Web Desing",
+                institucion: "FreeCodeCamp.org",
+                fechaInicio: "2018-01-01",
+                fechaFin: "2018-08-01",
+                certificacionUrl: "https://www.freecodecamp.org/certification/jesuseduaardo/responsive-web-design",
+                duracion: 300
+            },
+            {
+                titulo: "ReactJS",
+                institucion: "Educacion IT",
+                fechaInicio: "2018-07-25",
+                fechaFin: "2018-08-25",
+                certificacionUrl: "https://alumni.education/user/diploma/codigo_diplo/191544/id_diploma/32403NI2R999E98J4314U5351VX4J4NF/",
+                duracion: 15
+            }
+        ];
+    }
+    getEducation() {
+        return this.educations;
+    }
+};
+EducationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], EducationService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/experience.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/experience.service.ts ***!
+  \************************************************/
+/*! exports provided: ExperienceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExperienceService", function() { return ExperienceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ExperienceService = class ExperienceService {
+    constructor() {
+        this.experience = [
+            {
+                empresa: "IT Resources S.A",
+                puesto: "Programador Java",
+                fechaIngreso: "2019-07-01",
+                fechaEgreso: "",
+                proyectos: [
+                    {
+                        nombre: "Legal Security",
+                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion de seguridad personal y empresarial de la Empresa Legal Security",
+                        tecnologias: ["JavaEE", "SpringMVC", "MySql", "Bootstrap3", "Javascript/jQuery", "Git/SVN"]
+                    },
+                    {
+                        nombre: "Banco Santander",
+                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion portal del Banco Santander",
+                        tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "jQuery", "Git/SVN"]
+                    }
+                ],
+                resumenProyecto: "",
+                tecnologias: []
+            },
+            {
+                empresa: "Eglam Argentina S.A",
+                puesto: "Programador Backend",
+                fechaIngreso: "2019-02-01",
+                fechaEgreso: "2019-07-01",
+                proyectos: [],
+                resumenProyecto: "Gestión y desarrollo de modulos para e-commerces basados en Magento",
+                tecnologias: ["PHP5", "Magento", "MySql", "Javascript/jQuery", "Git/SVN"]
+            },
+            {
+                empresa: "Tecnosoftware S.A",
+                puesto: "Programador Java",
+                fechaIngreso: "2018-07-01",
+                fechaEgreso: "2019-02-01",
+                proyectos: [
+                    {
+                        nombre: "Banco Provincia",
+                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
+                        tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "Javascript/jQuery", "Git/SVN"]
+                    }
+                ],
+                resumenProyecto: "",
+                tecnologias: []
+            },
+            {
+                empresa: "Arkiteck C.A",
+                puesto: "Analista de Sistemas 3",
+                fechaIngreso: "2017-11-01",
+                fechaEgreso: "2018-02-01",
+                proyectos: [
+                    {
+                        nombre: "Banco BBVA Provincial (Venezuela)",
+                        resumenProyecto: "Desarrollo y mantenimiento de la plataforma para usuarios corporativos del banco BBVA Provincial",
+                        tecnologias: ["JavaEE", "SpringMVC", "Bootstrap3", "Javascript/jQuery", "Git"]
+                    }
+                ],
+                resumenProyecto: "",
+                tecnologias: []
+            },
+            {
+                empresa: "La Victoria 3021 R.L (Venezuela)",
+                puesto: "Desarrollador Web",
+                fechaIngreso: "2013-10-01",
+                fechaEgreso: "2017-11-01",
+                proyectos: [],
+                resumenProyecto: "Desarrollo de sitios/aplicaciones web tanto en frontend y backend siguiendo las exigencias de cada proyecto",
+                tecnologias: ["PHP5", "Codeigniter", "MySql", "Bootstrap3", "Javascript/jQuery", "Git"]
+            },
+        ];
+    }
+    getExperience() {
+        return this.experience;
+    }
+};
+ExperienceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], ExperienceService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/habilities.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/habilities.service.ts ***!
+  \************************************************/
+/*! exports provided: HabilitiesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HabilitiesService", function() { return HabilitiesService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HabilitiesService = class HabilitiesService {
+    constructor() {
+        this.java7 = { name: "JavaEE", version: 7 };
+        this.javaScript = { name: "JavaScript", version: "ES6" };
+        this.php = { name: "PHP", version: 7 };
+        this.sql = { name: "SQL", version: 0 };
+        this.html = { name: "Html", version: 5 };
+        this.css = { name: "Css", version: 3 };
+        this.habilities = [
+            {
+                language: this.java7,
+                frameworks: [
+                    {
+                        name: "SpringMVC",
+                        version: 5,
+                        percent: 60
+                    },
+                    {
+                        name: "SpringBoot",
+                        version: 2,
+                        percent: 30
+                    },
+                    {
+                        name: "JPA/Hibernate",
+                        version: 0,
+                        percent: 20
+                    },
+                ]
+            },
+            {
+                language: this.sql,
+                frameworks: [
+                    {
+                        name: "MySql",
+                        version: 0,
+                        percent: 60
+                    },
+                    {
+                        name: "PL/SQL",
+                        version: 0,
+                        percent: 10
+                    }
+                ]
+            },
+            {
+                language: this.javaScript,
+                frameworks: [
+                    {
+                        name: "ReactJS",
+                        version: 16,
+                        percent: 75
+                    },
+                    {
+                        name: "jQuery",
+                        version: 3,
+                        percent: 80
+                    },
+                    {
+                        name: "Angular",
+                        version: 8,
+                        percent: 30
+                    }
+                ]
+            },
+            {
+                language: this.php,
+                frameworks: [
+                    {
+                        name: "Laravel",
+                        version: 5.8,
+                        percent: 60
+                    }
+                ]
+            },
+            {
+                language: this.css,
+                frameworks: [
+                    {
+                        name: "Bootstrap",
+                        version: 4,
+                        percent: 80
+                    }
+                ]
+            },
+        ];
+    }
+    getHabilities() {
+        return this.habilities;
+    }
+};
+HabilitiesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], HabilitiesService);
 
 
 
