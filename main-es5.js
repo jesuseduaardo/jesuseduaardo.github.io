@@ -113,7 +113,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let educ of education\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\" \n                        >\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ educ.titulo }}</h5>\n                                    <h6>{{ educ.institucion }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>{{ educ.fechaFin | date:\"MMM-y\" }}</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p *ngIf=\"educ.duracion > 0\">Duracion: {{ educ.duracion }}Hrs</p>\n                            <a href=\"{{educ.certificacionUrl}}\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"empleos\">keyboard</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let experience of experiences\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ experience.empresa }}</h5>\n                                    <h6>{{ experience.puesto }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>\n                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / \n                                    <span *ngIf=\"experience.fechaEgreso\">{{ experience.fechaEgreso | date:'MMM-y' }}</span>\n                                    <span *ngIf=\"!experience.fechaEgreso\">Actualidad</span>\n                                </p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div *ngIf=\"experience.proyectos.length > 0\" class=\"proyects-list\">\n                            <h5>Proyectos</h5>\n                            <hr>\n                            <ul class=\"proyects\">\n                                <li *ngFor=\"let proyect of experience.proyectos\">\n                                    <div>\n                                        <h5>{{ proyect.nombre }}</h5>\n                                        <p>{{ proyect.resumenProyecto }}</p>\n                                        <div class=\"tecnologies\">\n                                            <h6>Tecnologias Empleadas</h6>\n                                            <ul>\n                                                <li *ngFor=\"let tecnologia of proyect.tecnologias\">{{ tecnologia }}</li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div *ngIf=\"experience.proyectos.length == 0 && experience.resumenProyecto.length\">\n                            <p>{{ experience.resumenProyecto }}</p>\n                            <div class=\"tecnologies\">\n                                <h6>Tecnologias Empleadas</h6>\n                                <ul>\n                                    <li *ngFor=\"let tecnologia of experience.tecnologias\">{{ tecnologia }}</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                <div class=\"stats\" *ngFor=\"let hability of habilities\">\n                    <p>{{ hability.language.name }}  <small *ngIf=\"hability.language.version !== 0\">v.{{ hability.language.version }}</small></p>\n                    <div *ngFor=\"let framework of hability.frameworks\" class=\"bar\">\n                        <div [ngStyle]=\"{'width': framework.percent +'%'}\" class=\"percent\">\n                           <span >{{ framework.name }}</span>\n                           <span *ngIf=\"framework.version !== 0\">- v.{{ framework.version }}</span> \n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n";
+    __webpack_exports__["default"] = "<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let educ of education\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\" \n                        >\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ educ.titulo }}</h5>\n                                    <h6>{{ educ.institucion }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>{{ educ.fechaFin | date:\"MMM-y\" }}</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p *ngIf=\"educ.duracion > 0\">Duracion: {{ educ.duracion }}Hrs</p>\n                            <a href=\"{{educ.certificacionUrl}}\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"empleos\">keyboard</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let experience of experiences\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ experience.empresa }}</h5>\n                                    <h6>{{ experience.puesto }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>\n                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / \n                                    <span *ngIf=\"experience.fechaEgreso\">{{ experience.fechaEgreso | date:'MMM-y' }}</span>\n                                    <span *ngIf=\"!experience.fechaEgreso\">Actualidad</span>\n                                </p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div *ngIf=\"experience.proyectos.length > 0\" class=\"proyects-list\">\n                            <h5>Proyectos</h5>\n                            <hr>\n                            <ul class=\"proyects\">\n                                <li *ngFor=\"let proyect of experience.proyectos\">\n                                    <div>\n                                        <h5>{{ proyect.nombre }}</h5>\n                                        <p>{{ proyect.resumenProyecto }}</p>\n                                        <div class=\"tecnologies\">\n                                            <h6>Tecnologias Empleadas</h6>\n                                            <ul>\n                                                <li *ngFor=\"let tecnologia of proyect.tecnologias\">{{ tecnologia }}</li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div *ngIf=\"experience.proyectos.length == 0 && experience.resumenProyecto.length\">\n                            <p>{{ experience.resumenProyecto }}</p>\n                            <div class=\"tecnologies\">\n                                <h6>Tecnologias Empleadas</h6>\n                                <ul>\n                                    <li *ngFor=\"let tecnologia of experience.tecnologias\">{{ tecnologia }}</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                \n\n                <div class=\"stats\" *ngFor=\"let hability of habilities\">\n                    <p>{{ hability.language.name }}  <small *ngIf=\"hability.language.version !== 0\">v.{{ hability.language.version }}</small></p>\n                    \n                    <div class=\"progress my-1\" *ngFor=\"let framework of hability.frameworks\">\n                        <div class=\"progress-bar bg-success\" role=\"progressbar\" [ngStyle]=\"{'width': framework.percent +'%'}\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n                            <p>\n                                <span>{{ framework.name }}</span><span *ngIf=\"framework.version !== 0\">- v.{{ framework.version }}</span>\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n";
     /***/
   },
 
@@ -153,7 +153,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"home-icon\" [routerLink]=\"['home']\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </a>\n                    <p>Inicio</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"about-icon\" [routerLink]=\"['about']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </a>\n                    <p>Sobre mi</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"experience-icon\" [routerLink]=\"['experience']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </a>\n                    <p>Experiencia</p>\n                </div>\n                <div class=\"nav-button\">\n                    <a mat-icon-button id=\"contact-icon\" [routerLink]=\"['contact']\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </a>\n                    <p>Contacto</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>";
+    __webpack_exports__["default"] = "<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['home']\">\n                    <a mat-icon-button id=\"home-icon\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </a>\n                    <p>Inicio</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['about']\">\n                    <a mat-icon-button id=\"about-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </a>\n                    <p>Sobre mi</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['experience']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </a>\n                    <p>Experiencia</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['portfolio']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>work</mat-icon>\n                    </a>\n                    <p>Portafolio</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['contact']\">\n                    <a mat-icon-button id=\"contact-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </a>\n                    <p>Contacto</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/portfolio/portfolio.component.html":
+  /*!*****************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/portfolio/portfolio.component.html ***!
+    \*****************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsPortfolioPortfolioComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"portfolio\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12 text-center\">\n                <h1>Portafolio</h1>\n                <p>Una muestra de proyectos que llevo a cabo en mi tiempo libre con nuevas tecnolog&iacute;as.</p>\n            </div>\n        </div>\n        <div class=\"row\">\n            <mat-card class=\"card mx-auto my-2\" *ngFor=\"let proyect of portfolio\">\n                <mat-card-header>\n                    <mat-card-title>{{ proyect.name }}</mat-card-title>\n                    <mat-card-subtitle></mat-card-subtitle>\n                </mat-card-header>\n                <img mat-card-image [src]=\"proyect.imageUrl\" [alt]=\"proyect.name\">\n                <mat-card-content>\n                    <p>{{proyect.description}}</p>\n                    <small>Tecnologias aplicadas</small><br>\n                    <span class=\"badge badge-primary mx-1\" *ngFor=\"let lang of proyect.lenguajes\">{{lang.name}} {{lang.version}}</span>\n                    <span class=\"badge badge-success mx-1\" *ngFor=\"let frame of proyect.frameworks\">{{frame.name}} {{frame.version}}</span>\n                </mat-card-content>\n                <mat-card-actions class=\"actions\">\n                    <a [href]=\"proyect.url\" target=\"_blank\">VISITAR</a>\n                    <!-- <a [href]=\"proyect.repoUrl\" target=\"_blank\">CODIGO</a> -->\n                </mat-card-actions>\n            </mat-card>\n        </div>\n    </div>\n</div>";
     /***/
   },
 
@@ -920,67 +940,85 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var ngx_skill_bar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _angular_material_chips__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @angular/material/chips */
+    "./node_modules/@angular/material/esm2015/chips.js");
+    /* harmony import */
+
+
+    var ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ngx-skill-bar */
     "./node_modules/ngx-skill-bar/fesm2015/ngx-skill-bar.js");
     /* harmony import */
 
 
-    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./components/home/home.component */
     "./src/app/components/home/home.component.ts");
     /* harmony import */
 
 
-    var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ./components/navbar/navbar.component */
     "./src/app/components/navbar/navbar.component.ts");
     /* harmony import */
 
 
-    var _components_about_about_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./components/about/about.component */
     "./src/app/components/about/about.component.ts");
     /* harmony import */
 
 
-    var _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./pipes/birth-day.pipe */
     "./src/app/pipes/birth-day.pipe.ts");
     /* harmony import */
 
 
-    var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./components/experience/experience.component */
     "./src/app/components/experience/experience.component.ts");
     /* harmony import */
 
 
-    var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./components/contact/contact.component */
     "./src/app/components/contact/contact.component.ts");
     /* harmony import */
 
 
-    var _services_experience_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ./components/portfolio/portfolio.component */
+    "./src/app/components/portfolio/portfolio.component.ts");
+    /* harmony import */
+
+
+    var _services_experience_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ./services/experience.service */
     "./src/app/services/experience.service.ts");
     /* harmony import */
 
 
-    var _services_education_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _services_education_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./services/education.service */
     "./src/app/services/education.service.ts");
     /* harmony import */
 
 
-    var _services_habilities_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _services_habilities_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! ./services/habilities.service */
     "./src/app/services/habilities.service.ts");
     /* harmony import */
 
 
-    var _app_routes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _services_portfolio_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    /*! ./services/portfolio.service */
+    "./src/app/services/portfolio.service.ts");
+    /* harmony import */
+
+
+    var _app_routes__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! ./app.routes */
     "./src/app/app.routes.ts"); //Servicios
     //Rutas
@@ -991,9 +1029,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_12__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_13__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_14__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_15__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_16__["ContactComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], ngx_typed_js__WEBPACK_IMPORTED_MODULE_9__["NgxTypedJsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"], ngx_skill_bar__WEBPACK_IMPORTED_MODULE_10__["NgxSkillBarModule"], _app_routes__WEBPACK_IMPORTED_MODULE_20__["app_routing"]],
-      providers: [_services_experience_service__WEBPACK_IMPORTED_MODULE_17__["ExperienceService"], _services_education_service__WEBPACK_IMPORTED_MODULE_18__["EducationService"], _services_habilities_service__WEBPACK_IMPORTED_MODULE_19__["HabilitiesService"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"], _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_18__["PortfolioComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], ngx_typed_js__WEBPACK_IMPORTED_MODULE_9__["NgxTypedJsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_10__["MatChipsModule"], ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__["NgxSkillBarModule"], _app_routes__WEBPACK_IMPORTED_MODULE_23__["app_routing"]],
+      providers: [_services_experience_service__WEBPACK_IMPORTED_MODULE_19__["ExperienceService"], _services_education_service__WEBPACK_IMPORTED_MODULE_20__["EducationService"], _services_habilities_service__WEBPACK_IMPORTED_MODULE_21__["HabilitiesService"], _services_portfolio_service__WEBPACK_IMPORTED_MODULE_22__["PortfolioService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
     /***/
@@ -1054,6 +1092,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./components/contact/contact.component */
     "./src/app/components/contact/contact.component.ts");
+    /* harmony import */
+
+
+    var _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./components/portfolio/portfolio.component */
+    "./src/app/components/portfolio/portfolio.component.ts");
 
     var app_routes = [{
       path: 'home',
@@ -1074,10 +1118,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         animation: 'isRight'
       }
     }, {
+      path: 'portfolio',
+      component: _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_6__["PortfolioComponent"],
+      data: {
+        animation: 'isLeft'
+      }
+    }, {
       path: 'contact',
       component: _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"],
       data: {
-        animation: 'isLeft'
+        animation: 'isRight'
       }
     }, {
       path: '**',
@@ -1260,7 +1310,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".fecha-ingreso-egreso{\r\n    flex-flow: row-reverse;\r\n}\r\n.experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\nhr{\r\n    margin: 0.75em 0 0.75em 0;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects{\r\n    padding-left: 0.85em;\r\n}\r\n.proyects-list{\r\n    color: #777777;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.proyects > li{\r\n    padding-bottom: 0.5em;\r\n    margin-bottom: 0.5em;\r\n    border-bottom: 1px solid #e6e6e6;\r\n}\r\n.proyects > li:last-child{\r\n    border-bottom: 0;\r\n}\r\n.tecnologies{\r\n    color: #4b4b4b;\r\n}\r\n.tecnologies ul{\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    flex-direction: unset;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n}\r\n.tecnologies li{\r\n    font-family: monospace;\r\n    margin: 2px;\r\n}\r\n.tecnologies li::after{\r\n    content: \"|\";\r\n    color: #cccccc;\r\n}\r\n.tecnologies li:last-child::after{\r\n    content: \"\";\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n.stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.bar{\r\n    display: flex;\r\n    flex-flow: row;\r\n    align-items: center;\r\n    background-color: #cccccc;\r\n    box-shadow: inset 1px 1px 3px #7d7d7d;\r\n    height: 28px;\r\n    border-radius: 50px;\r\n    margin: 2px 0;\r\n}\r\n.percent{\r\n    border-radius: 50px;\r\n    box-shadow: inset 2px 2px 4px #9a9a9a;\r\n    height: 90%;\r\n    margin-left: 3px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n            animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\r\n    background-color: #00c000;\r\n}\r\n.percent span{\r\n    height: 100%;\r\n    display: block;\r\n    font-size: 12px;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    text-align: center;\r\n    color: #000000;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0kseUJBQXlCO0FBQzdCO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxnQkFBZ0I7O0FBRXBCO0FBQ0E7SUFDSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7QUFDQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUVBO0lBQ0ksY0FBYztBQUNsQjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLGdDQUFnQztBQUNwQztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksU0FBUztBQUNiO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixxQ0FBcUM7SUFDckMsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixhQUFhO0FBQ2pCO0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIscUNBQXFDO0lBQ3JDLFdBQVc7SUFDWCxnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIscUZBQTZFO1lBQTdFLDZFQUE2RTtJQUM3RSx5QkFBeUI7QUFDN0I7QUFFQTtJQUNJLFlBQVk7SUFDWixjQUFjO0lBQ2QsZUFBZTtJQUNmLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixjQUFjO0FBQ2xCO0FBRUE7SUFDSTtNQUNFLHNCQUFzQjtNQUN0Qix1QkFBdUI7SUFDekI7SUFDQTtNQUNFLG9CQUFvQjtNQUNwQix1QkFBdUI7SUFDekI7RUFDRjtBQVRGO0lBQ0k7TUFDRSxzQkFBc0I7TUFDdEIsdUJBQXVCO0lBQ3pCO0lBQ0E7TUFDRSxvQkFBb0I7TUFDcEIsdUJBQXVCO0lBQ3pCO0VBQ0Y7QUFHRjtJQUNJO1FBQ0ksNEJBQTRCO0lBQ2hDO0lBQ0E7UUFDSSw0QkFBNEI7UUFDNUIsaUJBQWlCO0lBQ3JCO0lBQ0E7UUFDSSxlQUFlO0lBQ25CO0lBQ0E7UUFDSSxnQkFBZ0I7SUFDcEI7SUFDQTtRQUNJLGNBQWM7SUFDbEI7QUFDSiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZXhwZXJpZW5jZS9leHBlcmllbmNlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZmVjaGEtaW5ncmVzby1lZ3Jlc297XHJcbiAgICBmbGV4LWZsb3c6IHJvdy1yZXZlcnNlO1xyXG59XHJcbi5leHBlcmllbmNle1xyXG4gICAgcGFkZGluZzogMjBweCAwIDcwcHg7XHJcbn1cclxuLmV4cGVyaWVuY2UgaDF7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXdlaWdodDogYm9sZGVyO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjVweDtcclxufVxyXG5cclxuaHJ7XHJcbiAgICBtYXJnaW46IDAuNzVlbSAwIDAuNzVlbSAwO1xyXG59XHJcblxyXG4ubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXJbYXJpYS1kaXNhYmxlZD10cnVlXSwgLnBhbmVsLWhlYWRlci1kZXNjcmlwdGlvbiB7XHJcbiAgICBjb2xvcjogcmdiYSgwLDAsMCwuNTQpO1xyXG59XHJcbi5jb21wYW55LWFuZC1kYXRle1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbn1cclxuLmNvbXBhbnktYW5kLWRhdGUgaDUsIC5jb21wYW55LWFuZC1kYXRlIHB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwO1xyXG4gICAgXHJcbn0gXHJcbi5jb21wYW55LWFuZC1kYXRlIGg1e1xyXG4gICAgY29sb3I6IHJnYigwLCAxNDAsIDI1NSk7XHJcbn1cclxuLmNocm9ub2xvZ3ktbGlzdHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59XHJcbi5wcm95ZWN0c3tcclxuICAgIHBhZGRpbmctbGVmdDogMC44NWVtO1xyXG59XHJcblxyXG4ucHJveWVjdHMtbGlzdHtcclxuICAgIGNvbG9yOiAjNzc3Nzc3O1xyXG59XHJcblxyXG4ucHJveWVjdHMgaDV7XHJcbiAgICBjb2xvcjogcmdiKDAsIDE0MCwgMjU1KTtcclxufVxyXG4ucHJveWVjdHMgaDZ7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcclxufVxyXG5cclxuLnByb3llY3RzIHB7XHJcbiAgICBmb250LXNpemU6IDE0cHg7XHJcbn1cclxuLnByb3llY3RzID4gbGl7XHJcbiAgICBwYWRkaW5nLWJvdHRvbTogMC41ZW07XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwLjVlbTtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZTZlNmU2O1xyXG59XHJcblxyXG4ucHJveWVjdHMgPiBsaTpsYXN0LWNoaWxke1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMDtcclxufVxyXG5cclxuLnRlY25vbG9naWVze1xyXG4gICAgY29sb3I6ICM0YjRiNGI7XHJcbn1cclxuLnRlY25vbG9naWVzIHVse1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHVuc2V0O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xyXG59XHJcbi50ZWNub2xvZ2llcyBsaXtcclxuICAgIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7XHJcbiAgICBtYXJnaW46IDJweDtcclxufVxyXG5cclxuLnRlY25vbG9naWVzIGxpOjphZnRlcntcclxuICAgIGNvbnRlbnQ6IFwifFwiO1xyXG4gICAgY29sb3I6ICNjY2NjY2M7XHJcbn1cclxuLnRlY25vbG9naWVzIGxpOmxhc3QtY2hpbGQ6OmFmdGVye1xyXG4gICAgY29udGVudDogXCJcIjtcclxufVxyXG5cclxuLmRhdGEtY2FyZHtcclxuICAgIG1hcmdpbjogNXB4IDA7XHJcbn1cclxuLnN0YXRzIHB7XHJcbiAgICBtYXJnaW46IDA7XHJcbn1cclxuLnN0YXRze1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG5cclxuLmJhcntcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWZsb3c6IHJvdztcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2NjY2NjO1xyXG4gICAgYm94LXNoYWRvdzogaW5zZXQgMXB4IDFweCAzcHggIzdkN2Q3ZDtcclxuICAgIGhlaWdodDogMjhweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBtYXJnaW46IDJweCAwO1xyXG59XHJcblxyXG4ucGVyY2VudHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbiAgICBib3gtc2hhZG93OiBpbnNldCAycHggMnB4IDRweCAjOWE5YTlhO1xyXG4gICAgaGVpZ2h0OiA5MCU7XHJcbiAgICBtYXJnaW4tbGVmdDogM3B4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFuaW1hdGlvbjogc2NhbGUtdXAtaG9yLWxlZnQgMXMgY3ViaWMtYmV6aWVyKDAuMzkwLCAwLjU3NSwgMC41NjUsIDEuMDAwKSBib3RoO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwYzAwMDtcclxufVxyXG5cclxuLnBlcmNlbnQgc3BhbntcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGNvbG9yOiAjMDAwMDAwO1xyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHNjYWxlLXVwLWhvci1sZWZ0IHtcclxuICAgIDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMC40KTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XHJcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAlIDAlO1xyXG4gICAgfVxyXG4gIH1cclxuXHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlci10aXRsZXtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDVweCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9ue1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICB9XHJcbiAgICAuY29tcGFueS1hbmQtZGF0ZSBoNXtcclxuICAgICAgICBmb250LXNpemU6IDFyZW07XHJcbiAgICB9XHJcbiAgICAucGVyY2VudCBzcGFue1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMC42ZW07XHJcbiAgICB9XHJcbiAgICBoM3tcclxuICAgICAgICBtYXJnaW46IDE1cHggMDtcclxuICAgIH1cclxufSJdfQ== */";
+    __webpack_exports__["default"] = ".fecha-ingreso-egreso{\r\n    flex-flow: row-reverse;\r\n}\r\n.experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\nhr{\r\n    margin: 0.75em 0 0.75em 0;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects{\r\n    padding-left: 0.85em;\r\n}\r\n.proyects-list{\r\n    color: #777777;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.proyects > li{\r\n    padding-bottom: 0.5em;\r\n    margin-bottom: 0.5em;\r\n    border-bottom: 1px solid #e6e6e6;\r\n}\r\n.proyects > li:last-child{\r\n    border-bottom: 0;\r\n}\r\n.tecnologies{\r\n    color: #4b4b4b;\r\n}\r\n.tecnologies ul{\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    flex-direction: unset;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n}\r\n.tecnologies li{\r\n    font-family: monospace;\r\n    margin: 2px;\r\n}\r\n.tecnologies li::after{\r\n    content: \"|\";\r\n    color: #cccccc;\r\n}\r\n.tecnologies li:last-child::after{\r\n    content: \"\";\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n.stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.progress{\r\n    height: 25px;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0kseUJBQXlCO0FBQzdCO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxnQkFBZ0I7O0FBRXBCO0FBQ0E7SUFDSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7QUFDQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUVBO0lBQ0ksY0FBYztBQUNsQjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLGdDQUFnQztBQUNwQztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksU0FBUztBQUNiO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLFlBQVk7QUFDaEI7QUFFQTtJQUNJO01BQ0Usc0JBQXNCO01BQ3RCLHVCQUF1QjtJQUN6QjtJQUNBO01BQ0Usb0JBQW9CO01BQ3BCLHVCQUF1QjtJQUN6QjtFQUNGO0FBVEY7SUFDSTtNQUNFLHNCQUFzQjtNQUN0Qix1QkFBdUI7SUFDekI7SUFDQTtNQUNFLG9CQUFvQjtNQUNwQix1QkFBdUI7SUFDekI7RUFDRjtBQUdGO0lBQ0k7UUFDSSw0QkFBNEI7SUFDaEM7SUFDQTtRQUNJLDRCQUE0QjtRQUM1QixpQkFBaUI7SUFDckI7SUFDQTtRQUNJLGVBQWU7SUFDbkI7SUFDQTtRQUNJLGdCQUFnQjtJQUNwQjtJQUNBO1FBQ0ksY0FBYztJQUNsQjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mZWNoYS1pbmdyZXNvLWVncmVzb3tcclxuICAgIGZsZXgtZmxvdzogcm93LXJldmVyc2U7XHJcbn1cclxuLmV4cGVyaWVuY2V7XHJcbiAgICBwYWRkaW5nOiAyMHB4IDAgNzBweDtcclxufVxyXG4uZXhwZXJpZW5jZSBoMXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkZXI7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xyXG59XHJcblxyXG5ocntcclxuICAgIG1hcmdpbjogMC43NWVtIDAgMC43NWVtIDA7XHJcbn1cclxuXHJcbi5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlclthcmlhLWRpc2FibGVkPXRydWVdLCAucGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9uIHtcclxuICAgIGNvbG9yOiByZ2JhKDAsMCwwLC41NCk7XHJcbn1cclxuLmNvbXBhbnktYW5kLWRhdGV7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG4uY29tcGFueS1hbmQtZGF0ZSBoNSwgLmNvbXBhbnktYW5kLWRhdGUgcHtcclxuICAgIG1hcmdpbi1ib3R0b206IDA7XHJcbiAgICBcclxufSBcclxuLmNvbXBhbnktYW5kLWRhdGUgaDV7XHJcbiAgICBjb2xvcjogcmdiKDAsIDE0MCwgMjU1KTtcclxufVxyXG4uY2hyb25vbG9neS1saXN0e1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbn1cclxuLnByb3llY3Rze1xyXG4gICAgcGFkZGluZy1sZWZ0OiAwLjg1ZW07XHJcbn1cclxuXHJcbi5wcm95ZWN0cy1saXN0e1xyXG4gICAgY29sb3I6ICM3Nzc3Nzc7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyBoNXtcclxuICAgIGNvbG9yOiByZ2IoMCwgMTQwLCAyNTUpO1xyXG59XHJcbi5wcm95ZWN0cyBoNntcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG59XHJcblxyXG4ucHJveWVjdHMgcHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG4ucHJveWVjdHMgPiBsaXtcclxuICAgIHBhZGRpbmctYm90dG9tOiAwLjVlbTtcclxuICAgIG1hcmdpbi1ib3R0b206IDAuNWVtO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyA+IGxpOmxhc3QtY2hpbGR7XHJcbiAgICBib3JkZXItYm90dG9tOiAwO1xyXG59XHJcblxyXG4udGVjbm9sb2dpZXN7XHJcbiAgICBjb2xvcjogIzRiNGI0YjtcclxufVxyXG4udGVjbm9sb2dpZXMgdWx7XHJcbiAgICBsaXN0LXN0eWxlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogdW5zZXQ7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbn1cclxuLnRlY25vbG9naWVzIGxpe1xyXG4gICAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcclxuICAgIG1hcmdpbjogMnB4O1xyXG59XHJcblxyXG4udGVjbm9sb2dpZXMgbGk6OmFmdGVye1xyXG4gICAgY29udGVudDogXCJ8XCI7XHJcbiAgICBjb2xvcjogI2NjY2NjYztcclxufVxyXG4udGVjbm9sb2dpZXMgbGk6bGFzdC1jaGlsZDo6YWZ0ZXJ7XHJcbiAgICBjb250ZW50OiBcIlwiO1xyXG59XHJcblxyXG4uZGF0YS1jYXJke1xyXG4gICAgbWFyZ2luOiA1cHggMDtcclxufVxyXG4uc3RhdHMgcHtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG4uc3RhdHN7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4ucHJvZ3Jlc3N7XHJcbiAgICBoZWlnaHQ6IDI1cHg7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgc2NhbGUtdXAtaG9yLWxlZnQge1xyXG4gICAgMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwLjQpO1xyXG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwJSAwJTtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgxKTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLXRpdGxle1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbiAgICAubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXItZGVzY3JpcHRpb257XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiA1cHggIWltcG9ydGFudDtcclxuICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIH1cclxuICAgIC5jb21wYW55LWFuZC1kYXRlIGg1e1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMXJlbTtcclxuICAgIH1cclxuICAgIC5wZXJjZW50IHNwYW57XHJcbiAgICAgICAgZm9udC1zaXplOiAwLjZlbTtcclxuICAgIH1cclxuICAgIGgze1xyXG4gICAgICAgIG1hcmdpbjogMTVweCAwO1xyXG4gICAgfVxyXG59Il19 */";
     /***/
   },
 
@@ -1454,7 +1504,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".nav-bar{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\n.nav-button{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\nnav{\r\n    position: fixed;\r\n    width: 100%;\r\n    background-color:rgba(255, 255, 255, 0.85);\r\n    box-shadow: 0px 2px 7px 2px #333333;\r\n    left: 0;\r\n    bottom: 0;\r\n}\r\n#home-icon{\r\n    color: #008cff;\r\n}\r\n#about-icon{\r\n    color: #ff003b;\r\n}\r\n#experience-icon{\r\n    color: #ffc800;\r\n}\r\n#contact-icon{\r\n    color: #00af56;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtJQUNiLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGVBQWU7SUFDZixXQUFXO0lBQ1gsMENBQTBDO0lBQzFDLG1DQUFtQztJQUNuQyxPQUFPO0lBQ1AsU0FBUztBQUNiO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmF2LWJhcntcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xyXG59XHJcbi5uYXYtYnV0dG9ue1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbm5hdntcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuODUpO1xyXG4gICAgYm94LXNoYWRvdzogMHB4IDJweCA3cHggMnB4ICMzMzMzMzM7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgYm90dG9tOiAwO1xyXG59XHJcblxyXG4jaG9tZS1pY29ue1xyXG4gICAgY29sb3I6ICMwMDhjZmY7XHJcbn1cclxuI2Fib3V0LWljb257XHJcbiAgICBjb2xvcjogI2ZmMDAzYjtcclxufVxyXG4jZXhwZXJpZW5jZS1pY29ue1xyXG4gICAgY29sb3I6ICNmZmM4MDA7XHJcbn1cclxuI2NvbnRhY3QtaWNvbntcclxuICAgIGNvbG9yOiAjMDBhZjU2O1xyXG59Il19 */";
+    __webpack_exports__["default"] = ".nav-bar{\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\n.nav-button{\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n.nav-button:focus{\r\n    outline: none;\r\n}\r\nnav{\r\n    position: fixed;\r\n    width: 100%;\r\n    background-color:rgba(255, 255, 255, 0.85);\r\n    box-shadow: 0px 2px 7px 2px #dadada;\r\n    left: 0;\r\n    bottom: -2.5em;\r\n    transition: bottom 1s;\r\n}\r\nnav:hover{\r\n    bottom: 0em;\r\n}\r\n.active{\r\n    color: #007fe7;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtJQUNiLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLFdBQVc7SUFDWCwwQ0FBMEM7SUFDMUMsbUNBQW1DO0lBQ25DLE9BQU87SUFDUCxjQUFjO0lBQ2QscUJBQXFCO0FBQ3pCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTtJQUNJLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL25hdmJhci9uYXZiYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXYtYmFye1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbn1cclxuLm5hdi1idXR0b257XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuLm5hdi1idXR0b246Zm9jdXN7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcbm5hdntcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjpyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuODUpO1xyXG4gICAgYm94LXNoYWRvdzogMHB4IDJweCA3cHggMnB4ICNkYWRhZGE7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgYm90dG9tOiAtMi41ZW07XHJcbiAgICB0cmFuc2l0aW9uOiBib3R0b20gMXM7XHJcbn1cclxuXHJcbm5hdjpob3ZlcntcclxuICAgIGJvdHRvbTogMGVtO1xyXG59XHJcblxyXG4uYWN0aXZle1xyXG4gICAgY29sb3I6ICMwMDdmZTc7XHJcbn0iXX0= */";
     /***/
   },
 
@@ -1531,6 +1581,100 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       /*! ./navbar.component.css */
       "./src/app/components/navbar/navbar.component.css"))["default"]]
     })], NavbarComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/components/portfolio/portfolio.component.css":
+  /*!**************************************************************!*\
+    !*** ./src/app/components/portfolio/portfolio.component.css ***!
+    \**************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsPortfolioPortfolioComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".portfolio{\r\n    padding: 20px 0 70px;\r\n}\r\n.portfolio h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\n.card {\r\n    max-width: 250px;\r\n  }\r\n.header-image {\r\n    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');\r\n    background-size: cover;\r\n}\r\n.actions{\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wb3J0Zm9saW8vcG9ydGZvbGlvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBb0I7QUFDeEI7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxnQkFBZ0I7RUFDbEI7QUFFRjtJQUNJLG1GQUFtRjtJQUNuRixzQkFBc0I7QUFDMUI7QUFFQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7QUFDakMiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3BvcnRmb2xpby9wb3J0Zm9saW8uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wb3J0Zm9saW97XHJcbiAgICBwYWRkaW5nOiAyMHB4IDAgNzBweDtcclxufVxyXG4ucG9ydGZvbGlvIGgxe1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIG1hcmdpbi1ib3R0b206IDI1cHg7XHJcbn1cclxuLmNhcmQge1xyXG4gICAgbWF4LXdpZHRoOiAyNTBweDtcclxuICB9XHJcbiAgXHJcbi5oZWFkZXItaW1hZ2Uge1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCdodHRwczovL21hdGVyaWFsLmFuZ3VsYXIuaW8vYXNzZXRzL2ltZy9leGFtcGxlcy9zaGliYTEuanBnJyk7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG59XHJcblxyXG4uYWN0aW9uc3tcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/portfolio/portfolio.component.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/components/portfolio/portfolio.component.ts ***!
+    \*************************************************************/
+
+  /*! exports provided: PortfolioComponent */
+
+  /***/
+  function srcAppComponentsPortfolioPortfolioComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PortfolioComponent", function () {
+      return PortfolioComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_portfolio_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../services/portfolio.service */
+    "./src/app/services/portfolio.service.ts");
+
+    var PortfolioComponent = /*#__PURE__*/function () {
+      function PortfolioComponent(_portafolioService) {
+        _classCallCheck(this, PortfolioComponent);
+
+        this._portafolioService = _portafolioService;
+        this.portfolio = [];
+      }
+
+      _createClass(PortfolioComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.portfolio = this._portafolioService.getPortfolio();
+        }
+      }]);
+
+      return PortfolioComponent;
+    }();
+
+    PortfolioComponent.ctorParameters = function () {
+      return [{
+        type: _services_portfolio_service__WEBPACK_IMPORTED_MODULE_2__["PortfolioService"]
+      }];
+    };
+
+    PortfolioComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-portfolio',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./portfolio.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/portfolio/portfolio.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./portfolio.component.css */
+      "./src/app/components/portfolio/portfolio.component.css"))["default"]]
+    })], PortfolioComponent);
     /***/
   },
 
@@ -1913,6 +2057,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }();
 
     HabilitiesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()], HabilitiesService);
+    /***/
+  },
+
+  /***/
+  "./src/app/services/portfolio.service.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/services/portfolio.service.ts ***!
+    \***********************************************/
+
+  /*! exports provided: PortfolioService */
+
+  /***/
+  function srcAppServicesPortfolioServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "PortfolioService", function () {
+      return PortfolioService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var PortfolioService = /*#__PURE__*/function () {
+      function PortfolioService() {
+        _classCallCheck(this, PortfolioService);
+
+        this.proyects = [{
+          name: "SpotiApp",
+          description: "Applicacion que consume el api de spotify, para conocer nuevos lanzamientos y artistas",
+          imageUrl: "https://iili.io/JM23FI.th.jpg",
+          repoUrl: "",
+          url: "https://jesuseduaardo-spotiapp.herokuapp.com/",
+          lenguajes: [{
+            name: "Java",
+            version: "8"
+          }, {
+            name: "TypeScript",
+            version: "3.8"
+          }],
+          frameworks: [{
+            name: "SpringBoot",
+            version: 5,
+            percent: 0
+          }, {
+            name: "Angular",
+            version: 9,
+            percent: 0
+          }, {
+            name: "Bootstrap",
+            version: 4,
+            percent: 0
+          }]
+        }, {
+          name: "Saenca",
+          description: "Ecommerce completo con panel de administracion creado con laravel 5.8 y ReactJs 16",
+          imageUrl: "https://iili.io/JM2d6N.th.jpg",
+          repoUrl: "",
+          url: "http://saenca.com/",
+          lenguajes: [{
+            name: "PHP",
+            version: "7"
+          }, {
+            name: "Javascript",
+            version: "ES6"
+          }],
+          frameworks: [{
+            name: "Laravel",
+            version: 5.8,
+            percent: 0
+          }, {
+            name: "ReactJS",
+            version: 16,
+            percent: 0
+          }, {
+            name: "MaterialUI",
+            version: 8,
+            percent: 0
+          }]
+        }];
+      }
+
+      _createClass(PortfolioService, [{
+        key: "getPortfolio",
+        value: function getPortfolio() {
+          return this.proyects;
+        }
+      }]);
+
+      return PortfolioService;
+    }();
+
+    PortfolioService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()], PortfolioService);
     /***/
   },
 
