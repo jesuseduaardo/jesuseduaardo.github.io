@@ -9,8 +9,8 @@ const app_routes: Routes = [
     { path: 'home', component: HomeComponent, data: { animation: 'isRight' }},
     { path: 'about', component: AboutComponent, data: { animation: 'isLeft' }},
     { path: 'experience', component: ExperienceComponent, data: { animation: 'isRight' }},
-    { path: 'contact', component: ContactComponent, data: { animation: 'isLeft' } },
-    { path: 'portfolio', component: PortfolioComponent, data: { animation: 'isRight' }},
+    { path: 'portfolio', component: PortfolioComponent, data: { animation: 'isLeft' }},
+    { path: 'contact', component: ContactComponent, data: { animation: 'isRight' } },
     { path: '**', pathMatch: 'full', redirectTo: '/home' }
   ];
 

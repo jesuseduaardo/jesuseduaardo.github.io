@@ -97,12 +97,16 @@
                     <mat-icon aria-hidden="false" aria-label="Example home icon">emoji_events</mat-icon> 
                     Habilidades
                 </h3>
+                
+
                 <div class="stats" *ngFor="let hability of habilities">
                     <p>{{ hability.language.name }}  <small *ngIf="hability.language.version !== 0">v.{{ hability.language.version }}</small></p>
-                    <div *ngFor="let framework of hability.frameworks" class="bar">
-                        <div [ngStyle]="{'width': framework.percent +'%'}" class="percent">
-                           <span >{{ framework.name }}</span>
-                           <span *ngIf="framework.version !== 0">- v.{{ framework.version }}</span> 
+                    
+                    <div class="progress my-1" *ngFor="let framework of hability.frameworks">
+                        <div class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width': framework.percent +'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <p>
+                                <span>{{ framework.name }}</span><span *ngIf="framework.version !== 0">- v.{{ framework.version }}</span>
+                            </p>
                         </div>
                     </div>
                 </div>

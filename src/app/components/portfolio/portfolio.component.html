@@ -1,11 +1,13 @@
 <div class="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h1>Portafolio</h1>
-                <hr>
+                <p>Una muestra de proyectos que llevo a cabo en mi tiempo libre con nuevas tecnolog&iacute;as.</p>
             </div>
-            <mat-card class="card mx-2" *ngFor="let proyect of portfolio">
+        </div>
+        <div class="row">
+            <mat-card class="card mx-auto my-2" *ngFor="let proyect of portfolio">
                 <mat-card-header>
                     <mat-card-title>{{ proyect.name }}</mat-card-title>
                     <mat-card-subtitle></mat-card-subtitle>
@@ -19,7 +21,7 @@
                 </mat-card-content>
                 <mat-card-actions class="actions">
                     <a [href]="proyect.url" target="_blank">VISITAR</a>
-                    <a [href]="proyect.repoUrl" target="_blank">CODIGO</a>
+                    <!-- <a [href]="proyect.repoUrl" target="_blank">CODIGO</a> -->
                 </mat-card-actions>
             </mat-card>
         </div>
