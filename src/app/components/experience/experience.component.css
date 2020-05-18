@@ -1,3 +1,6 @@
+.fecha-ingreso-egreso{
+    flex-flow: row-reverse;
+}
 .experience{
     padding: 20px 0 70px;
 }
@@ -5,6 +8,10 @@
     text-align: center;
     font-weight: bolder;
     margin-bottom: 25px;
+}
+
+hr{
+    margin: 0.75em 0 0.75em 0;
 }
 
 .mat-expansion-panel-header[aria-disabled=true], .panel-header-description {
@@ -26,6 +33,13 @@
     list-style: none;
     padding: 0;
 }
+.proyects{
+    padding-left: 0.85em;
+}
+
+.proyects-list{
+    color: #777777;
+}
 
 .proyects h5{
     color: rgb(0, 140, 255);
@@ -38,10 +52,40 @@
 .proyects p{
     font-size: 14px;
 }
+.proyects > li{
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.proyects > li:last-child{
+    border-bottom: 0;
+}
 
 .tecnologies{
-    font-family: monospace;
+    color: #4b4b4b;
 }
+.tecnologies ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.tecnologies li{
+    font-family: monospace;
+    margin: 2px;
+}
+
+.tecnologies li::after{
+    content: "|";
+    color: #cccccc;
+}
+.tecnologies li:last-child::after{
+    content: "";
+}
+
 .data-card{
     margin: 5px 0;
 }
@@ -53,18 +97,26 @@
 }
 
 .bar{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
     background-color: #cccccc;
     box-shadow: inset 1px 1px 3px #7d7d7d;
-    height: 35px;
+    height: 28px;
     border-radius: 50px;
+    margin: 2px 0;
 }
 
 .percent{
     border-radius: 50px;
-    height: 100%;
+    box-shadow: inset 2px 2px 4px #9a9a9a;
+    height: 90%;
+    margin-left: 3px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    background-color: #00c000;
 }
 
 .percent span{
@@ -75,18 +127,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
-}
-.percent span:first-child{
-    border-radius: 50px 0 0 50px;
-    background-color: #008cff;
-}
-.percent span:nth-child(2){
-    background-color: #9400b9;
-}
-.percent span:last-child{
-    border-radius: 0 50px 50px 0;
-    background-color: #00c000;
+    color: #000000;
 }
 
 @keyframes scale-up-hor-left {

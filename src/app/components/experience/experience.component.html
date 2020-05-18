@@ -4,198 +4,88 @@
             <div class="col-12">
                 <h1>Mi experiencia</h1>
             </div>
-            <div class="col-md">
+            <div class="col-12 col-md-6">
                 <h3>
                     <mat-icon aria-hidden="false" aria-label="Example home icon">school</mat-icon> 
                     Educaci&oacute;n
                 </h3>
                 <mat-accordion multi="true">
-                    <mat-expansion-panel [disabled]="true">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>T&eacute;cnico Superior en Inform&aacute;tica</h5>
-                                    <h6>I.U.T Jos&eacute; Mar&iacute;a Carre&ntilde;o</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Jul/2017</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                    </mat-expansion-panel>
                     <mat-expansion-panel 
+                        *ngFor="let educ of education" 
                         (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false">
+                        (closed)="panelOpenState = false" 
+                        >
                         <mat-expansion-panel-header [collapsedHeight]="'100px'">
                             <mat-panel-title>
                                 <div class="company-and-date">
-                                    <h5>Responsive Web Design</h5>
-                                    <h6>FreeCodeCamp.org</h6>
+                                    <h5>{{ educ.titulo }}</h5>
+                                    <h6>{{ educ.institucion }}</h6>
                                 </div>
                             </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Nov/2018</p>
+                            <mat-panel-description class="fecha-ingreso-egreso">
+                                <p>{{ educ.fechaFin | date:"MMM-y" }}</p>
                             </mat-panel-description>
                         </mat-expansion-panel-header>
                         <div>
-                            <p>Developer Certification, representing approximately 300 hours of coursework</p>
-                            <a href="https://www.freecodecamp.org/certification/jesuseduaardo/responsive-web-design" target="_blank">
+                            <p *ngIf="educ.duracion > 0">Duracion: {{ educ.duracion }}Hrs</p>
+                            <a href="{{educ.certificacionUrl}}" target="_blank">
                             Ver Certificaci&oacute;n
                             </a>
                         </div>
                     </mat-expansion-panel>
-                    <mat-expansion-panel [disabled]="true">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>Fundamentos ReactJS</h5>
-                                    <h6>Education IT</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Ago/2018</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                    </mat-expansion-panel>
                 </mat-accordion>
             </div>
-            <div class="col-md">
+            <div class="col-12 col-md-6">
                 <h3>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">create</mat-icon> 
+                    <mat-icon aria-hidden="false" aria-label="empleos">keyboard</mat-icon> 
                     Empleos
                 </h3>
                 <mat-accordion multi="true">
                     <mat-expansion-panel 
+                        *ngFor="let experience of experiences" 
                         (opened)="panelOpenState = true" 
                         (closed)="panelOpenState = false">
                         <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
                             <mat-panel-title>
                                 <div class="company-and-date">
-                                    <h5>IT Resources S.A.</h5>
-                                    <h6>Programador Java</h6>
+                                    <h5>{{ experience.empresa }}</h5>
+                                    <h6>{{ experience.puesto }}</h6>
                                 </div>
                             </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Jul/2019 - Actualidad</p>
+                            <mat-panel-description class="fecha-ingreso-egreso">
+                                <p>
+                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / 
+                                    <span *ngIf="experience.fechaEgreso">{{ experience.fechaEgreso | date:'MMM-y' }}</span>
+                                    <span *ngIf="!experience.fechaEgreso">Actualidad</span>
+                                </p>
                             </mat-panel-description>
                         </mat-expansion-panel-header>
-                        <div>
-                            <p>Proyectos</p>
+                        <div *ngIf="experience.proyectos.length > 0" class="proyects-list">
+                            <h5>Proyectos</h5>
+                            <hr>
                             <ul class="proyects">
-                                <li>
+                                <li *ngFor="let proyect of experience.proyectos">
                                     <div>
-                                        <h5>Banco Santander</h5>
-                                        <p>Desarrollo y mantenimiento de la aplicacion portal del Banco Santander</p>
-                                        <h6>Tecnologias Empleadas</h6>
-                                        <p class="tecnologies">JavaEE | SpringMVC | jQuery | Git/SVN</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <h5>Legal Security</h5>
-                                        <p>Desarrollo y mantenimiento de la aplicacion de seguridad personal 
-                                            y empresarial de la Empresa Legal Security</p>
-                                        <h6>Tecnologias Empleadas</h6>
-                                        <p class="tecnologies">JavaEE | SpringMVC | jQuery | Git/SVN</p>
+                                        <h5>{{ proyect.nombre }}</h5>
+                                        <p>{{ proyect.resumenProyecto }}</p>
+                                        <div class="tecnologies">
+                                            <h6>Tecnologias Empleadas</h6>
+                                            <ul>
+                                                <li *ngFor="let tecnologia of proyect.tecnologias">{{ tecnologia }}</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel 
-                        (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false"(collapsedHeight)="90">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>Eglam Argentina S.A</h5>
-                                    <h6>Programador Backend</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Feb/2019 - Jul/2019</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div class="proyects">
-                            <p>Gesti&oacute;n y desarrollo de modulos para e-commerces basados en Magento</p>
-                            <h6>Tecnologias Empleadas</h6>
-                            <p class="tecnologies">PHP5 | Magento | Javascript/jQuery | Git/SVN</p>
-                        </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel 
-                        (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false"(collapsedHeight)="90">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>Tecnosoftware S.A</h5>
-                                    <h6>Programador Java</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Jul/2018 - Feb/2019</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div>
-                            <p>Proyectos</p>
-                            <ul class="proyects">
-                                <li>
-                                    <div>
-                                        <h5>Banco Provincia</h5>
-                                        <p>Desarrollo y mantenimiento de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia</p>
-                                        <h6>Tecnologias Empleadas</h6>
-                                        <p class="tecnologies">JavaEE | SpringMVC | jQuery | Git/SVN</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel 
-                        (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false"(collapsedHeight)="90">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>Arkiteck C.A</h5>
-                                    <h6>Analista de Sistemas 3</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Nov/2017 - Feb/2018</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div>
-                            <p>Proyectos</p>
-                            <ul class="proyects">
-                                <li>
-                                    <div>
-                                        <h5>Banco BBVA (Venezuela)</h5>
-                                        <p>Desarrollo y mantenimiento de la plataforma para usuarios corporativos del banco BBVA Provincial</p>
-                                        <h6>Tecnologias Empleadas</h6>
-                                        <p class="tecnologies">JavaEE | SpringMVC | Javascript/jQuery | Bootstrap | Git</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </mat-expansion-panel>
-                    <mat-expansion-panel 
-                        (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false"(collapsedHeight)="90">
-                        <mat-expansion-panel-header [collapsedHeight]="'100px'" [expandedHeight]="'100px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <h5>La Victoria 3021 R.L</h5>
-                                    <h6>Web Developer</h6>
-                                </div>
-                            </mat-panel-title>
-                            <mat-panel-description>
-                                <p>Oct/2013 - Nov/2017</p>
-                            </mat-panel-description>
-                        </mat-expansion-panel-header>
-                        <div class="proyects">
-                            <p>Creacion de sitios web para pymes</p>
-                            <h6>Tecnologias Empleadas</h6>
-                            <p class="tecnologies">PHP5 | Codeigniter | Javascript/jQuery | Bootstrap | Git</p>
+                        <div *ngIf="experience.proyectos.length == 0 && experience.resumenProyecto.length">
+                            <p>{{ experience.resumenProyecto }}</p>
+                            <div class="tecnologies">
+                                <h6>Tecnologias Empleadas</h6>
+                                <ul>
+                                    <li *ngFor="let tecnologia of experience.tecnologias">{{ tecnologia }}</li>
+                                </ul>
+                            </div>
                         </div>
                     </mat-expansion-panel>
                 </mat-accordion>
@@ -207,41 +97,12 @@
                     <mat-icon aria-hidden="false" aria-label="Example home icon">emoji_events</mat-icon> 
                     Habilidades
                 </h3>
-                <div class="stats">
-                    <p>Java</p>
-                    <div class="bar">
-                        <div id="priority" class="percent" style="width: 40%;">
-                           <span style="width: 50%;">JavaEE</span> 
-                           <span style="width: 30%;">SpringMVC<br>Spring Boot</span> 
-                           <span style="width: 20%;">Jpa<br>Hibernate</span> 
-                        </div>
-                    </div>
-                </div>
-                <div class="stats">
-                    <p>JavaScript</p>
-                    <div class="bar">
-                        <div class="percent" style="width: 70%;">
-                            <span style="width: 45%;">jQuery</span> 
-                            <span style="width: 45%;">ReactJS</span> 
-                            <span style="width: 10%;">Angular</span> 
-                        </div>
-                    </div>
-                </div>
-                <div class="stats">
-                    <p>HTML5 / CSS3</p>
-                    <div class="bar">
-                        <div class="percent" style="width: 85%;">
-                            <span style="width: 60%;">Bootstrap</span> 
-                            <span style="width: 40%;">Material-UI</span> 
-                        </div>
-                    </div>
-                </div>
-                <div class="stats">
-                    <p>PHP</p>
-                    <div class="bar">
-                        <div class="percent" style="width: 60%;">
-                            <span style="width: 70%;">Laravel</span> 
-                            <span style="width: 30%;">PHP5 / PHP7</span> 
+                <div class="stats" *ngFor="let hability of habilities">
+                    <p>{{ hability.language.name }}  <small *ngIf="hability.language.version !== 0">v.{{ hability.language.version }}</small></p>
+                    <div *ngFor="let framework of hability.frameworks" class="bar">
+                        <div [ngStyle]="{'width': framework.percent +'%'}" class="percent">
+                           <span >{{ framework.name }}</span>
+                           <span *ngIf="framework.version !== 0">- v.{{ framework.version }}</span> 
                         </div>
                     </div>
                 </div>

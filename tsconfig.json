@@ -18,6 +18,9 @@
       "es2018",
       "dom"
     ]
+    // "resolveJsonModule": true,  //Descomentar para importar archivos .json
+    // "allowSyntheticDefaultImports": true,
+    // "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

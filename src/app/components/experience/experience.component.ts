@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ExperienceService, Experience } from '../../services/experience.service';
+import { EducationService, Education } from '../../services/education.service';
+import { HabilitiesService, Hability } from '../../services/habilities.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,45 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  experiences:Experience[] = [];
+  education:Education[] = [];
+  habilities:Hability[] = [];
+
+  constructor(
+    private _experienceService:ExperienceService, 
+    private _educationService:EducationService,
+    private _habilitiesService:HabilitiesService) { }
 
   ngOnInit() {
+    this.experiences = this._experienceService.getExperience();
+    this.education = this._educationService.getEducation();
+    this.habilities = this._habilitiesService.getHabilities();
+    console.log(this.habilities);
   }
-
-  public chartType: string = 'horizontalBar';
-
-  public chartDatasets: Array<any> = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'My First dataset' }
-  ];
-
-  public chartLabels: Array<any> = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
-
-  public chartColors: Array<any> = [
-    {
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 2,
-    }
-  ];
-
-  public chartOptions: any = {
-    responsive: true
-  };
-  public chartClicked(e: any): void { }
-  public chartHovered(e: any): void { }
 
 }
