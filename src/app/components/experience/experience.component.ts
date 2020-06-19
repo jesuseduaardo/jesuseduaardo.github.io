@@ -10,6 +10,8 @@ import { HabilitiesService, Hability } from '../../services/habilities.service';
 })
 export class ExperienceComponent implements OnInit {
 
+  panelOpenState:boolean;
+
   experiences:Experience[] = [];
   education:Education[] = [];
   habilities:Hability[] = [];

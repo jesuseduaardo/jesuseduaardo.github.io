@@ -63,6 +63,16 @@ export class HabilitiesService {
           name:"Angular",
           version:8,
           percent:30
+        },
+        {
+          name:"Angular Material",
+          version:9,
+          percent:30
+        },
+        {
+          name:"Ionic",
+          version:5,
+          percent:25
         }
       ]
     },
