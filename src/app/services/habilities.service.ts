@@ -9,6 +9,7 @@ export class HabilitiesService {
   sql:Language={name:"SQL", version:0}
   html:Language={name:"Html", version:5}
   css:Language={name:"Css", version:3}
+  versionado:Language={name:"Versionado", version:0}
 
   habilities:Hability[] = [
     {
@@ -96,6 +97,21 @@ export class HabilitiesService {
         }
       ]
     },
+    {
+      language:this.versionado,
+      frameworks:[
+        {
+          name: "GIT",
+          version:0,
+          percent: 50
+        },
+        {
+          name: "SVN",
+          version:0,
+          percent:30
+        }
+      ]
+    }
   ];
 
   constructor() { }
