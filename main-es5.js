@@ -113,7 +113,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let educ of education\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\" \n                        >\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ educ.titulo }}</h5>\n                                    <h6>{{ educ.institucion }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>{{ educ.fechaFin | date:\"MMM-y\" }}</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p *ngIf=\"educ.duracion > 0\">Duracion: {{ educ.duracion }}Hrs</p>\n                            <a href=\"{{educ.certificacionUrl}}\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"empleos\">keyboard</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let experience of experiences\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ experience.empresa }}</h5>\n                                    <h6>{{ experience.puesto }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>\n                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / \n                                    <span *ngIf=\"experience.fechaEgreso\">{{ experience.fechaEgreso | date:'MMM-y' }}</span>\n                                    <span *ngIf=\"!experience.fechaEgreso\">Actualidad</span>\n                                </p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div *ngIf=\"experience.proyectos.length > 0\" class=\"proyects-list\">\n                            <h5>Proyectos</h5>\n                            <hr>\n                            <ul class=\"proyects\">\n                                <li *ngFor=\"let proyect of experience.proyectos\">\n                                    <div>\n                                        <h5>{{ proyect.nombre }}</h5>\n                                        <p>{{ proyect.resumenProyecto }}</p>\n                                        <div class=\"tecnologies\">\n                                            <h6>Tecnologias Empleadas</h6>\n                                            <ul>\n                                                <li *ngFor=\"let tecnologia of proyect.tecnologias\">{{ tecnologia }}</li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div *ngIf=\"experience.proyectos.length == 0 && experience.resumenProyecto.length\">\n                            <p>{{ experience.resumenProyecto }}</p>\n                            <div class=\"tecnologies\">\n                                <h6>Tecnologias Empleadas</h6>\n                                <ul>\n                                    <li *ngFor=\"let tecnologia of experience.tecnologias\">{{ tecnologia }}</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                \n\n                <div class=\"stats\" *ngFor=\"let hability of habilities\">\n                    <p>{{ hability.language.name }}  <small *ngIf=\"hability.language.version !== 0\">v.{{ hability.language.version }}</small></p>\n                    \n                    <div class=\"progress my-1\" *ngFor=\"let framework of hability.frameworks\">\n                        <div class=\"progress-bar bg-success\" role=\"progressbar\" [ngStyle]=\"{'width': framework.percent +'%'}\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n                            <p>\n                                <span>{{ framework.name }}</span><span *ngIf=\"framework.version !== 0\">- v.{{ framework.version }}</span>\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n";
+    __webpack_exports__["default"] = "<div class=\"experience\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h1>Mi experiencia</h1>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">school</mat-icon> \n                    Educaci&oacute;n\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let educ of education\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\" \n                        >\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ educ.titulo }}</h5>\n                                    <h6>{{ educ.institucion }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>{{ educ.fechaFin | date:\"MMM-y\" }}</p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div>\n                            <p *ngIf=\"educ.duracion > 0\">Duracion: {{ educ.duracion }}Hrs</p>\n                            <a href=\"{{educ.certificacionUrl}}\" target=\"_blank\">\n                            Ver Certificaci&oacute;n\n                            </a>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n            <div class=\"col-12 col-md-6\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"empleos\">keyboard</mat-icon> \n                    Empleos\n                </h3>\n                <mat-accordion multi=\"true\">\n                    <mat-expansion-panel \n                        *ngFor=\"let experience of experiences\" \n                        (opened)=\"panelOpenState = true\" \n                        (closed)=\"panelOpenState = false\">\n                        <mat-expansion-panel-header [collapsedHeight]=\"'100px'\" [expandedHeight]=\"'100px'\">\n                            <mat-panel-title>\n                                <div class=\"company-and-date\">\n                                    <h5>{{ experience.empresa }}</h5>\n                                    <h6>{{ experience.puesto }}</h6>\n                                </div>\n                            </mat-panel-title>\n                            <mat-panel-description class=\"fecha-ingreso-egreso\">\n                                <p>\n                                    <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / \n                                    <span *ngIf=\"experience.fechaEgreso\">{{ experience.fechaEgreso | date:'MMM-y' }}</span>\n                                    <span *ngIf=\"!experience.fechaEgreso\">Actualidad</span>\n                                </p>\n                            </mat-panel-description>\n                        </mat-expansion-panel-header>\n                        <div *ngIf=\"experience.proyectos.length > 0\" class=\"proyects-list\">\n                            <h5>Proyectos</h5>\n                            <hr>\n                            <ul class=\"proyects\">\n                                <li *ngFor=\"let proyect of experience.proyectos\">\n                                    <div>\n                                        <h5>{{ proyect.nombre }}</h5>\n                                        <p>{{ proyect.resumenProyecto }}</p>\n                                        <div class=\"tecnologies\">\n                                            <h6>Tecnologias Empleadas</h6>\n                                            <ul>\n                                                <li *ngFor=\"let tecnologia of proyect.tecnologias\">{{ tecnologia }}</li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </li>\n                            </ul>\n                        </div>\n                        <div *ngIf=\"experience.proyectos.length == 0 && experience.resumenProyecto.length\">\n                            <p>{{ experience.resumenProyecto }}</p>\n                            <div class=\"tecnologies\">\n                                <h6>Tecnologias Empleadas</h6>\n                                <ul>\n                                    <li *ngFor=\"let tecnologia of experience.tecnologias\">{{ tecnologia }}</li>\n                                </ul>\n                            </div>\n                        </div>\n                    </mat-expansion-panel>\n                </mat-accordion>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <h3>\n                    <mat-icon aria-hidden=\"false\" aria-label=\"Example home icon\">emoji_events</mat-icon> \n                    Habilidades\n                </h3>\n                <app-skill *ngFor=\"let hability of habilities\" [hability]=\"hability\"></app-skill>\n            </div>\n        </div>\n    </div>\n</div>\n\n\n\n";
     /***/
   },
 
@@ -153,7 +153,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['home']\">\n                    <a mat-icon-button id=\"home-icon\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </a>\n                    <p>Inicio</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['about']\">\n                    <a mat-icon-button id=\"about-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </a>\n                    <p>Sobre mi</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['experience']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </a>\n                    <p>Experiencia</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['portfolio']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>work</mat-icon>\n                    </a>\n                    <p>Portafolio</p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['contact']\">\n                    <a mat-icon-button id=\"contact-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </a>\n                    <p>Contacto</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>";
+    __webpack_exports__["default"] = "<nav>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"nav-bar\">\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['home']\">\n                    <a mat-icon-button id=\"home-icon\" aria-label=\"Inicio\">\n                        <mat-icon>home</mat-icon>\n                    </a>\n                    <p>\n                        <span class=\"d-none d-md-block\">Inicio</span>\n                    </p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['about']\">\n                    <a mat-icon-button id=\"about-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>person</mat-icon>\n                    </a>\n                    <p>\n                        <span class=\"d-none d-md-block\">Sobre mi</span>\n                    </p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['experience']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>grade</mat-icon>\n                    </a>\n                    <p>\n                        <span class=\"d-none d-md-block\">Experiencia</span>\n                    </p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['portfolio']\">\n                    <a mat-icon-button id=\"experience-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>work</mat-icon>\n                    </a>\n                    <p>\n                        <span class=\"d-none d-md-block\">Portafolio</span>\n                    </p>\n                </div>\n                <div class=\"nav-button\" routerLinkActive=\"active\" [routerLink]=\"['contact']\">\n                    <a mat-icon-button id=\"contact-icon\" aria-label=\"Example icon button with a home icon\">\n                        <mat-icon>local_post_office</mat-icon>\n                    </a>\n                    <p>\n                        <span class=\"d-none d-md-block\">Contacto</span>\n                    </p>\n                </div>\n            </div>\n        </div>\n    </div>\n</nav>";
     /***/
   },
 
@@ -178,12 +178,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/components/skill/skill.component.html":
+  /*!*********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/skill/skill.component.html ***!
+    \*********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentsSkillSkillComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<mat-card class=\"stats\">\n    <div class=\"hability-title\">\n        <img [src]=\"hability.language.icon\" [alt]=\"hability.language.name\" class=\"img-thumbnail\">\n        <h5>{{ hability.language.name }}  <small *ngIf=\"hability.language.version !== 0\">v.{{ hability.language.version }}</small></h5>\n    </div>\n    <div *ngFor=\"let framework of hability.frameworks\" class=\"framework-info\">\n        <img [src]=\"framework.icon\" [alt]=\"framework.name\" class=\"img-thumbnail\">\n        <div class=\"progress my-1\">\n            <div class=\"progress-bar bg-success\" role=\"progressbar\" [ngStyle]=\"{'width': framework.percent +'%'}\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n                <p>\n                    <span>{{ framework.name }}</span><span *ngIf=\"framework.version !== 0\">- v.{{ framework.version }}</span>\n                </p>\n            </div>\n        </div>\n    </div>\n</mat-card>";
+    /***/
+  },
+
+  /***/
   "./node_modules/tslib/tslib.es6.js":
   /*!*****************************************!*\
     !*** ./node_modules/tslib/tslib.es6.js ***!
     \*****************************************/
 
-  /*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+  /*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
 
   /***/
   function node_modulesTslibTslibEs6Js(module, __webpack_exports__, __webpack_require__) {
@@ -237,6 +257,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     __webpack_require__.d(__webpack_exports__, "__generator", function () {
       return __generator;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "__createBinding", function () {
+      return __createBinding;
     });
     /* harmony export (binding) */
 
@@ -323,18 +349,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return __classPrivateFieldSet;
     });
     /*! *****************************************************************************
-    Copyright (c) Microsoft Corporation. All rights reserved.
-    Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-    this file except in compliance with the License. You may obtain a copy of the
-    License at http://www.apache.org/licenses/LICENSE-2.0
+    Copyright (c) Microsoft Corporation.
     
-    THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-    KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-    WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-    MERCHANTABLITY OR NON-INFRINGEMENT.
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted.
     
-    See the Apache Version 2.0 License for specific language governing permissions
-    and limitations under the License.
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+    PERFORMANCE OF THIS SOFTWARE.
     ***************************************************************************** */
 
     /* global Reflect, Promise */
@@ -556,9 +582,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
+    function __createBinding(o, m, k, k2) {
+      if (k2 === undefined) k2 = k;
+      o[k2] = m[k];
+    }
+
     function __exportStar(m, exports) {
       for (var p in m) {
-        if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+        if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
       }
     }
 
@@ -1020,7 +1051,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _app_routes__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! ./app.routes */
-    "./src/app/app.routes.ts"); //Servicios
+    "./src/app/app.routes.ts");
+    /* harmony import */
+
+
+    var _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    /*! ./components/skill/skill.component */
+    "./src/app/components/skill/skill.component.ts"); //Servicios
     //Rutas
 
 
@@ -1029,7 +1066,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"], _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_18__["PortfolioComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _components_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"], _components_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_13__["NavbarComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_14__["AboutComponent"], _pipes_birth_day_pipe__WEBPACK_IMPORTED_MODULE_15__["BirthDayPipe"], _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_16__["ExperienceComponent"], _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__["ContactComponent"], _components_portfolio_portfolio_component__WEBPACK_IMPORTED_MODULE_18__["PortfolioComponent"], _components_skill_skill_component__WEBPACK_IMPORTED_MODULE_24__["SkillComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], ngx_typed_js__WEBPACK_IMPORTED_MODULE_9__["NgxTypedJsModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_10__["MatChipsModule"], ngx_skill_bar__WEBPACK_IMPORTED_MODULE_11__["NgxSkillBarModule"], _app_routes__WEBPACK_IMPORTED_MODULE_23__["app_routing"]],
       providers: [_services_experience_service__WEBPACK_IMPORTED_MODULE_19__["ExperienceService"], _services_education_service__WEBPACK_IMPORTED_MODULE_20__["EducationService"], _services_habilities_service__WEBPACK_IMPORTED_MODULE_21__["HabilitiesService"], _services_portfolio_service__WEBPACK_IMPORTED_MODULE_22__["PortfolioService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -1312,7 +1349,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".fecha-ingreso-egreso{\r\n    flex-flow: row-reverse;\r\n}\r\n.experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\nhr{\r\n    margin: 0.75em 0 0.75em 0;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects{\r\n    padding-left: 0.85em;\r\n}\r\n.proyects-list{\r\n    color: #777777;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.proyects > li{\r\n    padding-bottom: 0.5em;\r\n    margin-bottom: 0.5em;\r\n    border-bottom: 1px solid #e6e6e6;\r\n}\r\n.proyects > li:last-child{\r\n    border-bottom: 0;\r\n}\r\n.tecnologies{\r\n    color: #4b4b4b;\r\n}\r\n.tecnologies ul{\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    flex-direction: unset;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n}\r\n.tecnologies li{\r\n    font-family: monospace;\r\n    margin: 2px;\r\n}\r\n.tecnologies li::after{\r\n    content: \"|\";\r\n    color: #cccccc;\r\n}\r\n.tecnologies li:last-child::after{\r\n    content: \"\";\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n.stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.progress{\r\n    height: 25px;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0kseUJBQXlCO0FBQzdCO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxnQkFBZ0I7O0FBRXBCO0FBQ0E7SUFDSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7QUFDQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUVBO0lBQ0ksY0FBYztBQUNsQjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLGdDQUFnQztBQUNwQztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUNBO0lBQ0ksU0FBUztBQUNiO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLFlBQVk7QUFDaEI7QUFFQTtJQUNJO01BQ0Usc0JBQXNCO01BQ3RCLHVCQUF1QjtJQUN6QjtJQUNBO01BQ0Usb0JBQW9CO01BQ3BCLHVCQUF1QjtJQUN6QjtFQUNGO0FBVEY7SUFDSTtNQUNFLHNCQUFzQjtNQUN0Qix1QkFBdUI7SUFDekI7SUFDQTtNQUNFLG9CQUFvQjtNQUNwQix1QkFBdUI7SUFDekI7RUFDRjtBQUdGO0lBQ0k7UUFDSSw0QkFBNEI7SUFDaEM7SUFDQTtRQUNJLDRCQUE0QjtRQUM1QixpQkFBaUI7SUFDckI7SUFDQTtRQUNJLGVBQWU7SUFDbkI7SUFDQTtRQUNJLGdCQUFnQjtJQUNwQjtJQUNBO1FBQ0ksY0FBYztJQUNsQjtBQUNKIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mZWNoYS1pbmdyZXNvLWVncmVzb3tcclxuICAgIGZsZXgtZmxvdzogcm93LXJldmVyc2U7XHJcbn1cclxuLmV4cGVyaWVuY2V7XHJcbiAgICBwYWRkaW5nOiAyMHB4IDAgNzBweDtcclxufVxyXG4uZXhwZXJpZW5jZSBoMXtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkZXI7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyNXB4O1xyXG59XHJcblxyXG5ocntcclxuICAgIG1hcmdpbjogMC43NWVtIDAgMC43NWVtIDA7XHJcbn1cclxuXHJcbi5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlclthcmlhLWRpc2FibGVkPXRydWVdLCAucGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9uIHtcclxuICAgIGNvbG9yOiByZ2JhKDAsMCwwLC41NCk7XHJcbn1cclxuLmNvbXBhbnktYW5kLWRhdGV7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG4uY29tcGFueS1hbmQtZGF0ZSBoNSwgLmNvbXBhbnktYW5kLWRhdGUgcHtcclxuICAgIG1hcmdpbi1ib3R0b206IDA7XHJcbiAgICBcclxufSBcclxuLmNvbXBhbnktYW5kLWRhdGUgaDV7XHJcbiAgICBjb2xvcjogcmdiKDAsIDE0MCwgMjU1KTtcclxufVxyXG4uY2hyb25vbG9neS1saXN0e1xyXG4gICAgbGlzdC1zdHlsZTogbm9uZTtcclxuICAgIHBhZGRpbmc6IDA7XHJcbn1cclxuLnByb3llY3Rze1xyXG4gICAgcGFkZGluZy1sZWZ0OiAwLjg1ZW07XHJcbn1cclxuXHJcbi5wcm95ZWN0cy1saXN0e1xyXG4gICAgY29sb3I6ICM3Nzc3Nzc7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyBoNXtcclxuICAgIGNvbG9yOiByZ2IoMCwgMTQwLCAyNTUpO1xyXG59XHJcbi5wcm95ZWN0cyBoNntcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG59XHJcblxyXG4ucHJveWVjdHMgcHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG4ucHJveWVjdHMgPiBsaXtcclxuICAgIHBhZGRpbmctYm90dG9tOiAwLjVlbTtcclxuICAgIG1hcmdpbi1ib3R0b206IDAuNWVtO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyA+IGxpOmxhc3QtY2hpbGR7XHJcbiAgICBib3JkZXItYm90dG9tOiAwO1xyXG59XHJcblxyXG4udGVjbm9sb2dpZXN7XHJcbiAgICBjb2xvcjogIzRiNGI0YjtcclxufVxyXG4udGVjbm9sb2dpZXMgdWx7XHJcbiAgICBsaXN0LXN0eWxlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogdW5zZXQ7XHJcbiAgICBmbGV4LXdyYXA6IHdyYXA7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XHJcbn1cclxuLnRlY25vbG9naWVzIGxpe1xyXG4gICAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcclxuICAgIG1hcmdpbjogMnB4O1xyXG59XHJcblxyXG4udGVjbm9sb2dpZXMgbGk6OmFmdGVye1xyXG4gICAgY29udGVudDogXCJ8XCI7XHJcbiAgICBjb2xvcjogI2NjY2NjYztcclxufVxyXG4udGVjbm9sb2dpZXMgbGk6bGFzdC1jaGlsZDo6YWZ0ZXJ7XHJcbiAgICBjb250ZW50OiBcIlwiO1xyXG59XHJcblxyXG4uZGF0YS1jYXJke1xyXG4gICAgbWFyZ2luOiA1cHggMDtcclxufVxyXG4uc3RhdHMgcHtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG4uc3RhdHN7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4ucHJvZ3Jlc3N7XHJcbiAgICBoZWlnaHQ6IDI1cHg7XHJcbn1cclxuXHJcbkBrZXlmcmFtZXMgc2NhbGUtdXAtaG9yLWxlZnQge1xyXG4gICAgMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgwLjQpO1xyXG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwJSAwJTtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICB0cmFuc2Zvcm06IHNjYWxlWCgxKTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuXHJcbkBtZWRpYSAobWF4LXdpZHRoOiA2MDBweCkge1xyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLXRpdGxle1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICB9XHJcbiAgICAubWF0LWV4cGFuc2lvbi1wYW5lbC1oZWFkZXItZGVzY3JpcHRpb257XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiA1cHggIWltcG9ydGFudDtcclxuICAgICAgICB0ZXh0LWFsaWduOiByaWdodDtcclxuICAgIH1cclxuICAgIC5jb21wYW55LWFuZC1kYXRlIGg1e1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMXJlbTtcclxuICAgIH1cclxuICAgIC5wZXJjZW50IHNwYW57XHJcbiAgICAgICAgZm9udC1zaXplOiAwLjZlbTtcclxuICAgIH1cclxuICAgIGgze1xyXG4gICAgICAgIG1hcmdpbjogMTVweCAwO1xyXG4gICAgfVxyXG59Il19 */";
+    __webpack_exports__["default"] = ".fecha-ingreso-egreso{\r\n    flex-flow: row-reverse;\r\n}\r\n.experience{\r\n    padding: 20px 0 70px;\r\n}\r\n.experience h1{\r\n    text-align: center;\r\n    font-weight: bolder;\r\n    margin-bottom: 25px;\r\n}\r\nhr{\r\n    margin: 0.75em 0 0.75em 0;\r\n}\r\n.mat-expansion-panel-header[aria-disabled=true], .panel-header-description {\r\n    color: rgba(0,0,0,.54);\r\n}\r\n.company-and-date{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: space-between;\r\n}\r\n.company-and-date h5, .company-and-date p{\r\n    margin-bottom: 0;\r\n    \r\n}\r\n.company-and-date h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.chronology-list{\r\n    list-style: none;\r\n    padding: 0;\r\n}\r\n.proyects{\r\n    padding-left: 0.85em;\r\n}\r\n.proyects-list{\r\n    color: #777777;\r\n}\r\n.proyects h5{\r\n    color: rgb(0, 140, 255);\r\n}\r\n.proyects h6{\r\n    font-size: 14px;\r\n    text-decoration: underline;\r\n}\r\n.proyects p{\r\n    font-size: 14px;\r\n}\r\n.proyects > li{\r\n    padding-bottom: 0.5em;\r\n    margin-bottom: 0.5em;\r\n    border-bottom: 1px solid #e6e6e6;\r\n}\r\n.proyects > li:last-child{\r\n    border-bottom: 0;\r\n}\r\n.tecnologies{\r\n    color: #4b4b4b;\r\n}\r\n.tecnologies ul{\r\n    list-style: none;\r\n    padding: 0;\r\n    display: flex;\r\n    flex-direction: unset;\r\n    flex-wrap: wrap;\r\n    justify-content: flex-start;\r\n}\r\n.tecnologies li{\r\n    font-family: monospace;\r\n    margin: 2px;\r\n}\r\n.tecnologies li::after{\r\n    content: \"|\";\r\n    color: #cccccc;\r\n}\r\n.tecnologies li:last-child::after{\r\n    content: \"\";\r\n}\r\n.data-card{\r\n    margin: 5px 0;\r\n}\r\n@-webkit-keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@keyframes scale-up-hor-left {\r\n    0% {\r\n      transform: scaleX(0.4);\r\n      transform-origin: 0% 0%;\r\n    }\r\n    100% {\r\n      transform: scaleX(1);\r\n      transform-origin: 0% 0%;\r\n    }\r\n  }\r\n@media (max-width: 600px) {\r\n    .mat-expansion-panel-header-title{\r\n        margin-right: 5px !important;\r\n    }\r\n    .mat-expansion-panel-header-description{\r\n        margin-right: 5px !important;\r\n        text-align: right;\r\n    }\r\n    .company-and-date h5{\r\n        font-size: 1rem;\r\n    }\r\n    .percent span{\r\n        font-size: 0.6em;\r\n    }\r\n    h3{\r\n        margin: 15px 0;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9leHBlcmllbmNlL2V4cGVyaWVuY2UuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0kseUJBQXlCO0FBQzdCO0FBRUE7SUFDSSxzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxnQkFBZ0I7O0FBRXBCO0FBQ0E7SUFDSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixVQUFVO0FBQ2Q7QUFDQTtJQUNJLG9CQUFvQjtBQUN4QjtBQUVBO0lBQ0ksY0FBYztBQUNsQjtBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsMEJBQTBCO0FBQzlCO0FBRUE7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLGdDQUFnQztBQUNwQztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksc0JBQXNCO0lBQ3RCLFdBQVc7QUFDZjtBQUVBO0lBQ0ksWUFBWTtJQUNaLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUVBO0lBQ0k7TUFDRSxzQkFBc0I7TUFDdEIsdUJBQXVCO0lBQ3pCO0lBQ0E7TUFDRSxvQkFBb0I7TUFDcEIsdUJBQXVCO0lBQ3pCO0VBQ0Y7QUFURjtJQUNJO01BQ0Usc0JBQXNCO01BQ3RCLHVCQUF1QjtJQUN6QjtJQUNBO01BQ0Usb0JBQW9CO01BQ3BCLHVCQUF1QjtJQUN6QjtFQUNGO0FBR0Y7SUFDSTtRQUNJLDRCQUE0QjtJQUNoQztJQUNBO1FBQ0ksNEJBQTRCO1FBQzVCLGlCQUFpQjtJQUNyQjtJQUNBO1FBQ0ksZUFBZTtJQUNuQjtJQUNBO1FBQ0ksZ0JBQWdCO0lBQ3BCO0lBQ0E7UUFDSSxjQUFjO0lBQ2xCO0FBQ0oiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2V4cGVyaWVuY2UvZXhwZXJpZW5jZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZlY2hhLWluZ3Jlc28tZWdyZXNve1xyXG4gICAgZmxleC1mbG93OiByb3ctcmV2ZXJzZTtcclxufVxyXG4uZXhwZXJpZW5jZXtcclxuICAgIHBhZGRpbmc6IDIwcHggMCA3MHB4O1xyXG59XHJcbi5leHBlcmllbmNlIGgxe1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGRlcjtcclxuICAgIG1hcmdpbi1ib3R0b206IDI1cHg7XHJcbn1cclxuXHJcbmhye1xyXG4gICAgbWFyZ2luOiAwLjc1ZW0gMCAwLjc1ZW0gMDtcclxufVxyXG5cclxuLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyW2FyaWEtZGlzYWJsZWQ9dHJ1ZV0sIC5wYW5lbC1oZWFkZXItZGVzY3JpcHRpb24ge1xyXG4gICAgY29sb3I6IHJnYmEoMCwwLDAsLjU0KTtcclxufVxyXG4uY29tcGFueS1hbmQtZGF0ZXtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG59XHJcbi5jb21wYW55LWFuZC1kYXRlIGg1LCAuY29tcGFueS1hbmQtZGF0ZSBwe1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMDtcclxuICAgIFxyXG59IFxyXG4uY29tcGFueS1hbmQtZGF0ZSBoNXtcclxuICAgIGNvbG9yOiByZ2IoMCwgMTQwLCAyNTUpO1xyXG59XHJcbi5jaHJvbm9sb2d5LWxpc3R7XHJcbiAgICBsaXN0LXN0eWxlOiBub25lO1xyXG4gICAgcGFkZGluZzogMDtcclxufVxyXG4ucHJveWVjdHN7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDAuODVlbTtcclxufVxyXG5cclxuLnByb3llY3RzLWxpc3R7XHJcbiAgICBjb2xvcjogIzc3Nzc3NztcclxufVxyXG5cclxuLnByb3llY3RzIGg1e1xyXG4gICAgY29sb3I6IHJnYigwLCAxNDAsIDI1NSk7XHJcbn1cclxuLnByb3llY3RzIGg2e1xyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbn1cclxuXHJcbi5wcm95ZWN0cyBwe1xyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG59XHJcbi5wcm95ZWN0cyA+IGxpe1xyXG4gICAgcGFkZGluZy1ib3R0b206IDAuNWVtO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMC41ZW07XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2U2ZTZlNjtcclxufVxyXG5cclxuLnByb3llY3RzID4gbGk6bGFzdC1jaGlsZHtcclxuICAgIGJvcmRlci1ib3R0b206IDA7XHJcbn1cclxuXHJcbi50ZWNub2xvZ2llc3tcclxuICAgIGNvbG9yOiAjNGI0YjRiO1xyXG59XHJcbi50ZWNub2xvZ2llcyB1bHtcclxuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiB1bnNldDtcclxuICAgIGZsZXgtd3JhcDogd3JhcDtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxufVxyXG4udGVjbm9sb2dpZXMgbGl7XHJcbiAgICBmb250LWZhbWlseTogbW9ub3NwYWNlO1xyXG4gICAgbWFyZ2luOiAycHg7XHJcbn1cclxuXHJcbi50ZWNub2xvZ2llcyBsaTo6YWZ0ZXJ7XHJcbiAgICBjb250ZW50OiBcInxcIjtcclxuICAgIGNvbG9yOiAjY2NjY2NjO1xyXG59XHJcbi50ZWNub2xvZ2llcyBsaTpsYXN0LWNoaWxkOjphZnRlcntcclxuICAgIGNvbnRlbnQ6IFwiXCI7XHJcbn1cclxuXHJcbi5kYXRhLWNhcmR7XHJcbiAgICBtYXJnaW46IDVweCAwO1xyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIHNjYWxlLXVwLWhvci1sZWZ0IHtcclxuICAgIDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMC40KTtcclxuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCUgMCU7XHJcbiAgICB9XHJcbiAgICAxMDAlIHtcclxuICAgICAgdHJhbnNmb3JtOiBzY2FsZVgoMSk7XHJcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAlIDAlO1xyXG4gICAgfVxyXG4gIH1cclxuXHJcblxyXG5AbWVkaWEgKG1heC13aWR0aDogNjAwcHgpIHtcclxuICAgIC5tYXQtZXhwYW5zaW9uLXBhbmVsLWhlYWRlci10aXRsZXtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDVweCAhaW1wb3J0YW50O1xyXG4gICAgfVxyXG4gICAgLm1hdC1leHBhbnNpb24tcGFuZWwtaGVhZGVyLWRlc2NyaXB0aW9ue1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogNXB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICB9XHJcbiAgICAuY29tcGFueS1hbmQtZGF0ZSBoNXtcclxuICAgICAgICBmb250LXNpemU6IDFyZW07XHJcbiAgICB9XHJcbiAgICAucGVyY2VudCBzcGFue1xyXG4gICAgICAgIGZvbnQtc2l6ZTogMC42ZW07XHJcbiAgICB9XHJcbiAgICBoM3tcclxuICAgICAgICBtYXJnaW46IDE1cHggMDtcclxuICAgIH1cclxufSJdfQ== */";
     /***/
   },
 
@@ -1681,6 +1718,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/components/skill/skill.component.css":
+  /*!******************************************************!*\
+    !*** ./src/app/components/skill/skill.component.css ***!
+    \******************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentsSkillSkillComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".stats p{\r\n    margin: 0;\r\n}\r\n.stats{\r\n    margin-bottom: 20px;\r\n}\r\n.hability-title{\r\n    display: flex;\r\n    flex-flow: row;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n.hability-title h5{\r\n    margin-left: 5px;\r\n}\r\n.hability-title img{\r\n    width: 50px;\r\n    border:0\r\n}\r\n.framework-info{\r\n    display: flex;\r\n    flex-flow: row;\r\n    align-items: center;\r\n    width: 100%;\r\n}\r\n.framework-info .progress{\r\n    height: 50px;\r\n    width: 100%;\r\n    border-radius: 0px 5px 5px 0px;\r\n}\r\n.framework-info img{\r\n    width: 50px;\r\n    height: 50px;\r\n    border-radius: 5px 0px 0px 5px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9za2lsbC9za2lsbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksU0FBUztBQUNiO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxXQUFXO0lBQ1g7QUFDSjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGNBQWM7SUFDZCxtQkFBbUI7SUFDbkIsV0FBVztBQUNmO0FBRUE7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLDhCQUE4QjtBQUNsQztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWiw4QkFBOEI7QUFDbEMiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL3NraWxsL3NraWxsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc3RhdHMgcHtcclxuICAgIG1hcmdpbjogMDtcclxufVxyXG4uc3RhdHN7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcblxyXG4uaGFiaWxpdHktdGl0bGV7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiByb3c7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi5oYWJpbGl0eS10aXRsZSBoNXtcclxuICAgIG1hcmdpbi1sZWZ0OiA1cHg7XHJcbn1cclxuXHJcbi5oYWJpbGl0eS10aXRsZSBpbWd7XHJcbiAgICB3aWR0aDogNTBweDtcclxuICAgIGJvcmRlcjowXHJcbn1cclxuLmZyYW1ld29yay1pbmZve1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZmxvdzogcm93O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uZnJhbWV3b3JrLWluZm8gLnByb2dyZXNze1xyXG4gICAgaGVpZ2h0OiA1MHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwcHggNXB4IDVweCAwcHg7XHJcbn1cclxuXHJcbi5mcmFtZXdvcmstaW5mbyBpbWd7XHJcbiAgICB3aWR0aDogNTBweDtcclxuICAgIGhlaWdodDogNTBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDVweCAwcHggMHB4IDVweDtcclxufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/components/skill/skill.component.ts":
+  /*!*****************************************************!*\
+    !*** ./src/app/components/skill/skill.component.ts ***!
+    \*****************************************************/
+
+  /*! exports provided: SkillComponent */
+
+  /***/
+  function srcAppComponentsSkillSkillComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SkillComponent", function () {
+      return SkillComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var SkillComponent = /*#__PURE__*/function () {
+      function SkillComponent() {
+        _classCallCheck(this, SkillComponent);
+      }
+
+      _createClass(SkillComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return SkillComponent;
+    }();
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()], SkillComponent.prototype, "hability", void 0);
+    SkillComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-skill',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./skill.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/components/skill/skill.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./skill.component.css */
+      "./src/app/components/skill/skill.component.css"))["default"]]
+    })], SkillComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/pipes/birth-day.pipe.ts":
   /*!*****************************************!*\
     !*** ./src/app/pipes/birth-day.pipe.ts ***!
@@ -1968,44 +2083,54 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.java7 = {
           name: "JavaEE",
-          version: 7
+          version: 7,
+          icon: '../assets/img/pro-icon/icons8-java-50.png'
         };
         this.javaScript = {
           name: "JavaScript",
-          version: "ES6"
+          version: "ES6",
+          icon: '../assets/img/pro-icon/icons8-javascript-50.png'
         };
         this.php = {
           name: "PHP",
-          version: 7
+          version: 7,
+          icon: '../assets/img/pro-icon/icons8-php-logo-50.png'
         };
         this.sql = {
           name: "SQL",
-          version: 0
+          version: 0,
+          icon: '../assets/img/pro-icon/icons8-database-50.png'
         };
         this.html = {
           name: "Html",
-          version: 5
+          version: 5,
+          icon: '../assets/img/pro-icon/icons8-html-5-50.png'
         };
         this.css = {
           name: "Css",
-          version: 3
+          version: 3,
+          icon: '../assets/img/pro-icon/icons8-css3-50.png'
         };
         this.versionado = {
           name: "Versionado",
-          version: 0
+          version: 0,
+          icon: '../assets/img/pro-icon/icons8-code-fork-50.png'
         };
         this.habilities = [{
           language: this.java7,
           frameworks: [{
             name: "SpringMVC",
+            icon: '../assets/img/pro-icon/icons8-spring-logo-50.png',
             version: 5,
             percent: 60
           }, {
             name: "SpringBoot",
+            icon: '../assets/img/pro-icon/icons8-spring-logo-50.png',
             version: 2,
             percent: 30
           }, {
             name: "JPA/Hibernate",
+            icon: '../assets/img/pro-icon/hibernate.png',
             version: 0,
             percent: 20
           }]
@@ -2013,10 +2138,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           language: this.sql,
           frameworks: [{
             name: "MySql",
+            icon: '../assets/img/pro-icon/mysql.png',
             version: 0,
             percent: 60
           }, {
             name: "PL/SQL",
+            icon: '../assets/img/pro-icon/icons8-oracle-logo-50.png',
             version: 0,
             percent: 10
           }]
@@ -2024,29 +2151,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           language: this.javaScript,
           frameworks: [{
             name: "ReactJS",
+            icon: '../assets/img/pro-icon/icons8-react-native-50.png',
             version: 16,
             percent: 75
           }, {
             name: "jQuery",
+            icon: '../assets/img/pro-icon/jquery.png',
             version: 3,
             percent: 80
           }, {
             name: "Angular",
+            icon: '../assets/img/pro-icon/angular.png',
             version: 8,
             percent: 30
           }, {
             name: "Angular Material",
+            icon: '../assets/img/pro-icon/angular-material.png',
             version: 9,
             percent: 30
           }, {
             name: "Ionic",
+            icon: '../assets/img/pro-icon/Ionic.png',
             version: 5,
             percent: 25
+          }, {
+            name: "Typescript",
+            icon: '../assets/img/pro-icon/typescript.svg',
+            version: 3,
+            percent: 65
           }]
         }, {
           language: this.php,
           frameworks: [{
             name: "Laravel",
+            icon: '../assets/img/pro-icon/laravel.png',
             version: 5.8,
             percent: 60
           }]
@@ -2054,6 +2192,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           language: this.css,
           frameworks: [{
             name: "Bootstrap",
+            icon: '../assets/img/pro-icon/icons8-bootstrap-50.png',
             version: 4,
             percent: 80
           }]
@@ -2061,10 +2200,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           language: this.versionado,
           frameworks: [{
             name: "GIT",
+            icon: '../assets/img/pro-icon/icons8-git-50.png',
             version: 0,
             percent: 50
           }, {
             name: "SVN",
+            icon: '../assets/img/pro-icon/svn.png',
             version: 0,
             percent: 30
           }]
@@ -2129,23 +2270,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           url: "https://jesuseduaardo-spotiapp.herokuapp.com/",
           lenguajes: [{
             name: "Java",
-            version: "8"
+            version: "8",
+            icon: ""
           }, {
             name: "TypeScript",
-            version: "3.8"
+            version: "3.8",
+            icon: ""
           }],
           frameworks: [{
             name: "SpringBoot",
             version: 5,
-            percent: 0
+            percent: 0,
+            icon: ""
           }, {
             name: "Angular",
             version: 9,
-            percent: 0
+            percent: 0,
+            icon: ""
           }, {
             name: "Bootstrap",
             version: 4,
-            percent: 0
+            percent: 0,
+            icon: ""
           }]
         }, {
           name: "Saenca",
@@ -2155,23 +2301,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           url: "http://saenca.com/",
           lenguajes: [{
             name: "PHP",
-            version: "7"
+            version: "7",
+            icon: ""
           }, {
             name: "Javascript",
-            version: "ES6"
+            version: "ES6",
+            icon: ""
           }],
           frameworks: [{
             name: "Laravel",
             version: 5.8,
-            percent: 0
+            percent: 0,
+            icon: ""
           }, {
             name: "ReactJS",
             version: 16,
-            percent: 0
+            percent: 0,
+            icon: ""
           }, {
             name: "MaterialUI",
             version: 8,
-            percent: 0
+            percent: 0,
+            icon: ""
           }]
         }];
       }
