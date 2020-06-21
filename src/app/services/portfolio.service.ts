@@ -12,13 +12,13 @@ export class PortfolioService {
       repoUrl:"",
       url:"https://jesuseduaardo-spotiapp.herokuapp.com/",
       lenguajes:[
-        {name:"Java", version:"8"},
-        {name:"TypeScript", version:"3.8"}
+        {name:"Java", version:"8", icon:""},
+        {name:"TypeScript", version:"3.8", icon:""}
       ],
       frameworks:[
-        {name:"SpringBoot", version:5, percent:0}, 
-        {name:"Angular", version:9, percent:0 },
-        {name:"Bootstrap", version: 4, percent:0}
+        {name:"SpringBoot", version:5, percent:0, icon:""}, 
+        {name:"Angular", version:9, percent:0, icon:"" },
+        {name:"Bootstrap", version: 4, percent:0, icon:""}
       ]
     },
     {
@@ -28,13 +28,13 @@ export class PortfolioService {
       repoUrl:"",
       url:"http://saenca.com/",
       lenguajes:[
-        {name:"PHP", version:"7"},
-        {name:"Javascript", version:"ES6"}
+        {name:"PHP", version:"7", icon:""},
+        {name:"Javascript", version:"ES6", icon:""}
       ],
       frameworks:[
-        {name:"Laravel", version:5.8, percent:0}, 
-        {name:"ReactJS", version:16, percent:0 },
-        {name:"MaterialUI", version: 8, percent:0}
+        {name:"Laravel", version:5.8, percent:0, icon:""}, 
+        {name:"ReactJS", version:16, percent:0, icon:"" },
+        {name:"MaterialUI", version: 8, percent:0, icon:""}
       ]
     }
   ] 

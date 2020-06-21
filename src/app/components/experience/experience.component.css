@@ -89,16 +89,6 @@ hr{
 .data-card{
     margin: 5px 0;
 }
-.stats p{
-    margin: 0;
-}
-.stats{
-    margin-bottom: 20px;
-}
-
-.progress{
-    height: 25px;
-}
 
 @keyframes scale-up-hor-left {
     0% {

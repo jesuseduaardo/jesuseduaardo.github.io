@@ -24,6 +24,7 @@ import { HabilitiesService } from './services/habilities.service';
 import { PortfolioService } from './services/portfolio.service'
 //Rutas
 import { app_routing } from './app.routes';
+import { SkillComponent } from './components/skill/skill.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { app_routing } from './app.routes';
     BirthDayPipe,
     ExperienceComponent,
     ContactComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
