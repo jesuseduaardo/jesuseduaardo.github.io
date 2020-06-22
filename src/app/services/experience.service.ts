@@ -11,12 +11,12 @@ export class ExperienceService{
             proyectos:[
                 {
                     nombre:"Legal Security",
-                    resumenProyecto:"Desarrollo y mantenimiento de la aplicacion de seguridad personal y empresarial de la Empresa Legal Security",
+                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la aplicacion iSecurity para la Empresa Legal Security",
                     tecnologias: ["JavaEE", "SpringMVC", "MySql", "Bootstrap3", "Javascript/jQuery", "Git/SVN"]
                 },
                 {
                     nombre:"Banco Santander",
-                    resumenProyecto:"Desarrollo y mantenimiento de la aplicacion portal del Banco Santander",
+                    resumenProyecto:"Desarrollo y mantenimiento de la aplicacion Portal del Banco Santander",
                     tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "jQuery", "Git/SVN"]
                 }
             ],
@@ -40,7 +40,7 @@ export class ExperienceService{
             proyectos:[
                 {
                     nombre:"Banco Provincia",
-                    resumenProyecto:"Desarrollo y mantenimiento de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
+                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
                     tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "Javascript/jQuery", "Git/SVN"]
                 }
             ],
@@ -55,7 +55,7 @@ export class ExperienceService{
             proyectos:[
                 {
                     nombre:"Banco BBVA Provincial (Venezuela)",
-                    resumenProyecto:"Desarrollo y mantenimiento de la plataforma para usuarios corporativos del banco BBVA Provincial",
+                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la plataforma para usuarios corporativos del banco BBVA Provincial",
                     tecnologias: ["JavaEE", "SpringMVC", "Bootstrap3","Javascript/jQuery", "Git"]
                 }
             ],
