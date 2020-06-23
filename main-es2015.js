@@ -991,6 +991,14 @@ let EducationService = class EducationService {
                 duracion: 0
             },
             {
+                titulo: "JavaScript Algorithms and Data Structures",
+                institucion: "FreeCodeCamp.org",
+                fechaInicio: "2020-05-01",
+                fechaFin: "2020-05-01",
+                certificacionUrl: "https://www.freecodecamp.org/certification/jesuseduaardo/javascript-algorithms-and-data-structures",
+                duracion: 300
+            },
+            {
                 titulo: "Responsive Web Desing",
                 institucion: "FreeCodeCamp.org",
                 fechaInicio: "2018-01-01",
@@ -1045,12 +1053,12 @@ let ExperienceService = class ExperienceService {
                 proyectos: [
                     {
                         nombre: "Legal Security",
-                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion de seguridad personal y empresarial de la Empresa Legal Security",
+                        resumenProyecto: "Mantenimiento y desarrollo evolutivo de la aplicacion iSecurity para la Empresa Legal Security",
                         tecnologias: ["JavaEE", "SpringMVC", "MySql", "Bootstrap3", "Javascript/jQuery", "Git/SVN"]
                     },
                     {
                         nombre: "Banco Santander",
-                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion portal del Banco Santander",
+                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion Portal del Banco Santander",
                         tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "jQuery", "Git/SVN"]
                     }
                 ],
@@ -1074,7 +1082,7 @@ let ExperienceService = class ExperienceService {
                 proyectos: [
                     {
                         nombre: "Banco Provincia",
-                        resumenProyecto: "Desarrollo y mantenimiento de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
+                        resumenProyecto: "Mantenimiento y desarrollo evolutivo de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
                         tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "Javascript/jQuery", "Git/SVN"]
                     }
                 ],
@@ -1089,7 +1097,7 @@ let ExperienceService = class ExperienceService {
                 proyectos: [
                     {
                         nombre: "Banco BBVA Provincial (Venezuela)",
-                        resumenProyecto: "Desarrollo y mantenimiento de la plataforma para usuarios corporativos del banco BBVA Provincial",
+                        resumenProyecto: "Mantenimiento y desarrollo evolutivo de la plataforma para usuarios corporativos del banco BBVA Provincial",
                         tecnologias: ["JavaEE", "SpringMVC", "Bootstrap3", "Javascript/jQuery", "Git"]
                     }
                 ],
