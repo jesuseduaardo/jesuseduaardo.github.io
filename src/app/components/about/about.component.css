@@ -39,3 +39,35 @@
 .bio-details li{
     padding: 12px 0;
 }
+.download_button{
+    width: 50%;
+}
+.download_button:hover{
+    text-decoration: none;
+}
+.opc_descarga{
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mat-pdf{
+    background-color: rgb(190, 0, 0);
+    color: #fff;
+}
+.mat-word{
+    background-color: rgb(27, 107, 255);
+    color: #fff;
+}
+
+@media (max-width:600px){
+    .bio-details li{
+        padding: 2px 0;
+    }
+    .about h3{
+        font-weight: bolder;
+        padding: 15px 0px 0px;
+    }
+}

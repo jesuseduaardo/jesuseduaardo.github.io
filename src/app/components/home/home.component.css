@@ -12,8 +12,8 @@
     text-align: center;
 }
 .round-pic img{
-    border-radius: 165px;
-    max-width: 315px;
+    border-radius: 95px;
+    width: 320px;
     box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
 }
 .typing{
