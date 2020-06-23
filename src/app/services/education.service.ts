@@ -13,6 +13,14 @@ export class EducationService {
       duracion:0
     },
     {
+      titulo:"JavaScript Algorithms and Data Structures",
+      institucion:"FreeCodeCamp.org",
+      fechaInicio:"2020-05-01",
+      fechaFin:"2020-05-01",
+      certificacionUrl:"https://www.freecodecamp.org/certification/jesuseduaardo/javascript-algorithms-and-data-structures",
+      duracion:300
+    },
+    {
       titulo:"Responsive Web Desing",
       institucion:"FreeCodeCamp.org",
       fechaInicio:"2018-01-01",
