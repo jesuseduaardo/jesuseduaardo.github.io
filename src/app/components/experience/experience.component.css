@@ -90,6 +90,15 @@ hr{
     margin: 5px 0;
 }
 
+.cert{
+    width: 95px;
+    margin: auto;
+    display: block;
+}
+.text-muted{
+    font-size: 76%;
+}
+
 @keyframes scale-up-hor-left {
     0% {
       transform: scaleX(0.4);
@@ -118,5 +127,8 @@ hr{
     }
     h3{
         margin: 15px 0;
+    }
+    .card-body{
+        text-align: center;
     }
 }

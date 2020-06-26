@@ -29,3 +29,12 @@ nav:hover{
 .active{
     color: #007fe7;
 }
+
+@media (max-width:600px){
+    nav{
+        bottom: 1.5em;
+    }
+    nav:hover{
+        bottom: 1.5em;
+    }
+}
