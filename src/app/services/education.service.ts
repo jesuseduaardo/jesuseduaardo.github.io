@@ -5,12 +5,30 @@ export class EducationService {
 
   educations:Education[] = [
     {
-      titulo:"Técnico Superior en Informatica",
+      titulo:"Técnico Superior en Informatica (Analista de Sistemas)",
       institucion:"I.U.T José María Carreño",
       fechaInicio:"2007-07-01",
       fechaFin:"2012-07-01",
       certificacionUrl:"https://drive.google.com/open?id=0B_kPEZBn5CtldlYzTzBLOVpmRU0",
       duracion:0
+    },
+    {
+      titulo:"Angular (Basic) ",
+      institucion:"HackerRank",
+      fechaInicio:"2020-06-01",
+      fechaFin:"2020-06-01",
+      certificacionUrl:"https://www.hackerrank.com/certificates/bddba66b1683",
+      duracion:300
+      
+    },
+    {
+      titulo:"React (Basic) ",
+      institucion:"HackerRank",
+      fechaInicio:"2020-06-01",
+      fechaFin:"2020-06-01",
+      certificacionUrl:"https://www.hackerrank.com/certificates/86772c3ab8a4",
+      duracion:300
+      
     },
     {
       titulo:"JavaScript Algorithms and Data Structures",
