@@ -32,9 +32,9 @@ nav:hover{
 
 @media (max-width:600px){
     nav{
-        bottom: 1.5em;
+        bottom: 0em;
     }
     nav:hover{
-        bottom: 1.5em;
+        bottom: 0em;
     }
 }
