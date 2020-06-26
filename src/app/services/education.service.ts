@@ -18,7 +18,7 @@ export class EducationService {
       fechaInicio:"2020-06-01",
       fechaFin:"2020-06-01",
       certificacionUrl:"https://www.hackerrank.com/certificates/bddba66b1683",
-      duracion:300
+      duracion:0
       
     },
     {
@@ -27,7 +27,7 @@ export class EducationService {
       fechaInicio:"2020-06-01",
       fechaFin:"2020-06-01",
       certificacionUrl:"https://www.hackerrank.com/certificates/86772c3ab8a4",
-      duracion:300
+      duracion:0
       
     },
     {
