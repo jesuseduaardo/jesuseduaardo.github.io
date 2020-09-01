@@ -15,6 +15,12 @@ export class HabilitiesService {
       language:this.java7,
       frameworks:[
         {
+          name:"JavaEE",
+          icon:'../assets/img/pro-icon/icons8-java-50.png',
+          version:8,
+          percent:60
+        },
+        {
           name:"SpringMVC",
           icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
           version:5,
@@ -24,13 +30,13 @@ export class HabilitiesService {
           name:"SpringBoot",
           icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
           version:2,
-          percent:30
+          percent:45
         },
         {
           name:"JPA/Hibernate",
           icon:'../assets/img/pro-icon/hibernate.png',
           version:0,
-          percent:20
+          percent:40
         },
       ]
     },
@@ -47,13 +53,19 @@ export class HabilitiesService {
           name:"PL/SQL",
           icon:'../assets/img/pro-icon/icons8-oracle-logo-50.png',
           version:0,
-          percent:10
+          percent:20
         }
       ]
     },
     {
       language:this.javaScript,
       frameworks:[
+        {
+          name:"Javascript",
+          icon:'../assets/img/pro-icon/icons8-javascript-50.png',
+          version:6, 
+          percent:80
+        },
         {
           name:"ReactJS",
           icon:'../assets/img/pro-icon/icons8-react-native-50.png',
@@ -64,31 +76,31 @@ export class HabilitiesService {
           name:"jQuery",
           icon:'../assets/img/pro-icon/jquery.png',
           version:3,
-          percent:80
+          percent:67
         },
         {
           name:"Angular",
           icon:'../assets/img/pro-icon/angular.png',
-          version:8,
-          percent:30
+          version:9,
+          percent:75
         },
         {
           name:"Angular Material",
           icon:'../assets/img/pro-icon/angular-material.png',
           version:9,
-          percent:30
+          percent:60
         },
         {
           name:"Ionic",
           icon:'../assets/img/pro-icon/Ionic.png',
           version:5,
-          percent:25
+          percent:35
         },
         {
           name:"Typescript",
           icon:'../assets/img/pro-icon/typescript.svg',
           version:3,
-          percent:65
+          percent:75
         }
       ]
     },
@@ -98,8 +110,8 @@ export class HabilitiesService {
         {
           name:"Laravel",
           icon:'../assets/img/pro-icon/laravel.png',
-          version:5.8,
-          percent:60
+          version:7,
+          percent:40
         }
       ]
     },
@@ -107,10 +119,16 @@ export class HabilitiesService {
       language:this.css,
       frameworks:[
         {
+          name:"CSS",
+          icon:'../assets/img/pro-icon/icons8-css3-50.png',
+          version:3,
+          percent:75
+        },
+        {
           name:"Bootstrap",
           icon:'../assets/img/pro-icon/icons8-bootstrap-50.png',
           version:4,
-          percent:80
+          percent:95
         }
       ]
     },
@@ -121,7 +139,7 @@ export class HabilitiesService {
           name: "GIT",
           icon:'../assets/img/pro-icon/icons8-git-50.png',
           version:0,
-          percent: 50
+          percent: 65
         },
         {
           name: "SVN",

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import {MatChipsModule} from '@angular/material/chips';
@@ -25,6 +26,7 @@ import { PortfolioService } from './services/portfolio.service'
 //Rutas
 import { app_routing } from './app.routes';
 import { SkillComponent } from './components/skill/skill.component';
+import { BrandIconPipe } from './pipes/brand-icon.pipe';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { SkillComponent } from './components/skill/skill.component';
     ExperienceComponent,
     ContactComponent,
     PortfolioComponent,
-    SkillComponent
+    SkillComponent,
+    BrandIconPipe
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { SkillComponent } from './components/skill/skill.component';
     MatExpansionModule,
     MatChipsModule,
     NgxSkillBarModule,
+    MatTooltipModule,
     app_routing
   ],
   providers: [

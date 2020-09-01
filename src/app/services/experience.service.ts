@@ -10,6 +10,11 @@ export class ExperienceService{
             fechaEgreso: "",
             proyectos:[
                 {
+                    nombre:"I+D - Kaiso App",
+                    resumenProyecto:"Desarrollo de aplicacion web de soporte para personas con deterioro cognitivo",
+                    tecnologias: ["Microsoft Azure Cognitive Services Face service", "JavaEE", "JHipster", "SpringBoot", "MySql", "Bootstrap4", "Angular9", "Git"]
+                },
+                {
                     nombre:"Legal Security",
                     resumenProyecto:"Mantenimiento y desarrollo evolutivo de la aplicacion iSecurity para la Empresa Legal Security",
                     tecnologias: ["JavaEE", "SpringMVC", "MySql", "Bootstrap3", "Javascript/jQuery", "Git/SVN"]
@@ -21,7 +26,8 @@ export class ExperienceService{
                 }
             ],
             resumenProyecto:"",
-            tecnologias: []
+            tecnologias: [],
+            web:"https://www.itrsa.com.ar/"
         },
         {
             empresa:"Eglam Argentina S.A",
@@ -30,7 +36,8 @@ export class ExperienceService{
             fechaEgreso: "2019-07-01",
             proyectos:[],
             resumenProyecto:"Gestión y desarrollo de modulos para e-commerces basados en Magento",
-            tecnologias: ["PHP5", "Magento", "MySql", "Javascript/jQuery", "Git/SVN"]
+            tecnologias: ["PHP5", "Magento", "MySql", "Javascript/jQuery", "Git/SVN"],
+            web:"https://www.glamit.com.ar/"
         },
         {
             empresa:"Tecnosoftware S.A",
@@ -45,7 +52,8 @@ export class ExperienceService{
                 }
             ],
             resumenProyecto:"",
-            tecnologias: []
+            tecnologias: [],
+            web:"https://www.tecnosoftware.com/"
         },
         {
             empresa:"Arkiteck C.A",
@@ -60,7 +68,8 @@ export class ExperienceService{
                 }
             ],
             resumenProyecto:"",
-            tecnologias: []
+            tecnologias: [],
+            web:"http://www.arkiteck.net/"
         },
         {
             empresa:"La Victoria 3021 R.L (Venezuela)",
@@ -86,7 +95,8 @@ export interface Experience{
     fechaEgreso:string,
     proyectos:Proyects[],
     resumenProyecto:string,
-    tecnologias:string[]
+    tecnologias:string[],
+    web?:string
 }
 
 interface Proyects{

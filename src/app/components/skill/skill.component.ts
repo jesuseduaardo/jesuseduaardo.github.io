@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hability } from 'src/app/services/habilities.service';
+import { TooltipPosition } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-skill',
@@ -9,6 +10,7 @@ import { Hability } from 'src/app/services/habilities.service';
 export class SkillComponent implements OnInit {
 
   @Input() hability:Hability;
+  tooltipPosition: TooltipPosition = 'above';
 
   constructor() { }
 
