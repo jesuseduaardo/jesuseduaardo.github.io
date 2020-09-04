@@ -4,10 +4,17 @@
 .experience{
     padding: 20px 0 70px;
 }
-.experience h1{
+.experience-title{
+    margin-bottom: 25px;
+}
+.experience-title h1{
     text-align: center;
     font-weight: bolder;
-    margin-bottom: 25px;
+}
+.experience-title em{
+    display: block;
+    text-align: center;
+    margin: auto;
 }
 
 hr{

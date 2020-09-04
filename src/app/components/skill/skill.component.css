@@ -45,6 +45,9 @@
 .bootstrap-icon{
     background-color: #6039a5;
 }
+.javascript-icon{
+    background-color: #ffd600;
+}
 
 .tooltipInfo{
     background-color: #03a2ff;
@@ -64,6 +67,11 @@
 
 .progress-bar p{
     z-index: 3;
+}
+
+i{
+    font-size: 30px;
+    padding: 0 10px;
 }
 
 @media (max-width: 600px) {

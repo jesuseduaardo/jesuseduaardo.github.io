@@ -9,7 +9,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 import {MatChipsModule} from '@angular/material/chips';
-import { NgxSkillBarModule } from "ngx-skill-bar";
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
@@ -26,7 +25,6 @@ import { PortfolioService } from './services/portfolio.service'
 //Rutas
 import { app_routing } from './app.routes';
 import { SkillComponent } from './components/skill/skill.component';
-import { BrandIconPipe } from './pipes/brand-icon.pipe';
 
 
 @NgModule({
@@ -39,8 +37,7 @@ import { BrandIconPipe } from './pipes/brand-icon.pipe';
     ExperienceComponent,
     ContactComponent,
     PortfolioComponent,
-    SkillComponent,
-    BrandIconPipe
+    SkillComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +48,6 @@ import { BrandIconPipe } from './pipes/brand-icon.pipe';
     MatCardModule,
     MatExpansionModule,
     MatChipsModule,
-    NgxSkillBarModule,
     MatTooltipModule,
     app_routing
   ],
