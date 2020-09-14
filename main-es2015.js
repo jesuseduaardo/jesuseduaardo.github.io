@@ -1587,7 +1587,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class HabilitiesService {
     constructor() {
-        this.java7 = { name: "JavaEE", version: 7, icon: '../assets/img/pro-icon/icons8-java-50.png' };
+        this.java = { name: "Java", version: 8, icon: '../assets/img/pro-icon/icons8-java-50.png' };
         this.javaScript = { name: "JavaScript", version: "ES6", icon: '../assets/img/pro-icon/icons8-javascript-50.png' };
         this.php = { name: "PHP", version: 7, icon: '../assets/img/pro-icon/icons8-php-logo-50.png' };
         this.sql = { name: "SQL", version: 0, icon: '../assets/img/pro-icon/icons8-database-50.png' };
@@ -1596,10 +1596,10 @@ class HabilitiesService {
         this.versionado = { name: "Versionado", version: 0, icon: '../assets/img/pro-icon/icons8-code-fork-50.png' };
         this.habilities = [
             {
-                language: this.java7,
+                language: this.java,
                 frameworks: [
                     {
-                        name: "JavaEE",
+                        name: "Java",
                         icon: '../assets/img/pro-icon/icons8-java-50.png',
                         version: 8,
                         percent: 60

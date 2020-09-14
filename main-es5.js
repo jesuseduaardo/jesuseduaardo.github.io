@@ -3106,9 +3106,9 @@
         function HabilitiesService() {
           _classCallCheck(this, HabilitiesService);
 
-          this.java7 = {
-            name: "JavaEE",
-            version: 7,
+          this.java = {
+            name: "Java",
+            version: 8,
             icon: '../assets/img/pro-icon/icons8-java-50.png'
           };
           this.javaScript = {
@@ -3142,9 +3142,9 @@
             icon: '../assets/img/pro-icon/icons8-code-fork-50.png'
           };
           this.habilities = [{
-            language: this.java7,
+            language: this.java,
             frameworks: [{
-              name: "JavaEE",
+              name: "Java",
               icon: '../assets/img/pro-icon/icons8-java-50.png',
               version: 8,
               percent: 60
