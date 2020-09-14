@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HabilitiesService {
-  java7:Language={name:"JavaEE", version:7, icon:'../assets/img/pro-icon/icons8-java-50.png'}
+  java:Language={name:"Java", version:8, icon:'../assets/img/pro-icon/icons8-java-50.png'}
   javaScript:Language={name:"JavaScript", version:"ES6", icon:'../assets/img/pro-icon/icons8-javascript-50.png'}
   php:Language={name:"PHP", version:7, icon:'../assets/img/pro-icon/icons8-php-logo-50.png'}
   sql:Language={name:"SQL", version:0, icon:'../assets/img/pro-icon/icons8-database-50.png'}
@@ -12,10 +12,10 @@ export class HabilitiesService {
 
   habilities:Hability[] = [
     {
-      language:this.java7,
+      language:this.java,
       frameworks:[
         {
-          name:"JavaEE",
+          name:"Java",
           icon:'../assets/img/pro-icon/icons8-java-50.png',
           version:8,
           percent:60
