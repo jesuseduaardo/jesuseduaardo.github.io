@@ -7,6 +7,16 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
+      titulo:"Apache Kafka con Java, Spring framework y AWS",
+      institucion:"Udemy",
+      fechaInicio:"2020-10-18",
+      fechaFin:"2020-10-20",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-a78a1a84-0acc-47c9-8ae7-a458c1e67a95/",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/kafka-java-spring-aws_tn.jpg'
+      
+    },
+    {
       titulo:"Angular (Basic) ",
       institucion:"HackerRank",
       fechaInicio:"2020-06-01",
