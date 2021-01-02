@@ -7,6 +7,16 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
+      titulo:"Programación Reactiva con Spring Boot 2 y Spring WebFlux",
+      institucion:"Udemy",
+      fechaInicio:"2020-12-18",
+      fechaFin:"2020-01-21",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-e70f78d5-6756-4af2-8473-d80d15b668ba/",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/kafka-java-spring-aws_tn.jpg'
+      
+    },
+    {
       titulo:"Apache Kafka con Java, Spring framework y AWS",
       institucion:"Udemy",
       fechaInicio:"2020-10-18",

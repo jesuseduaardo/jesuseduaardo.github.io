@@ -30,7 +30,7 @@ export class HabilitiesService {
           name:"SpringBoot",
           icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
           version:2,
-          percent:45
+          percent:55
         },
         {
           name:"JPA/Hibernate",
