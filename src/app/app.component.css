@@ -1,0 +1,10 @@
+.main{
+    min-height:100vh;
+    background-color: #f7f7f7;
+}
+
+@media(max-width:600px){
+    .main{
+        padding-bottom: 20px;
+    }
+}
