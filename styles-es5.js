@@ -87,15 +87,15 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! /home/jesuseduaardo/Proyects/jesuseduaardo.github.io/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */
+      /*! F:\Mis Proyectos\jesuseduaardo.github.io\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */
       "8jWO");
 
       __webpack_require__(
-      /*! /home/jesuseduaardo/Proyects/jesuseduaardo.github.io/node_modules/bootstrap/dist/css/bootstrap.css */
+      /*! F:\Mis Proyectos\jesuseduaardo.github.io\node_modules\bootstrap\dist\css\bootstrap.css */
       "+eM2");
 
       module.exports = __webpack_require__(
-      /*! /home/jesuseduaardo/Proyects/jesuseduaardo.github.io/src/styles.css */
+      /*! F:\Mis Proyectos\jesuseduaardo.github.io\src\styles.css */
       "OmL/");
       /***/
     },
@@ -627,12 +627,12 @@
       var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true); // Module
 
 
-      ___CSS_LOADER_EXPORT___.push([module.i, "/* You can add global styles to this file, and also import other style files */\nhtml, body { height: 100%; }\nbody { \n    margin: 0;\n    font-family: 'Montserrat', sans-serif;\n    color:rgba(74, 74, 74, 1);\n}\n", "", {
+      ___CSS_LOADER_EXPORT___.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nhtml, body { height: 100%; }\r\nbody { \r\n    margin: 0;\r\n    font-family: 'Montserrat', sans-serif;\r\n    color:rgba(74, 74, 74, 1);\r\n}\r\n", "", {
         "version": 3,
         "sources": ["webpack://src/styles.css"],
         "names": [],
         "mappings": "AAAA,8EAA8E;AAC9E,aAAa,YAAY,EAAE;AAC3B;IACI,SAAS;IACT,qCAAqC;IACrC,yBAAyB;AAC7B",
-        "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\nhtml, body { height: 100%; }\nbody { \n    margin: 0;\n    font-family: 'Montserrat', sans-serif;\n    color:rgba(74, 74, 74, 1);\n}\n"],
+        "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\r\nhtml, body { height: 100%; }\r\nbody { \r\n    margin: 0;\r\n    font-family: 'Montserrat', sans-serif;\r\n    color:rgba(74, 74, 74, 1);\r\n}\r\n"],
         "sourceRoot": ""
       }]); // Exports
 
