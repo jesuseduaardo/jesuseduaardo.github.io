@@ -7,10 +7,20 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
+      titulo:"Liquibase Fundamentals Certification",
+      institucion:"Liquibase University",
+      fechaInicio:"2020-12-18",
+      fechaFin:"2021-02-12",
+      certificacionUrl:"https://www.credential.net/28060f9f-ebd1-4eea-a916-c5aaf81b67ef#gs.ta2u98",
+      duracion:0,
+      thumbnails:'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/28715111'
+      
+    },
+    {
       titulo:"Programación Reactiva con Spring Boot 2 y Spring WebFlux",
       institucion:"Udemy",
       fechaInicio:"2020-12-18",
-      fechaFin:"2020-01-21",
+      fechaFin:"2021-01-01",
       certificacionUrl:"https://www.udemy.com/certificate/UC-e70f78d5-6756-4af2-8473-d80d15b668ba/",
       duracion:0,
       thumbnails:'/assets/img/certs/thumbnails/kafka-java-spring-aws_tn.jpg'
@@ -20,7 +30,7 @@ export class CertificationsService {
       titulo:"Apache Kafka con Java, Spring framework y AWS",
       institucion:"Udemy",
       fechaInicio:"2020-10-18",
-      fechaFin:"2020-10-20",
+      fechaFin:"2020-10-24",
       certificacionUrl:"https://www.udemy.com/certificate/UC-a78a1a84-0acc-47c9-8ae7-a458c1e67a95/",
       duracion:0,
       thumbnails:'/assets/img/certs/thumbnails/kafka-java-spring-aws_tn.jpg'

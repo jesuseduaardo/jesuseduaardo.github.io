@@ -20,6 +20,7 @@ nav{
     left: 0;
     bottom: -2.5em;
     transition: bottom 1s;
+    color: #656565;
 }
 
 nav:hover{

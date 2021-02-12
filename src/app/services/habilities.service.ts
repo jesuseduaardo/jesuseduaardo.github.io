@@ -24,13 +24,13 @@ export class HabilitiesService {
           name:"SpringMVC",
           icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
           version:5,
-          percent:60
+          percent:55
         },
         {
           name:"SpringBoot",
           icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
           version:2,
-          percent:55
+          percent:65
         },
         {
           name:"JPA/Hibernate",
@@ -50,10 +50,16 @@ export class HabilitiesService {
           percent:60
         },
         {
+          name:"MS SQL",
+          icon:'../assets/img/pro-icon/ms_sql_icon.png',
+          version:0,
+          percent:38
+        },
+        {
           name:"PL/SQL",
           icon:'../assets/img/pro-icon/icons8-oracle-logo-50.png',
           version:0,
-          percent:20
+          percent:26
         }
       ]
     },
@@ -81,13 +87,13 @@ export class HabilitiesService {
         {
           name:"Angular",
           icon:'../assets/img/pro-icon/angular.png',
-          version:9,
+          version:11,
           percent:75
         },
         {
           name:"Angular Material",
           icon:'../assets/img/pro-icon/angular-material.png',
-          version:9,
+          version:11,
           percent:60
         },
         {
@@ -111,7 +117,7 @@ export class HabilitiesService {
           name:"Laravel",
           icon:'../assets/img/pro-icon/laravel.png',
           version:7,
-          percent:40
+          percent:35
         }
       ]
     },
@@ -122,7 +128,7 @@ export class HabilitiesService {
           name:"CSS",
           icon:'../assets/img/pro-icon/icons8-css3-50.png',
           version:3,
-          percent:75
+          percent:80
         },
         {
           name:"Bootstrap",
@@ -139,7 +145,7 @@ export class HabilitiesService {
           name: "GIT",
           icon:'../assets/img/pro-icon/icons8-git-50.png',
           version:0,
-          percent: 65
+          percent: 75
         },
         {
           name: "SVN",
