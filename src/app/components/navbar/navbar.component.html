@@ -1,48 +1,25 @@
-<nav>
-    <div class="container">
-        <div class="row">
-            <div class="nav-bar">
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['home']">
-                    <a mat-icon-button id="home-icon" aria-label="Inicio">
-                        <mat-icon>home</mat-icon>
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">Inicio</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['about']">
-                    <a mat-icon-button id="about-icon" aria-label="Example icon button with a home icon">
-                        <mat-icon>person</mat-icon>
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">Sobre mi</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['experience']">
-                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
-                        <mat-icon>grade</mat-icon>
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">Experiencia</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['portfolio']">
-                    <a mat-icon-button id="experience-icon" aria-label="Example icon button with a home icon">
-                        <mat-icon>work</mat-icon>
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">Portafolio</span>
-                    </p>
-                </div>
-                <div class="nav-button" routerLinkActive="active" [routerLink]="['contact']">
-                    <a mat-icon-button id="contact-icon" aria-label="Example icon button with a home icon">
-                        <mat-icon>local_post_office</mat-icon>
-                    </a>
-                    <p>
-                        <span class="d-none d-md-block">Contacto</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="menu-btn" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
+    <span class="menu-btn__burger" [ngClass]="{'open' : showMenu}"></span>
+</div>
+<nav class="nav" [ngClass]="{'open' : showMenu}">
+    <ul class="menu-nav" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+            <a href="index.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['home']">Home</a>
+        </li>
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+            <a href="about.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['about']">About Me</a>
+        </li>
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+            <a href="projects.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['experience']">My
+                Experience</a>
+        </li>
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+            <a href="projects.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['portfolio']">My
+                Projects</a>
+        </li>
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+            <a href="contact.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['contact']">Contact
+                Me</a>
+        </li>
+    </ul>
 </nav>

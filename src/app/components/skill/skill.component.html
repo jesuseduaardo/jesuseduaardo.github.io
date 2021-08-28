@@ -5,11 +5,7 @@
 <div *ngFor="let framework of hability.frameworks" class="framework-info">
     <img [src]="framework.icon" 
         [alt]="framework.name" 
-        class="img-thumbnail" 
-        [class.react-icon]="framework.name === 'Typescript'" 
-        [class.bootstrap-icon]="framework.name === 'Bootstrap'" 
-        [class.javascript-icon]="framework.name === 'Javascript'" 
-    >
+        class="img-thumbnail">
     <div class="progress my-1">
         <div 
             class="progress-bar bg-success" 

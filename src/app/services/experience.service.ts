@@ -4,13 +4,29 @@ import { Injectable } from "@angular/core";
 export class ExperienceService{
     private experience:Experience[] = [
         {
-            empresa:"Globant S.A",
-            puesto: "Java Developer",
-            fechaIngreso: "2020-10-05",
+            empresa:"BBVA S.A",
+            puesto: "Analista de Sistemas",
+            fechaIngreso: "2021-06-21",
             fechaEgreso: "",
             proyectos:[],
             resumenProyecto:"",
-            tecnologias: ["Java", "SpringBoot", "Sql", "Spock", "Git/SVN"],
+            tecnologias: ["Java", "Angular"],
+            web:"https://www.bbva.com.ar/"
+        },
+        {
+            empresa:"Globant S.A",
+            puesto: "Java Developer",
+            fechaIngreso: "2020-10-05",
+            fechaEgreso: "2021-06-14",
+            proyectos:[
+                {
+                    nombre:"Bimo (Prisma S.A)",
+                    resumenProyecto:"Desarrollo de microservicios y consumo de apis de terceros para la e-wallet Bimo",
+                    tecnologias: ["Java", "SpringBoot", "SQLServer", "Jenkins", "Spock", "Git"]
+                }
+            ],
+            resumenProyecto:"",
+            tecnologias: [],
             web:"https://www.globant.com/"
         },
         {
@@ -83,7 +99,7 @@ export class ExperienceService{
         },
         {
             empresa:"La Victoria 3021 R.L (Venezuela)",
-            puesto: "Desarrollador Web",
+            puesto: "Web Developer",
             fechaIngreso: "2013-10-01",
             fechaEgreso: "2017-11-01",
             proyectos:[],

@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HabilitiesService {
-  java:Language={name:"Java", version:8, icon:'../assets/img/pro-icon/icons8-java-50.png'}
-  javaScript:Language={name:"JavaScript", version:"ES6", icon:'../assets/img/pro-icon/icons8-javascript-50.png'}
-  php:Language={name:"PHP", version:7, icon:'../assets/img/pro-icon/icons8-php-logo-50.png'}
-  sql:Language={name:"SQL", version:0, icon:'../assets/img/pro-icon/icons8-database-50.png'}
+  java:Language={name:"Java", version:"8/11", icon:'../assets/img/pro-icon/java.svg'}
+  android:Language={name:"Android", version:0, icon:'../assets/img/pro-icon/android-original.svg'}
+  javaScript:Language={name:"JavaScript", version:"ES6", icon:'../assets/img/pro-icon/javascript-original.svg'}
+  php:Language={name:"PHP", version:7, icon:'../assets/img/pro-icon/php-original.svg'}
+  sql:Language={name:"SQL", version:0, icon:'../assets/img/pro-icon/sql.svg'}
   html:Language={name:"Html", version:5, icon:'../assets/img/pro-icon/icons8-html-5-50.png'}
-  css:Language={name:"Css", version:3, icon:'../assets/img/pro-icon/icons8-css3-50.png'}
-  versionado:Language={name:"Versionado", version:0, icon:'../assets/img/pro-icon/icons8-code-fork-50.png'}
+  css:Language={name:"Css", version:3, icon:'../assets/img/pro-icon/css3-original.svg'}
+  versionado:Language={name:"Versionado", version:0, icon:'../assets/img/pro-icon/367559.svg'}
 
   habilities:Hability[] = [
     {
@@ -16,28 +17,39 @@ export class HabilitiesService {
       frameworks:[
         {
           name:"Java",
-          icon:'../assets/img/pro-icon/icons8-java-50.png',
+          icon:'../assets/img/pro-icon/java.svg',
           version:8,
           percent:60
         },
         {
           name:"SpringMVC",
-          icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
+          icon:'../assets/img/pro-icon/spring-original.svg',
           version:5,
           percent:55
         },
         {
           name:"SpringBoot",
-          icon:'../assets/img/pro-icon/icons8-spring-logo-50.png',
+          icon:'../assets/img/pro-icon/spring-original.svg',
           version:2,
           percent:65
         },
         {
           name:"JPA/Hibernate",
-          icon:'../assets/img/pro-icon/hibernate.png',
+          icon:'../assets/img/pro-icon/hibernate.svg',
           version:0,
           percent:40
         },
+      ]
+    },
+    {
+      language:this.android,
+      frameworks:[
+        {
+          name:"Kotlin",
+          icon:'../assets/img/pro-icon/kotlin-original.svg',
+          version:7,
+          percent:35
+        }
       ]
     },
     {
@@ -45,19 +57,19 @@ export class HabilitiesService {
       frameworks:[
         {
           name:"MySql",
-          icon:'../assets/img/pro-icon/mysql.png',
+          icon:'../assets/img/pro-icon/mysql-original.svg',
           version:0,
           percent:60
         },
         {
           name:"MS SQL",
-          icon:'../assets/img/pro-icon/ms_sql_icon.png',
+          icon:'../assets/img/pro-icon/microsoft-sql-server.svg',
           version:0,
           percent:38
         },
         {
           name:"PL/SQL",
-          icon:'../assets/img/pro-icon/icons8-oracle-logo-50.png',
+          icon:'../assets/img/pro-icon/oracle-original.svg',
           version:0,
           percent:26
         }
@@ -68,37 +80,37 @@ export class HabilitiesService {
       frameworks:[
         {
           name:"Javascript",
-          icon:'../assets/img/pro-icon/icons8-javascript-50.png',
+          icon:'../assets/img/pro-icon/javascript-original.svg',
           version:6, 
           percent:80
         },
         {
           name:"ReactJS",
-          icon:'../assets/img/pro-icon/icons8-react-native-50.png',
+          icon:'../assets/img/pro-icon/reactjs-icon.svg',
           version:16,
           percent:75
         },
         {
           name:"jQuery",
-          icon:'../assets/img/pro-icon/jquery.png',
+          icon:'../assets/img/pro-icon/jquery-original.svg',
           version:3,
           percent:67
         },
         {
           name:"Angular",
-          icon:'../assets/img/pro-icon/angular.png',
+          icon:'../assets/img/pro-icon/angularjs-original.svg',
           version:11,
           percent:75
         },
         {
           name:"Angular Material",
-          icon:'../assets/img/pro-icon/angular-material.png',
+          icon:'../assets/img/pro-icon/materialui-original.svg',
           version:11,
           percent:60
         },
         {
           name:"Ionic",
-          icon:'../assets/img/pro-icon/Ionic.png',
+          icon:'../assets/img/pro-icon/ionic-original.svg',
           version:5,
           percent:35
         },
@@ -115,7 +127,7 @@ export class HabilitiesService {
       frameworks:[
         {
           name:"Laravel",
-          icon:'../assets/img/pro-icon/laravel.png',
+          icon:'../assets/img/pro-icon/laravel-plain.svg',
           version:7,
           percent:35
         }
@@ -126,13 +138,19 @@ export class HabilitiesService {
       frameworks:[
         {
           name:"CSS",
-          icon:'../assets/img/pro-icon/icons8-css3-50.png',
+          icon:'../assets/img/pro-icon/css3-original.svg',
           version:3,
           percent:80
         },
         {
+          name:"Saas",
+          icon:'../assets/img/pro-icon/sass-original.svg',
+          version:1.38,
+          percent:75
+        },
+        {
           name:"Bootstrap",
-          icon:'../assets/img/pro-icon/icons8-bootstrap-50.png',
+          icon:'../assets/img/pro-icon/bootstrap-original.svg',
           version:4,
           percent:95
         }
@@ -143,13 +161,13 @@ export class HabilitiesService {
       frameworks:[
         {
           name: "GIT",
-          icon:'../assets/img/pro-icon/icons8-git-50.png',
+          icon:'../assets/img/pro-icon/git-original.svg',
           version:0,
           percent: 75
         },
         {
           name: "SVN",
-          icon:'../assets/img/pro-icon/svn.png',
+          icon:'../assets/img/pro-icon/subversion.svg',
           version:0,
           percent:30
         }

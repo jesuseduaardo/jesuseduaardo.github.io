@@ -1,0 +1,30 @@
+@import "../../../scss/config";
+@import "../../../scss/responsive";
+
+.portfolio {
+  padding: 6rem 3rem;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    color: $secondary-color;
+  }
+}
+.card {
+  max-width: 250px;
+  padding: 0.9rem;
+}
+
+.header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.badge {
+  padding: 0.2rem;
+}

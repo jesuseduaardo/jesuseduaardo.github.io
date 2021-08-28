@@ -1,0 +1,24 @@
+@import "../../../scss/config";
+@import "../../../scss/responsive";
+.social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 0.5rem;
+  a {
+    padding: 0.4rem;
+    @include transition-ease;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 0.5rem;
+  text-align: right;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+}

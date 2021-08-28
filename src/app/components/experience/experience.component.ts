@@ -5,7 +5,7 @@ import { HabilitiesService, Hability } from '../../services/habilities.service';
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
 

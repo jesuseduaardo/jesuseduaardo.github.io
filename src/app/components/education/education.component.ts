@@ -5,7 +5,7 @@ import { CertificationsService, Certification } from '../../services/certificati
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
 

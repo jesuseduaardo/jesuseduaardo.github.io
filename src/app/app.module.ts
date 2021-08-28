@@ -26,6 +26,8 @@ import { PortfolioService } from './services/portfolio.service'
 import { app_routing } from './app.routes';
 import { SkillComponent } from './components/skill/skill.component';
 import { EducationComponent } from './components/education/education.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { EducationComponent } from './components/education/education.component';
     ContactComponent,
     PortfolioComponent,
     SkillComponent,
-    EducationComponent
+    EducationComponent,
+    FooterComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
