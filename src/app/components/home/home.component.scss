@@ -44,7 +44,8 @@
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url("../../../../assets/img/perfil_pic.jpg") center -10rem;
+      url("../../../../assets/img/perfil_pic.jpg") center 0rem;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 }

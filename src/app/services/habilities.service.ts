@@ -47,7 +47,7 @@ export class HabilitiesService {
         {
           name:"Kotlin",
           icon:'../assets/img/pro-icon/kotlin-original.svg',
-          version:7,
+          version:1.5,
           percent:35
         }
       ]
@@ -88,7 +88,7 @@ export class HabilitiesService {
           name:"ReactJS",
           icon:'../assets/img/pro-icon/reactjs-icon.svg',
           version:16,
-          percent:75
+          percent:45
         },
         {
           name:"jQuery",
@@ -100,7 +100,7 @@ export class HabilitiesService {
           name:"Angular",
           icon:'../assets/img/pro-icon/angularjs-original.svg',
           version:11,
-          percent:75
+          percent:65
         },
         {
           name:"Angular Material",
