@@ -1,5 +1,34 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
+/***/ "+EN/":
+/*!*************************!*\
+  !*** ./src/styles.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "LboF");
+            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--13-1!../node_modules/postcss-loader/src??embedded!../node_modules/resolve-url-loader??ref--13-3!../node_modules/sass-loader/dist/cjs.js??ref--13-4!./styles.scss */ "/I9Y");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "+eM2":
 /*!*******************************************************!*\
   !*** ./node_modules/bootstrap/dist/css/bootstrap.css ***!
@@ -51,16 +80,38 @@ ___CSS_LOADER_EXPORT___.push([module.i, "/*!\n * Bootstrap v4.5.3 (https://getbo
 
 /***/ }),
 
+/***/ "/I9Y":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--13-1!./node_modules/postcss-loader/src??embedded!./node_modules/resolve-url-loader??ref--13-3!./node_modules/sass-loader/dist/cjs.js??ref--13-4!./src/styles.scss ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "/* You can add global styles to this file, and also import other style files */\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n/* fallback */\n@font-face {\n  font-family: \"Material Icons\";\n  font-style: normal;\n  font-weight: 400;\n  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format(\"woff2\");\n}\n.material-icons {\n  font-family: \"Material Icons\";\n  font-weight: normal;\n  font-style: normal;\n  font-size: 24px;\n  line-height: 1;\n  letter-spacing: normal;\n  text-transform: none;\n  display: inline-block;\n  white-space: nowrap;\n  word-wrap: normal;\n  direction: ltr;\n  -webkit-font-feature-settings: \"liga\";\n  -webkit-font-smoothing: antialiased;\n}\nbody {\n  background: #272727;\n  color: #fff;\n  height: 100vh;\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n  line-height: 1;\n}\nh1,\nh2,\nh3 {\n  font-weight: 400;\n}\na {\n  color: #fff;\n  text-decoration: none;\n}\n.text-secondary {\n  color: #ff652f;\n}\nmain {\n  height: 100%;\n  width: 100%;\n}\nmain .social-icons {\n  position: fixed;\n  bottom: 1rem;\n  left: 1rem;\n}\nmain .social-icons a {\n  padding: 0.4rem;\n  transition: all 0.5s ease-in-out;\n}\nmain .social-icons a:hover {\n  color: #ff652f;\n}\napp-skill {\n  display: block;\n  overflow: hidden;\n  margin: 0.5rem auto;\n  padding: 0.5rem;\n  color: #fff;\n}", "",{"version":3,"sources":["webpack://src/styles.scss","webpack://src/scss/_config.scss"],"names":[],"mappings":"AAAA,8EAAA;ACIA;EACE,sBAAA;EACA,SAAA;EACA,UAAA;ADFF;AADA,aAAA;AACA;EACE,6BAAA;EACA,kBAAA;EACA,gBAAA;EACA,0GAAA;AAIF;AADA;EACE,6BAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,cAAA;EACA,sBAAA;EACA,oBAAA;EACA,qBAAA;EACA,mBAAA;EACA,iBAAA;EACA,cAAA;EACA,qCAAA;EACA,mCAAA;AAGF;AAAA;EACE,mBC7Bc;ED8Bd,WAAA;EACA,aAAA;EACA,4DAAA;EACA,cAAA;AAGF;AAAA;;;EAGE,gBAAA;AAGF;AAAA;EACE,WAAA;EACA,qBAAA;AAGF;AAAA;EACI,cC/Cc;ADkDlB;AAAA;EACE,YAAA;EACA,WAAA;AAGF;AADE;EACE,eAAA;EACA,YAAA;EACA,UAAA;AAGJ;AADI;EACE,eAAA;EClDJ,gCAAA;ADsDF;AAFM;EACE,cC/DU;ADmElB;AAEA;EACE,cAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;EACA,WAAA;AACF","sourcesContent":["/* You can add global styles to this file, and also import other style files */\r\n@import \"./scss/config\";\r\n@import \"./scss/responsive\";\r\n\r\n/* fallback */\r\n@font-face {\r\n  font-family: 'Material Icons';\r\n  font-style: normal;\r\n  font-weight: 400;\r\n  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');\r\n}\r\n\r\n.material-icons {\r\n  font-family: 'Material Icons';\r\n  font-weight: normal;\r\n  font-style: normal;\r\n  font-size: 24px;\r\n  line-height: 1;\r\n  letter-spacing: normal;\r\n  text-transform: none;\r\n  display: inline-block;\r\n  white-space: nowrap;\r\n  word-wrap: normal;\r\n  direction: ltr;\r\n  -webkit-font-feature-settings: 'liga';\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nbody {\r\n  background: $primary-color;\r\n  color: set-text-color($primary-color);\r\n  height: 100vh;\r\n  font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\r\n  line-height: 1;\r\n}\r\n\r\nh1,\r\nh2,\r\nh3 {\r\n  font-weight: 400;\r\n}\r\n\r\na {\r\n  color: set-text-color($primary-color);\r\n  text-decoration: none;\r\n}\r\n\r\n.text-secondary{\r\n    color: $secondary-color;\r\n}\r\n\r\nmain {\r\n  height: 100%;\r\n  width: 100%;\r\n\r\n  .social-icons {\r\n    position: fixed;\r\n    bottom: 1rem;\r\n    left: 1rem;\r\n\r\n    a {\r\n      padding: 0.4rem;\r\n      @include transition-ease;\r\n      &:hover {\r\n        color: $secondary-color;\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\napp-skill{\r\n  display: block;\r\n  overflow: hidden;\r\n  margin: 0.5rem auto;\r\n  padding: 0.5rem;\r\n  color: set-text-color($primary-color);\r\n}","$primary-color: #272727;\r\n$secondary-color: #ff652f;\r\n$terciary-color: #c5c5c5;\r\n\r\n* {\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n@mixin transition-ease {\r\n  transition: all 0.5s ease-in-out;\r\n}\r\n\r\n@function set-text-color($color) {\r\n  @if (lightness($color) > 40%) {\r\n    @return #000;\r\n  } @else {\r\n    @return #fff;\r\n  }\r\n}\r\n\r\n@mixin media-md {\r\n  @media screen and (min-width: 768px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin media-lg {\r\n  @media screen and (min-width: 1024px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin media-xl {\r\n  @media screen and (min-width: 1600px) {\r\n    @content;\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 3:
-/*!***********************************************************************************************************************************************!*\
-  !*** multi ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./node_modules/bootstrap/dist/css/bootstrap.css ./src/styles.css ***!
-  \***********************************************************************************************************************************************/
+/*!************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/@angular/material/prebuilt-themes/indigo-pink.css ./node_modules/bootstrap/dist/css/bootstrap.css ./src/styles.scss ***!
+  \************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\MisProyectos\jesuseduaardo.github.io\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"8jWO");
-__webpack_require__(/*! E:\MisProyectos\jesuseduaardo.github.io\node_modules\bootstrap\dist\css\bootstrap.css */"+eM2");
-module.exports = __webpack_require__(/*! E:\MisProyectos\jesuseduaardo.github.io\src\styles.css */"OmL/");
+__webpack_require__(/*! E:\MisProyectos\Mi Curriculum Online\jesuseduaardo.github.io\node_modules\@angular\material\prebuilt-themes\indigo-pink.css */"8jWO");
+__webpack_require__(/*! E:\MisProyectos\Mi Curriculum Online\jesuseduaardo.github.io\node_modules\bootstrap\dist\css\bootstrap.css */"+eM2");
+module.exports = __webpack_require__(/*! E:\MisProyectos\Mi Curriculum Online\jesuseduaardo.github.io\src\styles.scss */"+EN/");
 
 
 /***/ }),
@@ -498,57 +549,6 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
-
-/***/ }),
-
-/***/ "OmL/":
-/*!************************!*\
-  !*** ./src/styles.css ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "LboF");
-            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--12-1!../node_modules/postcss-loader/src??embedded!./styles.css */ "W9N5");
-
-            content = content.__esModule ? content.default : content;
-
-            if (typeof content === 'string') {
-              content = [[module.i, content, '']];
-            }
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = api(content, options);
-
-
-
-module.exports = content.locals || {};
-
-/***/ }),
-
-/***/ "W9N5":
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--12-1!./node_modules/postcss-loader/src??embedded!./src/styles.css ***!
-  \*********************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "JPst");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nhtml, body { height: 100%; }\r\nbody { \r\n    margin: 0;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n", "",{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,8EAA8E;AAC9E,aAAa,YAAY,EAAE;AAC3B;IACI,SAAS;IACT,qCAAqC;AACzC","sourcesContent":["/* You can add global styles to this file, and also import other style files */\r\nhtml, body { height: 100%; }\r\nbody { \r\n    margin: 0;\r\n    font-family: 'Montserrat', sans-serif;\r\n}\r\n"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
-
 
 /***/ })
 
