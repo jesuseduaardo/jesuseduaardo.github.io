@@ -10,10 +10,11 @@
     background: linear-gradient(
         to right,
         rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
+        rgba($primary-color, 0.7)
       ),
       url("../../../assets/img/perfil_pic.jpg") center top;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,10 +29,10 @@
     width: 80%;
     text-align: center;
 
-    h2{
-        span{
-            color: $secondary-color;
-        }
+    h2 {
+      span {
+        color: $secondary-color;
+      }
     }
 
     .text-secondary {
@@ -46,13 +47,13 @@
     grid-template-columns: 1fr;
     grid-gap: 2rem;
     text-align: center;
-    p{
+    p {
       text-align: center;
     }
   }
-  .download_button{
-      text-decoration: none;
-      color: $primary-color;
-      background-color: $secondary-color;
+  .download_button {
+    text-decoration: none;
+    color: $primary-color;
+    background-color: $secondary-color;
   }
 }
