@@ -24,7 +24,7 @@
                                         <span *ngIf="!experience.fechaEgreso">Actualidad</span>
                                     </p>
                                     <h5>{{ experience.empresa }}</h5>
-                                    <p *ngIf="experience.web" class="company-link">
+                                    <p *ngIf="experience.web" class="company-link d-none d-md-block">
                                         <a href="{{experience.web}}" target="_blank">{{ experience.web }}</a>
                                     </p>
                                     <h6>{{ experience.puesto }}</h6>

@@ -29,13 +29,18 @@ hr {
 }
 .mat-expansion-panel {
   background: lighten($primary-color, 10%);
-  color: $terciary-color;
+  color: $terciary-color !important;
   border-bottom: 5px solid $secondary-color;
   margin-bottom: 1rem;
 
   .mat-expansion-panel-header-title,
   .mat-expansion-panel-header-description {
     display: block;
+
+    .mat-expansion-panel-header-description,
+    .mat-expansion-indicator::after {
+      color: #a5a5a5;
+    }
   }
 
   .mat-expansion-panel-header {
@@ -150,7 +155,7 @@ hr {
 .mat-card {
   background: lighten($primary-color, 10%);
   margin-bottom: 4rem;
-  padding: 0.3rem 3rem 3rem;
+  padding: 0.3rem 1rem 3rem;
 }
 
 @keyframes scale-up-hor-left {
