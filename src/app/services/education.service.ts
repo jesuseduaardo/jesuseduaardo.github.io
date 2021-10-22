@@ -5,8 +5,8 @@ export class EducationService {
 
   educations:Education[] = [
     {
-      titulo:"Técnico Superior en Informatica (Analista de Sistemas)",
-      institucion:"I.U.T José María Carreño",
+      titulo:"Técnico Superior Universitario en Informatica",
+      institucion:"I.U.T José María Carreño - Miranda. Venezuela",
       fechaInicio:"2007-07-01",
       fechaFin:"2012-07-01",
       certificacionUrl:"https://drive.google.com/open?id=0B_kPEZBn5CtldlYzTzBLOVpmRU0",

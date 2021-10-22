@@ -43,6 +43,10 @@ h3 {
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
+  &:hover{
+    color: $secondary-color;
+    text-decoration: none;
+  }
 }
 
 .text-secondary{
@@ -74,4 +78,15 @@ app-skill{
   margin: 0.5rem auto;
   padding: 0.5rem;
   color: set-text-color($primary-color);
+  border-radius: 10px;
+  &:nth-child(odd){
+    background-color: #383838;
+    box-shadow: 5px 6px 1px #333;
+  }
+}
+
+.head-title{
+  background-color: $secondary-color;
+  padding: 0.3em !important;
+  text-align: center;
 }

@@ -3,85 +3,87 @@
         <div class="row">
             <div class="col-12 experience-title">
                 <h1>Experience</h1>
-                <em>Last update 26/08/2021</em>
+                <em>Last update 21/10/2021</em>
             </div>
-            <div class="col-12 col-md-6">
-                <h3 class="mt-3">
-                    <mat-icon aria-hidden="false" aria-label="empleos">keyboard</mat-icon> 
-                    Jobs
-                </h3>
-                <mat-accordion multi="true">
-                    <mat-expansion-panel 
-                        *ngFor="let experience of experiences" 
-                        (opened)="panelOpenState = true" 
-                        (closed)="panelOpenState = false">
-                        <mat-expansion-panel-header [collapsedHeight]="'150px'" [expandedHeight]="'150px'">
-                            <mat-panel-title>
-                                <div class="company-and-date">
-                                    <p>
-                                        <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> / 
-                                        <span *ngIf="experience.fechaEgreso">{{ experience.fechaEgreso | date:'MMM-y' }}</span>
-                                        <span *ngIf="!experience.fechaEgreso">Actualidad</span>
-                                    </p>
-                                    <h5>{{ experience.empresa }}</h5>
-                                    <p *ngIf="experience.web" class="company-link d-none d-md-block">
-                                        <a href="{{experience.web}}" target="_blank">{{ experience.web }}</a>
-                                    </p>
-                                    <h6>{{ experience.puesto }}</h6>
-                                    <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
-                                        Participacion en {{experience.proyectos.length}} proyectos
-                                    </p>
-                                </div>
-                            </mat-panel-title>
-                            <!-- <mat-panel-description class="fecha-ingreso-egreso"></mat-panel-description> -->
-                        </mat-expansion-panel-header>
-                        <div *ngIf="experience.proyectos.length > 0" class="proyects-list">
-                            <h5>Projects</h5>
-                            <hr>
-                            <ol class="proyects">
-                                <li *ngFor="let proyect of experience.proyectos">
-                                    <div>
-                                        <h5>{{ proyect.nombre }}</h5>
-                                        <p>{{ proyect.resumenProyecto }}</p>
-                                        <div class="tecnologies">
-                                            <h6>Skills used</h6>
-                                            <ul>
-                                                <li *ngFor="let tecnologia of proyect.tecnologias">{{ tecnologia }}</li>
-                                            </ul>
-                                        </div>
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-5">
+                    <h3 class="head-title mt-3">
+                        <mat-icon aria-hidden="false" aria-label="empleos">keyboard</mat-icon>
+                        Jobs
+                    </h3>
+                    <mat-accordion multi="true">
+                        <mat-expansion-panel *ngFor="let experience of experiences" (opened)="panelOpenState = true"
+                            (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header [collapsedHeight]="'150px'" [expandedHeight]="'150px'">
+                                <mat-panel-title>
+                                    <div class="company-and-date">
+                                        <p>
+                                            <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> /
+                                            <span *ngIf="experience.fechaEgreso">{{ experience.fechaEgreso |
+                                                date:'MMM-y' }}</span>
+                                            <span *ngIf="!experience.fechaEgreso">Actualidad</span>
+                                        </p>
+                                        <h5>{{ experience.empresa }}</h5>
+                                        <p *ngIf="experience.web" class="company-link d-none d-md-block">
+                                            <a href="{{experience.web}}" target="_blank">{{ experience.web }}</a>
+                                        </p>
+                                        <h6>{{ experience.puesto }}</h6>
+                                        <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
+                                            Participacion en {{experience.proyectos.length}} proyectos
+                                        </p>
                                     </div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div *ngIf="experience.proyectos.length == 0 && experience.resumenProyecto.length">
-                            <p>{{ experience.resumenProyecto }}</p>
-                            <div class="tecnologies">
-                                <h6>Skills used</h6>
-                                <ul>
-                                    <li *ngFor="let tecnologia of experience.tecnologias">{{ tecnologia }}</li>
-                                </ul>
+                                </mat-panel-title>
+                                <!-- <mat-panel-description class="fecha-ingreso-egreso"></mat-panel-description> -->
+                            </mat-expansion-panel-header>
+                            <div *ngIf="experience.proyectos.length > 0" class="proyects-list">
+                                <h5>Projects</h5>
+                                <hr>
+                                <ol class="proyects">
+                                    <li *ngFor="let proyect of experience.proyectos">
+                                        <div>
+                                            <h5>{{ proyect.nombre }}</h5>
+                                            <p>{{ proyect.resumenProyecto }}</p>
+                                            <div class="tecnologies">
+                                                <h6>Skills used</h6>
+                                                <ul>
+                                                    <li *ngFor="let tecnologia of proyect.tecnologias">{{ tecnologia }}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
                             </div>
-                        </div>
-                    </mat-expansion-panel>
-                </mat-accordion>
-            </div>
-            <div class="col-12 col-md-6 px-2">
-                <app-education></app-education>
+                            <div *ngIf="experience.proyectos.length == 0 && experience.resumenProyecto.length">
+                                <p>{{ experience.resumenProyecto }}</p>
+                                <div class="tecnologies">
+                                    <h6>Skills used</h6>
+                                    <ul>
+                                        <li *ngFor="let tecnologia of experience.tecnologias">{{ tecnologia }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+                <div class="col-12 col-md-5 px-2">
+                    <app-education></app-education>
+                </div>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
-                <h3>
-                    <mat-icon aria-hidden="false" aria-label="Example home icon">emoji_events</mat-icon> 
+                <h3 class="head-title">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">emoji_events</mat-icon>
                     Skills
                 </h3>
                 <mat-card class="stats">
-                    <app-skill *ngFor="let hability of habilities" [hability]="hability"></app-skill>
+                    <div class="row">
+                        <app-skill class="col-md-4 p-3" *ngFor="let hability of habilities" [hability]="hability">
+                        </app-skill>
+                    </div>
                 </mat-card>
             </div>
         </div>
     </div>
 </div>
-
-
-

@@ -7,6 +7,15 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
+      titulo:"Programando con Java para aplicaciones Android",
+      institucion:"Universidad Nacional Autónoma de México (Coursera)",
+      fechaInicio:"2021-05-18",
+      fechaFin:"2021-09-11",
+      certificacionUrl:"https://www.coursera.org/account/accomplishments/certificate/99NWVU3UT93V",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/fundamentos-android-coursera.thumb.png'
+    },
+    {
       titulo:"Fundamentos de Android",
       institucion:"Universidad Nacional Autónoma de México (Coursera)",
       fechaInicio:"2021-05-18",
@@ -14,6 +23,15 @@ export class CertificationsService {
       certificacionUrl:"https://www.coursera.org/account/accomplishments/verify/MN6LWA5PM44V",
       duracion:0,
       thumbnails:'/assets/img/certs/thumbnails/fundamentos-android-coursera.thumb.png'
+    },
+    {
+      titulo:"Java Advanced Programming: Threads, Networking, J2SE",
+      institucion:"EducacionIT",
+      fechaInicio:"2021-05-18",
+      fechaFin:"2021-07-12",
+      certificacionUrl:"https://api.alumni.education/course/certificate/generate?hash=150b02c8-086e-4af4-8e8e-db165031a29e&format=pdf",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/educacionit.thumb.png'
     },
     {
       titulo:"Liquibase Fundamentals Certification",
