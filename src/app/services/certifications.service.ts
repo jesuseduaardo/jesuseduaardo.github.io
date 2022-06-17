@@ -16,6 +16,33 @@ export class CertificationsService {
       thumbnails:'/assets/img/certs/thumbnails/fundamentos-android-coursera.thumb.png'
     },
     {
+      titulo:"ReactiveX - RxJs: De cero hasta los detalles",
+      institucion:"Udemy",
+      fechaInicio:"",
+      fechaFin:"2022-04-17",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-c4490a71-ae86-48de-afa8-9dfd6d8b12d7/  ",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/ReactiveX-RxJs-De cero-hasta-los-detalles_tn.jpg'
+    },
+    {
+      titulo:"Full Stack: Angular and Java Spring Boot E-Commerce Website",
+      institucion:"Udemy",
+      fechaInicio:"",
+      fechaFin:"2022-03-24",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-7fd4765f-a9da-40cc-94e9-28bd91d57664/",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/Full-Stack-Angular-and-Java-Spring Boot-E-Commerce-Website_tn.jpg'
+    },
+    {
+      titulo:"Javascript Desarrollador Avanzado",
+      institucion:"Educacion IT",
+      fechaInicio:"",
+      fechaFin:"2022-01-05",
+      certificacionUrl:"https://api.alumni.education/course/certificate/generate?hash=49573409-1092-4d27-b394-76abad260a46&format=pdf",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/Javascript-desarrollador-avanzado_tn.jpg'
+    },
+    {
       titulo:"Fundamentos de Android",
       institucion:"Universidad Nacional Autónoma de México (Coursera)",
       fechaInicio:"2021-05-18",

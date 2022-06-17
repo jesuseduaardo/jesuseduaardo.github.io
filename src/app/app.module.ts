@@ -28,6 +28,7 @@ import { SkillComponent } from './components/skill/skill.component';
 import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import { ContactItemComponent } from './components/contact/contact-item/contact-item.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     SkillComponent,
     EducationComponent,
     FooterComponent,
-    SafeHtmlPipe
+    SafeHtmlPipe,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule,

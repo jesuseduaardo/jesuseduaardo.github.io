@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class HabilitiesService {
-  java:Language={name:"Java", version:"8/11", icon:'../assets/img/pro-icon/java.svg'}
+  java:Language={name:"Java", version:"11", icon:'../assets/img/pro-icon/java.svg'}
   android:Language={name:"Android", version:0, icon:'../assets/img/pro-icon/android-original.svg'}
   javaScript:Language={name:"JavaScript", version:"ES6", icon:'../assets/img/pro-icon/javascript-original.svg'}
   php:Language={name:"PHP", version:7, icon:'../assets/img/pro-icon/php-original.svg'}
@@ -18,14 +18,14 @@ export class HabilitiesService {
         {
           name:"Java",
           icon:'../assets/img/pro-icon/java.svg',
-          version:8,
-          percent:60
+          version:11,
+          percent:70
         },
         {
           name:"SpringMVC",
           icon:'../assets/img/pro-icon/spring-original.svg',
           version:5,
-          percent:55
+          percent:65
         },
         {
           name:"SpringBoot",
@@ -48,7 +48,7 @@ export class HabilitiesService {
           name:"Kotlin",
           icon:'../assets/img/pro-icon/kotlin-original.svg',
           version:1.5,
-          percent:35
+          percent:25
         }
       ]
     },
@@ -65,7 +65,7 @@ export class HabilitiesService {
           name:"MS SQL",
           icon:'../assets/img/pro-icon/microsoft-sql-server.svg',
           version:0,
-          percent:38
+          percent:40
         },
         {
           name:"PL/SQL",
@@ -82,37 +82,37 @@ export class HabilitiesService {
           name:"Javascript",
           icon:'../assets/img/pro-icon/javascript-original.svg',
           version:6, 
-          percent:80
+          percent:85
         },
         {
           name:"ReactJS",
           icon:'../assets/img/pro-icon/reactjs-icon.svg',
           version:16,
-          percent:45
+          percent:30
         },
         {
           name:"jQuery",
           icon:'../assets/img/pro-icon/jquery-original.svg',
           version:3,
-          percent:67
+          percent:50
         },
         {
           name:"Angular",
           icon:'../assets/img/pro-icon/angularjs-original.svg',
-          version:11,
-          percent:65
+          version:13,
+          percent:70
         },
         {
           name:"Angular Material",
           icon:'../assets/img/pro-icon/materialui-original.svg',
-          version:11,
+          version:13,
           percent:60
         },
         {
           name:"Ionic",
           icon:'../assets/img/pro-icon/ionic-original.svg',
           version:5,
-          percent:35
+          percent:40
         },
         {
           name:"Typescript",
@@ -129,7 +129,7 @@ export class HabilitiesService {
           name:"Laravel",
           icon:'../assets/img/pro-icon/laravel-plain.svg',
           version:7,
-          percent:35
+          percent:20
         }
       ]
     },

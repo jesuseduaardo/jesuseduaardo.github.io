@@ -36,11 +36,10 @@ hr {
   .mat-expansion-panel-header-title,
   .mat-expansion-panel-header-description {
     display: block;
+  }
 
-    .mat-expansion-panel-header-description,
-    .mat-expansion-indicator::after {
-      color: #a5a5a5;
-    }
+  .mat-expansion-indicator::after {
+    color: $secondary-color !important;
   }
 
   .mat-expansion-panel-header {
@@ -84,6 +83,9 @@ hr {
 .proyects {
   padding-left: 0;
   list-style: none;
+  >li{
+    padding-bottom: 1rem;
+  }
   h5 {
     color: $secondary-color;
   }
@@ -107,6 +109,7 @@ hr {
 }
 
 .tecnologies {
+  padding-top: 1rem;
   color: set-text-color($primary-color);
   h6 {
     font-size: 14px;

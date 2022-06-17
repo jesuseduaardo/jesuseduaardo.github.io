@@ -1,6 +1,10 @@
 @import "../../../scss/config";
 @import "../../../scss/responsive";
 
+app-education{
+  margin-top: 1rem;
+}
+
 .card {
   background: lighten($primary-color, 10%);
   border-bottom: 5px solid $secondary-color;
@@ -47,6 +51,18 @@
     color: #dddddd !important;
   }
 }
+.card-body{
+  h5{
+    font-size: 13px;
+  }
+  p{
+    font-size: 13px;
+    color: #878787;
+    small{
+      font-size: 13px;
+    }
+  }
+}
 
 .certs {
   margin: 0.5rem auto 0 auto;
@@ -56,6 +72,11 @@
 }
 
 @include media-md {
+  .card-body{
+    h5{
+      font-size: 16px;
+    }
+  }
   .certs {
     margin: 0.5rem auto 0 auto;
   }

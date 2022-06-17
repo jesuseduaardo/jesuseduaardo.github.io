@@ -3,13 +3,13 @@
         <div class="row">
             <div class="col-12 experience-title">
                 <h1>Experience</h1>
-                <em>Last update 21/10/2021</em>
+                <em>Last update 17/06/2022</em>
             </div>
             <div class="row justify-content-around">
                 <div class="col-12 col-md-5">
                     <h3 class="head-title mt-3">
                         <mat-icon aria-hidden="false" aria-label="empleos">keyboard</mat-icon>
-                        Jobs
+                        Work History
                     </h3>
                     <mat-accordion multi="true">
                         <mat-expansion-panel *ngFor="let experience of experiences" (opened)="panelOpenState = true"
@@ -21,7 +21,7 @@
                                             <span>{{ experience.fechaIngreso | date:'MMM-y' }}</span> /
                                             <span *ngIf="experience.fechaEgreso">{{ experience.fechaEgreso |
                                                 date:'MMM-y' }}</span>
-                                            <span *ngIf="!experience.fechaEgreso">Actualidad</span>
+                                            <span *ngIf="!experience.fechaEgreso">Current</span>
                                         </p>
                                         <h5>{{ experience.empresa }}</h5>
                                         <p *ngIf="experience.web" class="company-link d-none d-md-block">
@@ -29,7 +29,7 @@
                                         </p>
                                         <h6>{{ experience.puesto }}</h6>
                                         <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
-                                            Participacion en {{experience.proyectos.length}} proyectos
+                                            Participation in {{experience.proyectos.length}} projects
                                         </p>
                                     </div>
                                 </mat-panel-title>
@@ -66,7 +66,7 @@
                         </mat-expansion-panel>
                     </mat-accordion>
                 </div>
-                <div class="col-12 col-md-5 px-2">
+                <div class="col-12 col-md-5">
                     <app-education></app-education>
                 </div>
             </div>

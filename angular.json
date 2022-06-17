@@ -118,7 +118,7 @@
   },
   "schematics": {
     "@schematics/angular:component": {
-      "styleext": "scss"
+      "skipTests": true
     }
   }
 }
