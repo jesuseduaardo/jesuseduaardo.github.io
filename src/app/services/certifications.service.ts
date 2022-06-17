@@ -7,15 +7,6 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
-      titulo:"Programando con Java para aplicaciones Android",
-      institucion:"Universidad Nacional Autónoma de México (Coursera)",
-      fechaInicio:"2021-05-18",
-      fechaFin:"2021-09-11",
-      certificacionUrl:"https://www.coursera.org/account/accomplishments/certificate/99NWVU3UT93V",
-      duracion:0,
-      thumbnails:'/assets/img/certs/thumbnails/fundamentos-android-coursera.thumb.png'
-    },
-    {
       titulo:"ReactiveX - RxJs: De cero hasta los detalles",
       institucion:"Udemy",
       fechaInicio:"",
@@ -41,6 +32,15 @@ export class CertificationsService {
       certificacionUrl:"https://api.alumni.education/course/certificate/generate?hash=49573409-1092-4d27-b394-76abad260a46&format=pdf",
       duracion:0,
       thumbnails:'/assets/img/certs/thumbnails/Javascript-desarrollador-avanzado_tn.jpg'
+    },
+    {
+      titulo:"Programando con Java para aplicaciones Android",
+      institucion:"Universidad Nacional Autónoma de México (Coursera)",
+      fechaInicio:"2021-05-18",
+      fechaFin:"2021-09-11",
+      certificacionUrl:"https://www.coursera.org/account/accomplishments/certificate/99NWVU3UT93V",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/fundamentos-android-coursera.thumb.png'
     },
     {
       titulo:"Fundamentos de Android",
