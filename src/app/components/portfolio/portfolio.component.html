@@ -15,13 +15,15 @@
                 <img mat-card-image [src]="proyect.imageUrl" [alt]="proyect.name">
                 <mat-card-content>
                     <p>{{proyect.description}}</p>
-                    <small>Tecnologias aplicadas</small><br>
-                    <span class="badge badge-primary mx-1" *ngFor="let lang of proyect.lenguajes">{{lang.name}} {{lang.version}}</span>
-                    <span class="badge badge-success mx-1" *ngFor="let frame of proyect.frameworks">{{frame.name}} {{frame.version}}</span>
+                    <h5>Tecnologias aplicadas</h5>
+                    <span class="badge badge-primary mx-1" *ngFor="let lang of proyect.lenguajes">{{lang.name}}
+                        {{lang.version}}</span>
+                    <br>
+                    <span class="badge badge-success mx-1" *ngFor="let frame of proyect.frameworks">{{frame.name}}
+                        {{frame.version}}</span>
                 </mat-card-content>
                 <mat-card-actions class="actions">
                     <a [href]="proyect.url" target="_blank">VISITAR</a>
-                    <!-- <a [href]="proyect.repoUrl" target="_blank">CODIGO</a> -->
                 </mat-card-actions>
             </mat-card>
         </div>
