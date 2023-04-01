@@ -81,26 +81,20 @@ export class HabilitiesService {
         {
           name:"Javascript",
           icon:'../assets/img/pro-icon/javascript-original.svg',
-          version:6, 
+          version:6,
           percent:85
         },
         {
           name:"ReactJS",
           icon:'../assets/img/pro-icon/reactjs-icon.svg',
           version:16,
-          percent:30
-        },
-        {
-          name:"jQuery",
-          icon:'../assets/img/pro-icon/jquery-original.svg',
-          version:3,
-          percent:50
+          percent:15
         },
         {
           name:"Angular",
           icon:'../assets/img/pro-icon/angularjs-original.svg',
           version:13,
-          percent:70
+          percent:65
         },
         {
           name:"Angular Material",
@@ -112,24 +106,13 @@ export class HabilitiesService {
           name:"Ionic",
           icon:'../assets/img/pro-icon/ionic-original.svg',
           version:5,
-          percent:40
+          percent:30
         },
         {
           name:"Typescript",
           icon:'../assets/img/pro-icon/typescript.svg',
           version:3,
           percent:75
-        }
-      ]
-    },
-    {
-      language:this.php,
-      frameworks:[
-        {
-          name:"Laravel",
-          icon:'../assets/img/pro-icon/laravel-plain.svg',
-          version:7,
-          percent:20
         }
       ]
     },
@@ -165,12 +148,6 @@ export class HabilitiesService {
           version:0,
           percent: 75
         },
-        {
-          name: "SVN",
-          icon:'../assets/img/pro-icon/subversion.svg',
-          version:0,
-          percent:30
-        }
       ]
     }
   ];
