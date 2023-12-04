@@ -29,6 +29,9 @@ import { EducationComponent } from './components/education/education.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { ContactItemComponent } from './components/contact/contact-item/contact-item.component';
+import { ExperienceItemComponent } from './components/experience/experience-item/experience-item.component';
+import { environment } from 'src/environments/environment';
+
 
 
 @NgModule({
@@ -45,7 +48,8 @@ import { ContactItemComponent } from './components/contact/contact-item/contact-
     EducationComponent,
     FooterComponent,
     SafeHtmlPipe,
-    ContactItemComponent
+    ContactItemComponent,
+    ExperienceItemComponent
   ],
   imports: [
     BrowserModule,
@@ -57,6 +61,8 @@ import { ContactItemComponent } from './components/contact/contact-item/contact-
     MatExpansionModule,
     MatChipsModule,
     MatTooltipModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
     app_routing
   ],
   providers: [

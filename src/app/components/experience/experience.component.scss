@@ -11,11 +11,13 @@
 
   .experience-title {
     margin-bottom: 25px;
+
     h1 {
       text-align: center;
       font-weight: bolder;
       color: $secondary-color;
     }
+
     em {
       display: block;
       text-align: center;
@@ -27,6 +29,7 @@
 hr {
   margin: 0.75em 0 0.75em 0;
 }
+
 .mat-expansion-panel {
   background: lighten($primary-color, 10%);
   color: $terciary-color !important;
@@ -56,39 +59,18 @@ hr {
   background-color: lighten($primary-color, 10%) !important;
 }
 
-.company-and-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
-
-  h5 {
-    margin-bottom: 0;
-    color: $secondary-color;
-  }
-  p {
-    margin-bottom: 0;
-    color: set-text-color($primary-color);
-  }
-  h6 {
-    margin-bottom: 0;
-    color: $terciary-color;
-  }
-  .chronology-list {
-    list-style: none;
-    padding: 0;
-  }
-}
-
 .proyects {
   padding-left: 0;
   list-style: none;
-  >li{
+
+  >li {
     padding-bottom: 1rem;
   }
+
   h5 {
     color: $secondary-color;
   }
+
   p {
     font-size: 14px;
   }
@@ -96,14 +78,16 @@ hr {
 
 .proyects-list {
   color: $terciary-color;
-  > li {
+
+  >li {
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
     border-bottom: 1px solid #e6e6e6;
     background: #f5f5f5;
     padding: 10px;
   }
-  > li:last-child {
+
+  >li:last-child {
     border-bottom: 0;
   }
 }
@@ -111,11 +95,14 @@ hr {
 .tecnologies {
   padding-top: 1rem;
   color: set-text-color($primary-color);
+
   h6 {
     font-size: 14px;
   }
+
   ul {
     padding: 0 20px;
+
     li {
       font-family: monospace;
       margin: 2px;
@@ -132,9 +119,11 @@ hr {
   margin: auto;
   display: block;
 }
+
 .text-muted {
   font-size: 76%;
 }
+
 .card-body {
   display: flex;
   flex-flow: column;
@@ -145,9 +134,11 @@ hr {
   margin-top: 0px;
   color: #a5a5a5;
 }
+
 .company-link {
   margin-top: -5px;
   margin-bottom: 5px !important;
+
   a {
     font-size: 12px;
     line-height: 0;
@@ -166,6 +157,7 @@ hr {
     transform: scaleX(0.4);
     transform-origin: 0% 0%;
   }
+
   100% {
     transform: scaleX(1);
     transform-origin: 0% 0%;

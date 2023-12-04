@@ -1,41 +1,53 @@
-<h3 class="head-title">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">school</mat-icon>
-    Education
-</h3>
-<div *ngFor="let educ of education" class="card" style="max-width: 540px;">
-    <div class="row no-gutters">
-        <div class="col-md-12">
-            <div class="card-body p-1">
-                <h5 class="card-title my-0">{{ educ.titulo }}</h5>
-                <p class="card-text my-0">{{ educ.institucion }}</p>
-                <p class="card-text"><small class="text-muted">{{ educ.fechaFin | date:"MMM-y" }}</small></p>
-            </div>
-        </div>
+<div class="education">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 education-title">
+        <h1>Education</h1>
+      </div>
     </div>
-</div>
+    <div class="col-12">
 
-<h3 class="head-title mt-3">
-    <mat-icon aria-hidden="false">star_border</mat-icon>
-    Certifications
-</h3>
-<div *ngFor="let cert of certifications" class="card certs">
-    <div class="row no-gutters">
-        <div class="col-3 align-self-center cert-container">
+      <h3 class="head-title">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">school</mat-icon>
+        Education
+      </h3>
+      <div *ngFor="let educ of education" class="card">
+        <div class="row no-gutters">
+          <div class="col-md-12">
+            <div class="card-body p-1">
+              <h5 class="card-title my-0">{{ educ.titulo }}</h5>
+              <p class="card-text my-0">{{ educ.institucion }}</p>
+              <p class="card-text"><small class="text-muted">{{ educ.fechaFin | date:"MMM-y" }}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="head-title mt-3">
+        <mat-icon aria-hidden="false">star_border</mat-icon>
+        Certifications
+      </h3>
+      <div *ngFor="let cert of certifications" class="card certs">
+        <div class="row no-gutters">
+          <div class="col-3 align-self-center cert-container">
             <img [src]="cert.thumbnails" class="card-img cert" alt="{{ cert.titulo }}">
             <div class="overlay">
-                <a [href]="cert.certificacionUrl" target="_blank" title="Ver Certificación">
-                    <i class="fas fa-eye"></i>
-                </a>
-              </div>
-        </div>
-        <div class="col-9 align-self-center">
-            <div class="card-body p-1">
-                <h5 class="card-title my-0">{{ cert.titulo }}</h5>
-                <p class="card-text my-0">{{ cert.institucion }}</p>
-                <p *ngIf="cert.duracion > 0" class="card-text my-0"><small class="text-muted">{{ cert.duracion }}
-                        Hours</small></p>
-                <p class="card-text"><small class="text-muted">{{ cert.fechaFin }}</small></p>
+              <a [href]="cert.certificacionUrl" target="_blank" title="Ver Certificación">
+                <i class="fas fa-eye"></i>
+              </a>
             </div>
+          </div>
+          <div class="col-9 align-self-center">
+            <div class="card-body p-1">
+              <h5 class="card-title my-0">{{ cert.titulo }}</h5>
+              <p class="card-text my-0">{{ cert.institucion }}</p>
+              <p *ngIf="cert.duracion > 0" class="card-text my-0"><small class="text-muted">{{ cert.duracion }}
+                  Hours</small></p>
+              <p class="card-text"><small class="text-muted">{{ cert.fechaFin }}</small></p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
