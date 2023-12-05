@@ -6,32 +6,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 contact-data">
-                <img src="assets/img/geo.svg" alt="Ubicacion" width="50" >
-                <p>
-                    <a href="https://goo.gl/maps/oBRnasEq435yce1t5">
-                        Av. Belgrano 1265<br>Buenos Aires<br>Argentina
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-3 contact-data">
-                <img src="assets/img/whatsapp.svg" alt="Whatsapp" width="50">
-                <p>
-                    <a href="https://api.whatsapp.com/send?phone=541127834634">+54 11 27834634</a> 
-                </p>
-            </div>
-            <div class="col-md-3 contact-data">
-                <img src="assets/img/skype.svg" alt="Skype" width="50">
-                <p>
-                    <a href="skype:jesus.eduaardo?chat">jesus.eduaardo</a>
-                </p>
-            </div>
-            <div class="col-md-3 contact-data">
-                <img src="assets/img/gmail.svg" alt="Gmail" width="50">
-                <p>
-                    <a href="mailto:jesuseduaardo@gmail.com">jesuseduaardo@gmail.com</a>
-                </p>
-            </div>
+            <!-- <app-contact-item [contactItem]="location" class="col-md-4 contact-data"></app-contact-item> -->
+            <!-- <app-contact-item [contactItem]="skype" class="col-md-4 contact-data"></app-contact-item> -->
+            <app-contact-item [contactItem]="email" class="col-md-6 contact-data"></app-contact-item>
+            <app-contact-item [contactItem]="whatsapp" class="col-md-6 contact-data"></app-contact-item>
         </div>
     </div>
 </div>

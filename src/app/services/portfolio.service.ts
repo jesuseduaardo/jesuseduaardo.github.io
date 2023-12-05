@@ -22,21 +22,53 @@ export class PortfolioService {
       ]
     },
     {
-      name:"Saenca",
-      description: "Ecommerce completo con panel de administracion creado con laravel 5.8 y ReactJs 16",
-      imageUrl:"https://iili.io/JM2d6N.th.jpg",
+      name:"Galletas Dino",
+      description: "Maqueta de portada de sitio para reconocida marca de galletas",
+      imageUrl:"https://iili.io/w8fLNt.jpg",
       repoUrl:"",
-      url:"http://saenca.com/",
+      url:"https://jesuseduaardo.tech/portfolio/cancan/dino/",
       lenguajes:[
-        {name:"PHP", version:"7", icon:""},
-        {name:"Javascript", version:"ES6", icon:""}
+        {name:"HTML", version:"5", icon:""},
+        {name:"CSS", version:"3", icon:""},
+        {name:"Javascript", version:"ES6", icon:""},
+        
       ],
       frameworks:[
-        {name:"Laravel", version:5.8, percent:0, icon:""}, 
-        {name:"ReactJS", version:16, percent:0, icon:"" },
-        {name:"MaterialUI", version: 8, percent:0, icon:""}
+        {name:"Bootstrap", version: 4.6, percent:0, icon:""}
       ]
-    }
+    },
+    {
+      name:"Galletas Can Can",
+      description: "Maqueta de portada de sitio para reconocida marca de galletas",
+      imageUrl:"https://iili.io/w8ftxn.jpg",
+      repoUrl:"",
+      url:"https://jesuseduaardo.tech/portfolio/cancan/colorin/",
+      lenguajes:[
+        {name:"HTML", version:"5", icon:""},
+        {name:"CSS", version:"3", icon:""},
+        {name:"Javascript", version:"ES6", icon:""},
+        
+      ],
+      frameworks:[
+        {name:"Bootstrap", version: 4.6, percent:0, icon:""}
+      ]
+    },
+    {
+      name:"AsRemis",
+      description: "Maqueta para empresa de servicios de transporte privado",
+      imageUrl:"https://iili.io/w8frKv.jpg",
+      repoUrl:"",
+      url:"https://jesuseduaardo.tech/portfolio/asremis/",
+      lenguajes:[
+        {name:"HTML", version:"5", icon:""},
+        {name:"CSS", version:"3", icon:""},
+        {name:"Javascript", version:"ES6", icon:""},
+        
+      ],
+      frameworks:[
+        {name:"Bootstrap", version: 4.6, percent:0, icon:""}
+      ]
+    },
   ] 
 
   constructor() { }

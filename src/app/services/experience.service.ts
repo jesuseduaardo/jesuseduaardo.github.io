@@ -4,24 +4,37 @@ import { Injectable } from "@angular/core";
 export class ExperienceService{
     private experience:Experience[] = [
         {
-            empresa:"BBVA S.A",
-            puesto: "Analista de Sistemas",
-            fechaIngreso: "2021-06-21",
+            empresa:"Itaú Unibanco",
+            puesto: "System Analyst",
+            fechaIngreso: "2022-03-09",
             fechaEgreso: "",
             proyectos:[],
-            resumenProyecto:"",
-            tecnologias: ["Java", "Angular"],
+            resumenProyecto:`
+            - Development a bank Teller application for daily bank operations.\n
+            - Develop tools for test and debug the app.\n
+            - Active participate in Scrum ceremonies, Code review and Pair Programing`,
+            tecnologias: ["MS Sql","Java 11","SpringBoot2", "Angular13", "TypeScript3", "RxJs6"],
+            web:"https://www.itau.com.ar/"
+        },
+        {
+            empresa:"BBVA",
+            puesto: "System Analyst",
+            fechaIngreso: "2021-06-21",
+            fechaEgreso: "2022-03-07",
+            proyectos:[],
+            resumenProyecto:"Evolutive development and bug fixing for the home banking web app.",
+            tecnologias: ["Java", "SpringMVC", "Angular", "Git"],
             web:"https://www.bbva.com.ar/"
         },
         {
-            empresa:"Globant S.A",
+            empresa:"Globant",
             puesto: "Java Developer",
             fechaIngreso: "2020-10-05",
             fechaEgreso: "2021-06-14",
             proyectos:[
                 {
                     nombre:"Bimo (Prisma S.A)",
-                    resumenProyecto:"Desarrollo de microservicios y consumo de apis de terceros para la e-wallet Bimo",
+                    resumenProyecto:"Build RESTful apis what consume third party apis and served data to the E-Wallet BIMO",
                     tecnologias: ["Java", "SpringBoot", "SQLServer", "Jenkins", "Spock", "Git"]
                 }
             ],
@@ -30,24 +43,24 @@ export class ExperienceService{
             web:"https://www.globant.com/"
         },
         {
-            empresa:"IT Resources S.A",
-            puesto: "Programador Java",
+            empresa:"IT Resources",
+            puesto: "Java Developer",
             fechaIngreso: "2019-07-01",
             fechaEgreso: "2020-10-02",
             proyectos:[
                 {
                     nombre:"I+D - Kaiso App",
-                    resumenProyecto:"Desarrollo de aplicacion web de soporte para personas con deterioro cognitivo",
+                    resumenProyecto:"Develop web App with memory exercises aimed at people with cognitive disabilities",
                     tecnologias: ["Microsoft Azure Cognitive Services Face service", "JavaEE", "JHipster", "SpringBoot", "MySql", "Bootstrap4", "Angular9", "Git"]
                 },
                 {
                     nombre:"Legal Security",
-                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la aplicacion iSecurity para la Empresa Legal Security",
+                    resumenProyecto:"Built internal tool using Spring MVC and jQuery to manage company surveillance system",
                     tecnologias: ["JavaEE", "SpringMVC", "MySql", "Bootstrap3", "Javascript/jQuery", "Git/SVN"]
                 },
                 {
                     nombre:"Banco Santander",
-                    resumenProyecto:"Desarrollo y mantenimiento de la aplicacion Portal del Banco Santander",
+                    resumenProyecto:"Development and maintenance of the Santander Bank portal application",
                     tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "jQuery", "Git/SVN"]
                 }
             ],
@@ -56,12 +69,12 @@ export class ExperienceService{
             web:"https://www.itrsa.com.ar/"
         },
         {
-            empresa:"Eglam Argentina S.A",
+            empresa:"Eglam Argentina",
             puesto: "Programador Backend",
             fechaIngreso: "2019-02-01",
             fechaEgreso: "2019-07-01",
             proyectos:[],
-            resumenProyecto:"Gestión y desarrollo de modulos para e-commerces basados en Magento",
+            resumenProyecto:"Develop magento based applications, for example: dashboard reports, console applications, etc.",
             tecnologias: ["PHP5", "Magento", "MySql", "Javascript/jQuery", "Git/SVN"],
             web:"https://www.glamit.com.ar/"
         },
@@ -73,7 +86,7 @@ export class ExperienceService{
             proyectos:[
                 {
                     nombre:"Banco Provincia",
-                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la aplicacion BIP (Banca Internet Provincia) del Banco Provincia",
+                    resumenProyecto:"Built and Maintained Home Banking Application, Communicating With Cross-Functional Teams Regarding Product and Design",
                     tecnologias: ["JavaEE", "SpringMVC", "OracleDB", "Javascript/jQuery", "Git/SVN"]
                 }
             ],
@@ -89,7 +102,7 @@ export class ExperienceService{
             proyectos:[
                 {
                     nombre:"Banco BBVA Provincial (Venezuela)",
-                    resumenProyecto:"Mantenimiento y desarrollo evolutivo de la plataforma para usuarios corporativos del banco BBVA Provincial",
+                    resumenProyecto:"Collaborated with contact center team members to implement new UI. Using Spring MVC with Java7 and jQuery",
                     tecnologias: ["JavaEE", "SpringMVC", "Bootstrap3","Javascript/jQuery", "Git"]
                 }
             ],
@@ -106,7 +119,7 @@ export class ExperienceService{
             resumenProyecto:"Desarrollo de sitios/aplicaciones web tanto en frontend y backend siguiendo las exigencias de cada proyecto",
             tecnologias: ["PHP5", "Codeigniter", "MySql", "Bootstrap3", "Javascript/jQuery", "Git"]
         },
-        
+
     ];
 
     getExperience():Experience[]{

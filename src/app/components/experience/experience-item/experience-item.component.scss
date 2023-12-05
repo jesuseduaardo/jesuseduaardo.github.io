@@ -1,0 +1,53 @@
+@import "../../../../scss/config";
+@import "../../../../scss/responsive";
+
+
+.company-and-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  color: set-text-color($primary-color);
+
+  h5 {
+    margin-bottom: 0;
+    color: $secondary-color;
+  }
+
+  p {
+    margin-bottom: 0;
+
+  }
+
+  h6 {
+    margin-bottom: 0;
+    color: $terciary-color;
+  }
+
+  .chronology-list {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+@include media-md {
+  ::ng-deep {
+    .mat-expansion-indicator::after {
+      padding: 10px !important;
+      color: white;
+    }
+  }
+  .company-and-date{
+    font-size: 1.3rem;
+    h5{
+      font-size: 1.5rem;
+    }
+    .fecha-ingreso-egreso{
+      text-align: end;
+    }
+    .info{
+      text-align: start;
+    }
+  }
+
+}

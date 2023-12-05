@@ -13,11 +13,14 @@
 .card {
   max-width: 250px;
   padding: 0.9rem;
+  p {
+    line-height: 1.3rem;
+  }
 }
 
-.mat-card-image{
+.mat-card-image {
   width: 100%;
-  margin:auto;
+  margin: auto;
 }
 
 .header-image {
@@ -28,8 +31,16 @@
 .actions {
   display: flex;
   justify-content: space-around;
+  a {
+    color: #3d3d3d;
+    &:hover{
+      color: #060606;
+    }
+  }
 }
 
 .badge {
   padding: 0.2rem;
+  color: #060606;
+  margin: 0.2rem;
 }
