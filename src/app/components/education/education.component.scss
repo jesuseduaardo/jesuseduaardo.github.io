@@ -1,7 +1,7 @@
 @import "../../../scss/config";
 @import "../../../scss/responsive";
 
-.education{
+.education {
   width: 75vw;
   margin: auto;
 }
@@ -92,11 +92,28 @@
   margin: 0 auto;
 }
 
+.cert-title {
+  align-self: center;
+}
+
 @include media-md {
   .card-body {
     h5 {
-      font-size: 16px;
+      font-size: 24px;
+      padding-bottom: 2px;
     }
+    small {
+      font-size: 18px !important;
+    }
+    p {
+      font-size: 16px;
+      padding-bottom: 2px;
+    }
+  }
+
+  .cert-title {
+    align-self: baseline;
+    padding: 20px;
   }
 
   .certs {
@@ -106,9 +123,9 @@
   .certs:first-child {
     margin: 0 auto !important;
   }
-}
-@include media-md {
+
   .education {
     padding-top: 6rem;
   }
+
 }

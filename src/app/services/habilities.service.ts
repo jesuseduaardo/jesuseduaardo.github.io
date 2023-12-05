@@ -3,10 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class HabilitiesService {
   java:Language={name:"Java", version:"11", icon:'../assets/img/pro-icon/java.svg'}
+  virtualization:Language={name:"Virtualization", version:0, icon:'../assets/img/pro-icon/cloud_icon.png'}
   android:Language={name:"Android", version:0, icon:'../assets/img/pro-icon/android-original.svg'}
   javaScript:Language={name:"JavaScript", version:"ES6", icon:'../assets/img/pro-icon/javascript-original.svg'}
   php:Language={name:"PHP", version:7, icon:'../assets/img/pro-icon/php-original.svg'}
-  sql:Language={name:"SQL", version:0, icon:'../assets/img/pro-icon/sql.svg'}
+  sql:Language={name:"SQL", version:0, icon:'../assets/img/pro-icon/database_icon.png'}
   html:Language={name:"Html", version:5, icon:'../assets/img/pro-icon/icons8-html-5-50.png'}
   css:Language={name:"Css", version:3, icon:'../assets/img/pro-icon/css3-original.svg'}
   versionado:Language={name:"Versionado", version:0, icon:'../assets/img/pro-icon/367559.svg'}
@@ -48,7 +49,18 @@ export class HabilitiesService {
           name:"Kotlin",
           icon:'../assets/img/pro-icon/kotlin-original.svg',
           version:1.5,
-          percent:25
+          percent:15
+        }
+      ]
+    },
+    {
+      language:this.virtualization,
+      frameworks:[
+        {
+          name:"Docker",
+          icon:'../assets/img/pro-icon/docker.svg',
+          version:1.5,
+          percent:15
         }
       ]
     },
@@ -113,6 +125,12 @@ export class HabilitiesService {
           icon:'../assets/img/pro-icon/typescript.svg',
           version:3,
           percent:75
+        },
+        {
+          name:"RxJs",
+          icon:'../assets/img/pro-icon/rxjslogo.com.svg',
+          version:7,
+          percent:25
         }
       ]
     },

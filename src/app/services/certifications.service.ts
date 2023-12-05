@@ -7,11 +7,38 @@ export class CertificationsService {
 
   certifications:Certification[]=[
     {
+      titulo:"Especializacion en React",
+      institucion:"Codo a Codo 4.0 - Gobierno de la Ciudad de Buenos Aires",
+      fechaInicio:"",
+      fechaFin:"2023-07",
+      certificacionUrl:"https://drive.google.com/file/d/1sGARFiKQyTmN3eVHlAIDjgFdJi-4AoHF/view",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/especializacion-en-react-codo-a-codo.jpg'
+    },
+    {
+      titulo:"Docker Mastery: with Kubernetes+Swarm from a Docker Captain",
+      institucion:"Udemy",
+      fechaInicio:"",
+      fechaFin:"2023-05-05",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-dba836d8-3518-481c-a11d-6ba9f27a0210/",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/docker-mastery-with-kubernetes+swarm-from-docker-captain.jpg'
+    },
+    {
+      titulo:"Microservicios Spring Cloud Eureka & Angular Full-stack",
+      institucion:"Udemy",
+      fechaInicio:"",
+      fechaFin:"2022-09-11",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-3490da41-2672-4c0d-b2b5-7c30dfb34657/",
+      duracion:0,
+      thumbnails:'/assets/img/certs/thumbnails/microservicios-spring-cloud-eureka-angular-full-stack.jpg'
+    },
+    {
       titulo:"ReactiveX - RxJs: De cero hasta los detalles",
       institucion:"Udemy",
       fechaInicio:"",
       fechaFin:"2022-04-17",
-      certificacionUrl:"https://www.udemy.com/certificate/UC-c4490a71-ae86-48de-afa8-9dfd6d8b12d7/  ",
+      certificacionUrl:"https://www.udemy.com/certificate/UC-c4490a71-ae86-48de-afa8-9dfd6d8b12d7/",
       duracion:0,
       thumbnails:'/assets/img/certs/thumbnails/ReactiveX-RxJs-De cero-hasta-los-detalles_tn.jpg'
     },
