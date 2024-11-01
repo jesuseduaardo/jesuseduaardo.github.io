@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatExpansionModule } from '@angular/material/expansion';
+
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -26,6 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { ContactItemComponent } from './components/contact/contact-item/contact-item.component';
 import { ExperienceItemComponent } from './components/experience/experience-item/experience-item.component';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -50,8 +50,7 @@ import { ExperienceItemComponent } from './components/experience/experience-item
     BrowserModule,
     BrowserAnimationsModule,
     NgxTypedJsModule,
-    MatIconModule,
-    MatExpansionModule,
+    MaterialModule,
     app_routing
   ],
   providers: [

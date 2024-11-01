@@ -24,6 +24,7 @@
     "@angular/router": "^17.3.12",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^4.5.3",
+    "cv-app": "file:",
     "mdbootstrap": "^4.19.1",
     "ngx-typed-js": "^2.0.2",
     "rxjs": "^6.6.3",
