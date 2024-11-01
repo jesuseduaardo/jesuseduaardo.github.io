@@ -4,15 +4,19 @@
 <nav class="nav" [ngClass]="{'open' : showMenu}">
     <ul class="menu-nav" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
         <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="index.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['home']">Home</a>
+            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['home']">Home</a>
         </li>
         <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="about.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['about']">About Me</a>
+            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['about']">About Me</a>
         </li>
         <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="projects.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['experience']">My
+            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['experience']">
                 Experience</a>
         </li>
+        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+          <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['education']">
+              Education</a>
+      </li>
         <!-- <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
             <a href="projects.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['portfolio']">My
                 Projects</a>

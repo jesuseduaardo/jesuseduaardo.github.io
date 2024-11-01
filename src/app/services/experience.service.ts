@@ -9,8 +9,11 @@ export class ExperienceService{
             fechaIngreso: "2022-03-09",
             fechaEgreso: "",
             proyectos:[],
-            resumenProyecto:"",
-            tecnologias: ["MS Sql","Java","SpringBoot", "Angular", "TypeScript", "RxJs"],
+            resumenProyecto:`
+            - Development a bank Teller application for daily bank operations.\n
+            - Develop tools for test and debug the app.\n
+            - Active participate in Scrum ceremonies, Code review and Pair Programing`,
+            tecnologias: ["MS Sql","Java 11","SpringBoot2", "Angular13", "TypeScript3", "RxJs6"],
             web:"https://www.itau.com.ar/"
         },
         {
@@ -116,7 +119,7 @@ export class ExperienceService{
             resumenProyecto:"Desarrollo de sitios/aplicaciones web tanto en frontend y backend siguiendo las exigencias de cada proyecto",
             tecnologias: ["PHP5", "Codeigniter", "MySql", "Bootstrap3", "Javascript/jQuery", "Git"]
         },
-        
+
     ];
 
     getExperience():Experience[]{

@@ -9,13 +9,13 @@ import { HabilitiesService, Hability } from '../../services/habilities.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  panelOpenState:boolean;
+  panelOpenState:boolean = true;
 
   experiences:Experience[] = [];
   habilities:Hability[] = [];
 
   constructor(
-    private _experienceService:ExperienceService, 
+    private _experienceService:ExperienceService,
     private _habilitiesService:HabilitiesService) { }
 
   ngOnInit() {

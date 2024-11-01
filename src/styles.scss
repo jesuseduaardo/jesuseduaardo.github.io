@@ -9,7 +9,9 @@
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
-
+.main{
+  padding-bottom: 4rem !important;
+}
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -78,11 +80,8 @@ app-skill{
   margin: 0.5rem auto;
   padding: 0.5rem;
   color: set-text-color($primary-color);
-  border-radius: 10px;
-  &:nth-child(odd){
-    background-color: #383838;
-    box-shadow: 5px 6px 1px #333;
-  }
+  background-color: #383838;
+  box-shadow: 5px 6px 1px #333;
 }
 
 .head-title{
