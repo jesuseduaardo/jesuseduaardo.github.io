@@ -2,13 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
-import { MatLegacyTooltipModule as MatTooltipModule } from '@angular/material/legacy-tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { NgxTypedJsModule } from 'ngx-typed-js';
-import { MatLegacyChipsModule as MatChipsModule } from '@angular/material/legacy-chips';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
@@ -55,11 +51,7 @@ import { ExperienceItemComponent } from './components/experience/experience-item
     BrowserAnimationsModule,
     NgxTypedJsModule,
     MatIconModule,
-    MatButtonModule,
-    MatCardModule,
     MatExpansionModule,
-    MatChipsModule,
-    MatTooltipModule,
     app_routing
   ],
   providers: [
