@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router"
 
@@ -6,14 +7,11 @@ import { Router } from "@angular/router"
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   showMenu = false;
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
+  constructor(private router: Router, private viewportScroller: ViewportScroller) { }
 
   public navigate(url: string): void {
     this.router.navigate([`/${url}`])
@@ -21,6 +19,10 @@ export class NavbarComponent implements OnInit {
 
   public toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  onClickScroollTo(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
 }

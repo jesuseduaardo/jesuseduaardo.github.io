@@ -27,6 +27,9 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   background: $primary-color;

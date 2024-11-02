@@ -1,24 +1,34 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <div class="main">
-    <app-navbar></app-navbar>
-    <main [@routeAnimations]="prepareRoute(outlet)">
+  <app-navbar></app-navbar>
+  <!-- <main [@routeAnimations]="prepareRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
-    </main>
-    <app-footer></app-footer>
+    </main> -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="section" id="home-view">
+        <app-home></app-home>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section" id="about-view">
+        <app-about></app-about>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section" id="experience-view">
+        <app-experience></app-experience>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section" id="education-view">
+        <app-education></app-education>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section" id="contact-view">
+        <app-contact></app-contact>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
 </div>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
