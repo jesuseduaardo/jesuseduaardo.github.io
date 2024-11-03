@@ -1,39 +1,39 @@
-<section class="about">
-    <div class="about__bio-image">
-        <div class="about__bio">
-            <h2>J. Eduardo <span>Castillo</span></h2>
-            <p>
-                I am a creative Java developer with seven years of experience in full stack programming,  specializing in languages like Java and Javascript. I like about learning new technologies also to build solutions with great performance and intuitive design, making use of good practices and the best industry standards.
-            </p>
-        </div>
+<section class="page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 page-title">
+        <h1>About Me</h1>
+      </div>
     </div>
-    <div class="bio">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>J. Eduardo <span>Castillo</span></h2>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="about-me">{{aboutMe}}</p>
         <div class="row">
-            <div class="col-12 p-5">
-                Let's talk about how my knowledge and experience may fit in your company's project.
-                <a target="_blank" href="https://calendly.com/jesuseduaardo/45min">
-                  <h4 class="pt-2">Book a Meeting With Me</h4>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center py-2">
-                <h4>Education</h4>
-                <p>
-                    Associate Degree in Information Technology <br> (System Analyst)
-                </p>
-            </div>
-            <div class="col-12 col-md-6 text-center py-2">
-                <h4>Hobies</h4>
-                <mat-icon aria-hidden="false" aria-label="Example home icon">sports_esports</mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Example home icon">fitness_center</mat-icon>
-                <mat-icon aria-hidden="false" aria-label="Example home icon">directions_bike</mat-icon>
-            </div>
+          <div class="col-8">
+            <h4>Power Skills</h4>
+            <ul class="soft-skill-list">
+              <li *ngFor="let skill of sofSkills">{{skill.name}}</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h4>Hobies</h4>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">sports_esports</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">fitness_center</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">directions_bike</mat-icon>
+          </div>
         </div>
-        <!-- <p class="text-center">
-            <a mat-raised-button class="download_button"
-                href="#"
-                target="_blank">
-                Descargar CV
-            </a>
-        </p> -->
+      </div>
     </div>
+    <div class="row">
+      <div class="col-12 text-center pt-4">
+        Let's talk about how my knowledge and experience may fit in your company's project.
+        <a target="_blank" href="https://calendly.com/jesuseduaardo/45min">
+          <h4 class="pt-2 book-meeting">Book a Meeting With Me</h4>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>

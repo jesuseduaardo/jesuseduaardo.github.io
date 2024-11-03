@@ -77,18 +77,34 @@ main {
   }
 }
 
-app-skill{
-  display: block;
-  overflow: hidden;
-  margin: 0.5rem auto;
-  padding: 0.5rem;
-  color: set-text-color($primary-color);
-  background-color: #383838;
-  box-shadow: 5px 6px 1px #333;
-}
-
 .head-title{
   background-color: $secondary-color;
   padding: 0.3em !important;
   text-align: center;
+}
+
+.page {
+  width: 75vw;
+  margin: auto;
+}
+
+.page-title {
+  margin-bottom: 25px;
+
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+  h3 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+}
+
+@include media-md {
+  .page {
+    padding-top: 6rem;
+  }
 }

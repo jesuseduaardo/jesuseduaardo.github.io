@@ -1,3 +1,4 @@
+import { SoftSkill, SoftSkillsService } from './../../services/soft-skills.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  aboutMe: string = "";
+  sofSkills: SoftSkill[]
+
+  constructor(private sofSkillService: SoftSkillsService) { }
 
   ngOnInit() {
+    this.aboutMe = this.sofSkillService.getAboutMe();
+    this.sofSkills = this.sofSkillService.getSoftSkills();
   }
 }

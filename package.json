@@ -26,6 +26,7 @@
     "bootstrap": "^4.5.3",
     "cv-app": "file:",
     "mdbootstrap": "^4.19.1",
+    "ngx-countup": "^13.2.0",
     "ngx-typed-js": "^2.0.2",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",

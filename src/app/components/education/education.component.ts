@@ -9,18 +9,26 @@ import { CertificationsService, Certification } from '../../services/certificati
 })
 export class EducationComponent implements OnInit {
 
-  panelOpenState:boolean;
-  education:Education[] = [];
-  certifications:Certification[]=[];
-
+  showAllCerts: boolean = false;
+  education: Education[] = [];
+  certifications: Certification[] = [];
+  sixLastCertifications: Certification[] = [];
   constructor(
-    private _educationService:EducationService, 
-    private _certificationService:CertificationsService
-    ) { }
+    private _educationService: EducationService,
+    private _certificationService: CertificationsService
+  ) { }
 
   ngOnInit(): void {
     this.education = this._educationService.getEducation();
     this.certifications = this._certificationService.getCertifications();
+    for (let i = 0; i < 6; i++) {
+      const cert: Certification = this.certifications.shift();
+      this.sixLastCertifications.push(cert)
+    }
+  }
+
+  viewAllCerts() {
+    this.showAllCerts = !this.showAllCerts;
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Hability } from 'src/app/services/habilities.service';
+import { Hability } from '../../../services/habilities.service';
 
 @Component({
   selector: 'app-skill',
