@@ -86,7 +86,10 @@
   padding: 1rem;
   cursor: pointer;
   a {
-    border-bottom: 5px solid $secondary-color;
+    h4 {
+      display: inline-block;
+      border-bottom: 5px solid $secondary-color;
+    }
   }
 }
 

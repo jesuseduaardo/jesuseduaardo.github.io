@@ -1,12 +1,21 @@
 .card {
   background-color: transparent;
+  .card-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .achieve-number {
     h1 {
       font-size: 6rem;
     }
-    span{
+    span {
       font-size: 4rem;
     }
+  }
+  .text-body-secondary {
+    overflow-wrap: break-word;
   }
 }

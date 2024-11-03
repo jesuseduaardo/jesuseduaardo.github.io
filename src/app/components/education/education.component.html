@@ -24,7 +24,9 @@
         <app-certification [cert]="cert"></app-certification>
       </div>
       <div *ngIf="!showAllCerts" class="col-12 view-all-cert-btn">
-        <a (click)="viewAllCerts()">View all others {{ certifications.length }} certifications</a>
+        <a (click)="viewAllCerts()">
+          <h4>View all others {{ certifications.length }} certifications</h4>
+        </a>
       </div>
     </div>
     <div class="row" *ngIf="showAllCerts">

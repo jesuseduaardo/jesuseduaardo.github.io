@@ -6,12 +6,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-6">
-        <app-achievements *ngFor="let achievement of achievements" [achievement]="achievement"></app-achievements>
+      <div class="col-12 col-md-6">
+        <app-achievements class="col-6" *ngFor="let achievement of achievements"
+          [achievement]="achievement"></app-achievements>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <div class="row">
-          <app-skill class="col-6" *ngFor="let hability of habilities" [hability]="hability"></app-skill>
+          <app-skill class="col-12 col-md-6" *ngFor="let hability of habilities" [hability]="hability"></app-skill>
         </div>
       </div>
     </div>
