@@ -1,0 +1,20 @@
+<div class="cert-card my-2">
+  <a [href]="cert.certificacionUrl" target="_blank" title="View online">
+    <img [src]="cert.thumbnails" class="card-img-top" alt="{{ cert.titulo }}">
+  </a>
+  <div class="card-body">
+    <div class="card-title">
+      {{ cert.titulo }}
+    </div>
+    <div class="card-subtitle mb-2">
+      <div class="row">
+        <div class="col date-hours">
+          <div class="text-muted text-start">
+            {{ cert.institucion }} | {{ cert.fechaFin | date : "MMM-y" }}
+          </div>
+          <div *ngIf="cert.duracion > 0" class="text-muted">&nbsp;| {{ cert.duracion }} Hours</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

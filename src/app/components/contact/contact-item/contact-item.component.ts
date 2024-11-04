@@ -8,7 +8,7 @@ import { ContactItem } from '../contact-item.model'
 })
 export class ContactItemComponent implements OnInit {
 
-  @Input() contactItem: ContactItem = null;
+  @Input() contactItem: ContactItem;
 
   data: string;
   link: string;

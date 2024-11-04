@@ -15,7 +15,7 @@ import { slider, transformer, fader, stepper } from '../route-animation';
 })
 export class AppComponent {
   title = 'J. Eduardo CV online';
-  prepareRoute(outlet: RouterOutlet) {
+  /* prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
-  }
+  } */
 }

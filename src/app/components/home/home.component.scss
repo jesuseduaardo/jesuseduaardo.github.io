@@ -7,19 +7,24 @@
   align-items: center;
   text-align: center;
   background: linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
-      rgba($primary-color, 0.3)
-    ),
-    url("../../../assets/img/perfil_pic.jpg") center top;
-  background-size: cover;
-
+    to left,
+    rgba(183, 0, 255, 0.22),
+    rgba(1, 1, 13, 0.51)
+  );
+  #background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../../../assets/img/me_working.png") -5rem bottom;
+    background-size: 200%;
+    background-repeat: no-repeat;
+  }
   .info {
-    padding-top: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
     .typing {
       color: $secondary-color;
     }
@@ -35,17 +40,22 @@
 
 @include media-md {
   .content {
-    height: 100vh;
+    position: relative;
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background: linear-gradient(
-        to right,
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
-      ),
-      url("../../../../assets/img/perfil_pic.jpg") center 0rem;
-    background-size: cover;
-    background-repeat: no-repeat;
+    #background {
+      height: 100vh;
+      background: $primary-color url("../../../assets/img/me_working.png") -5rem
+        0rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .info {
+      position: absolute;
+      top: 30%;
+      left: 60%;
+      transform: translate(0, -50%);
+    }
   }
 }

@@ -1,21 +1,41 @@
-<div class="company-and-date">
-  <div class="row">
-    <div class="col-12 fecha-ingreso-egreso">
+<div class="card p-2 m-2">
+  <div class="card-body">
+    <h5 class="card-title">{{ experience.empresa }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+
       <span>{{ experience.fechaIngreso | date : "MMM-y" }}</span> /
-      <span *ngIf="experience.fechaEgreso">{{
-        experience.fechaEgreso | date : "MMM-y"
-      }}</span>
+      <span *ngIf="experience.fechaEgreso">{{experience.fechaEgreso | date : "MMM-y"}}</span>
       <span *ngIf="!experience.fechaEgreso">Current</span>
-    </div>
-    <div class="col-12 info">
-      <h5>{{ experience.empresa }}</h5>
-      <p *ngIf="experience.web" class="company-link d-none d-md-block">
-        <a href="{{ experience.web }}" target="_blank">{{ experience.web }}</a>
+    </h6>
+    <div class="card-text">
+      <div #textContainer [class.closed]="closed" id="textContainer">
+        <p *ngIf="experience.web" class="company-link d-none d-md-block">
+          <a href="{{ experience.web }}" target="_blank">{{ experience.web }}</a>
+        </p>
+        <h5>{{ experience.puesto }}</h5>
+        <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
+          Participation in {{ experience.proyectos.length }} projects
+        </p>
+        <div *ngIf="experience.proyectos.length > 0">
+          <div *ngFor="let project of experience.proyectos">
+            <h5>{{project.nombre}}</h5>
+            <ul *ngIf="project.resumenProyecto.length > 0">
+              <li *ngFor="let resumen of project.resumenProyecto">{{resumen}}</li>
+            </ul>
+          </div>
+        </div>
+        <ul *ngIf="experience.resumenProyecto.length > 0">
+          <li *ngFor="let resumen of experience.resumenProyecto">{{resumen}}</li>
+        </ul>
+      </div>
+      <p class="text-center" *ngIf="closed">
+        <a (click)="changeDescriptionLength()" class="view-more">view {{closed ? 'more' : 'less'}}</a>
       </p>
-      <h6>{{ experience.puesto }}</h6>
-      <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
-        Participation in {{ experience.proyectos.length }} projects
-      </p>
+      <div class="card-footer p-0">
+        <span *ngFor="let tech of experience.tecnologias" class="badge rounded-pill" [ngClass]="getClassOf(tech)"
+          [title]="tech">{{tech}}
+        </span>
+      </div>
     </div>
   </div>
 </div>

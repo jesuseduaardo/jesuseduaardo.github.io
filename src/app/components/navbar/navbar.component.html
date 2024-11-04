@@ -1,29 +1,11 @@
 <div class="menu-btn" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
-    <span class="menu-btn__burger" [ngClass]="{'open' : showMenu}"></span>
+  <span class="menu-btn__burger" [ngClass]="{'open' : showMenu}"></span>
 </div>
 <nav class="nav" [ngClass]="{'open' : showMenu}">
-    <ul class="menu-nav" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
-        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['home']">Home</a>
-        </li>
-        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['about']">About Me</a>
-        </li>
-        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['experience']">
-                Experience</a>
-        </li>
-        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-          <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="['education']">
-              Education</a>
-      </li>
-        <!-- <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="projects.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['portfolio']">My
-                Projects</a>
-        </li> -->
-        <li class="menu-nav__item" [ngClass]="{'open' : showMenu}">
-            <a href="contact.html" class="menu-nav__link" routerLinkActive="active" [routerLink]="['contact']">Contact
-                Me</a>
-        </li>
-    </ul>
+  <ul class="menu-nav" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
+    <li *ngFor="let menu of navMenu" class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+      <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="[menu.menu]"
+        (click)="onClickScroollTo(menu.view)">{{menu.menu}}</a>
+    </li>
+  </ul>
 </nav>

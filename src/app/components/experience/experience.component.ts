@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienceService, Experience } from '../../services/experience.service';
-import { HabilitiesService, Hability } from '../../services/habilities.service';
 
 @Component({
   selector: 'app-experience',
@@ -9,18 +8,16 @@ import { HabilitiesService, Hability } from '../../services/habilities.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  panelOpenState:boolean = true;
+  panelOpenState: boolean = true;
 
-  experiences:Experience[] = [];
-  habilities:Hability[] = [];
+  experiences: Experience[] = [];
 
   constructor(
-    private _experienceService:ExperienceService,
-    private _habilitiesService:HabilitiesService) { }
+    private _experienceService: ExperienceService,
+  ) { }
 
   ngOnInit() {
     this.experiences = this._experienceService.getExperience();
-    this.habilities = this._habilitiesService.getHabilities();
   }
 
 }

@@ -4,16 +4,17 @@
 
 /* fallback */
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
 }
-.main{
+.main {
   padding-bottom: 4rem !important;
 }
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -24,8 +25,11 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,14 +49,14 @@ h3 {
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
-  &:hover{
+  &:hover {
     color: $secondary-color;
     text-decoration: none;
   }
 }
 
-.text-secondary{
-    color: $secondary-color;
+.text-secondary {
+  color: $secondary-color;
 }
 
 main {
@@ -74,18 +78,33 @@ main {
   }
 }
 
-app-skill{
-  display: block;
-  overflow: hidden;
-  margin: 0.5rem auto;
-  padding: 0.5rem;
-  color: set-text-color($primary-color);
-  background-color: #383838;
-  box-shadow: 5px 6px 1px #333;
-}
-
-.head-title{
+.head-title {
   background-color: $secondary-color;
   padding: 0.3em !important;
   text-align: center;
+}
+
+.page {
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+  h3 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+}
+
+@include media-md {
+  .page {
+    padding-top: 5rem;
+  }
 }

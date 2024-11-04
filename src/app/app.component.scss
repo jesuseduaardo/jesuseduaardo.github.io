@@ -6,3 +6,9 @@ app-navbar {
   width: 100%;
   padding: 1rem;
 }
+
+.section {
+  height: auto;
+  min-height: 100vh; /* For 100% screen height */
+  width: 100vw; /* For 100% screen width */
+}
