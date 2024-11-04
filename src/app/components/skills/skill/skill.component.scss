@@ -2,7 +2,8 @@
 @import "../../../../scss/responsive";
 
 .skill {
-  padding-bottom: 1.35rem;
+  background-color: $primary-color;
+  padding: 1rem 1rem 1.35rem 1rem;
   .stats {
     margin-bottom: 20px;
     p {
@@ -34,7 +35,7 @@
       height: 4vh;
       width: 100%;
       border-radius: 0px 5px 5px 0px;
-      background-color: #1e1e1e;
+      background: #2c303a;
     }
     img {
       width: 2rem;

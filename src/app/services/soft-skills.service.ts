@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class SoftSkillsService {
 
-  private aboutMe: string = `I am a creative Java developer with ${this.calculateYearsOfExperience(2018)} years of experience in full stack programming,  specializing in languages like Java and Javascript. I like about learning new technologies also to build solutions with great performance and intuitive design, making use of good practices and the best industry standards.`
+  private aboutMe: string = `I am a creative Java developer with ${this.calculateYearsOfExperience(2018)}+ years of experience in full stack programming,  specializing in languages like Java and Javascript. I like about learning new technologies also to build solutions with great performance and intuitive design, making use of good practices and the best industry standards.`
 
   private softSkills: SoftSkill[] = [
     {
