@@ -17,7 +17,7 @@ export class AchievementService {
     const projectsParticipation = this.getProjectParticipation();
     return [
       { number: yoe, description: "Years Experience" },
-      { number: projectsParticipation, description: "Long-term project participation" }
+      { number: projectsParticipation, description: "Projects Collaboration" }
     ]
   }
 

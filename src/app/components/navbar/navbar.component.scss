@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  opacity: 0.7;
+  opacity: 0.85;
   visibility: hidden;
 
   &.open {
@@ -76,6 +76,7 @@
     background: $primary-color;
     list-style-type: none;
     transform: translateY(-100%);
+    padding: 0;
     @include transition-ease;
 
     &.open {
