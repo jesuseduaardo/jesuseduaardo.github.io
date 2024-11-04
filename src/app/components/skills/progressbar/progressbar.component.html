@@ -1,0 +1,7 @@
+<div class="progress my-1">
+  <div *ngIf="framework.icon.length" class="img-thumbnail" [style.background-image]="backgroundImage"></div>
+  <div class="progress-bar" [ngStyle]="{'width': framework.percent +'%'}"
+    title="{{ framework.name+' = '+framework.percent+'%' }}">
+    <span>{{ framework.name }}</span>
+  </div>
+</div>

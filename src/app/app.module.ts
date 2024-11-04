@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillComponent } from './components/skills/skill/skill.component';
+import { ProgressbarComponent } from './components/skills/progressbar/progressbar.component';
 import { AchivementsComponent } from './components/skills/achivements/achivements.component';
 import { BirthDayPipe } from './pipes/birth-day.pipe';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -45,6 +46,7 @@ import { MaterialModule } from './material/material.module';
     PortfolioComponent,
     SkillComponent,
     SkillsComponent,
+    ProgressbarComponent,
     AchivementsComponent,
     EducationComponent,
     CertificationComponent,

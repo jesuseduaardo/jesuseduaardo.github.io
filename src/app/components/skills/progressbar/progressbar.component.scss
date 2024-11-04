@@ -1,0 +1,25 @@
+@import "../../../../scss/config";
+.progress {
+  height: 4vh;
+  background: #141414;
+  .progress-bar {
+    overflow: unset;
+    padding-left: 0.3rem;
+    text-align: left;
+    span {
+      z-index: 3;
+      color: $terciary-color;
+      font-weight: bold;
+    }
+  }
+  .img-thumbnail {
+    padding: 0 1rem;
+    background-color:#01010d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    max-width: 100%;
+    height: auto;
+  }
+}

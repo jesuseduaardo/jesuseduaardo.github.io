@@ -4,15 +4,6 @@
     <h5>{{ hability.language.name }}</h5>
   </div>
   <div *ngFor="let framework of hability.frameworks" class="framework-info">
-    <img [src]="framework.icon" [alt]="framework.name" class="img-thumbnail">
-    <div class="progress my-1">
-      <div class="progress-bar" role="progressbar" [ngStyle]="{'width': framework.percent +'%'}" aria-valuenow="25"
-        aria-valuemin="0" aria-valuemax="100" title="{{ framework.name+' = '+framework.percent+'%' }}">
-        <p>
-          <span>{{ framework.name }}</span>
-        </p>
-        <!-- <span class="info-percent">{{ framework.percent +'%' }}</span> -->
-      </div>
-    </div>
+    <app-progressbar [framework]="framework"></app-progressbar>
   </div>
 </div>
