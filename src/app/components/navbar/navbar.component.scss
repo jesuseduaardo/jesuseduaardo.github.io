@@ -3,6 +3,16 @@
 
 .nav-container {
   display: inline;
+  .lang-btn {
+    position: absolute;
+    z-index: 9;
+    left: 1rem;
+    top: 2rem;
+    height: 2.5rem;
+    width: 7rem;
+    opacity: 0.65;
+    font-size: 1.8em;
+  }
 }
 .menu-btn {
   position: absolute;
@@ -143,6 +153,24 @@
 }
 
 @include media-md {
+  .lang-btn {
+    position: absolute;
+    z-index: 9;
+    left: 3rem;
+    top: 1rem;
+    height: 2.5rem;
+    width: 5rem;
+    opacity: 0.65;
+    cursor: default;
+    font-size: 1.25rem;
+    font-weight: 300;
+    .active {
+      color: $secondary-color;
+    }
+    a {
+      cursor: pointer;
+    }
+  }
   .menu-btn {
     visibility: hidden;
   }
