@@ -1,0 +1,144 @@
+@import "../../../scss/config";
+@import "../../../scss/responsive";
+
+.fecha-ingreso-egreso {
+  flex-flow: row-reverse;
+}
+
+hr {
+  margin: 0.75em 0 0.75em 0;
+}
+
+.mat-expansion-panel {
+  background: lighten($primary-color, 10%);
+  color: $terciary-color !important;
+  border-bottom: 5px solid $secondary-color;
+  margin-bottom: 1rem;
+
+  .mat-expansion-panel-header-title,
+  .mat-expansion-panel-header-description {
+    display: block;
+  }
+
+  .mat-expansion-indicator::after {
+    color: $secondary-color !important;
+  }
+
+  .mat-expansion-panel-header {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+}
+
+.mat-expansion-panel-header:hover {
+  background-color: lighten($primary-color, 10%) !important;
+}
+
+.proyects {
+  padding-left: 0;
+  list-style: none;
+
+  >li {
+    padding-bottom: 1rem;
+  }
+
+  h5 {
+    color: $secondary-color;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.proyects-list {
+  color: $terciary-color;
+
+  >li {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #e6e6e6;
+    background: #f5f5f5;
+    padding: 10px;
+  }
+
+  >li:last-child {
+    border-bottom: 0;
+  }
+}
+
+.tecnologies {
+  padding-top: 1rem;
+  color: set-text-color($primary-color);
+
+  h6 {
+    font-size: 14px;
+  }
+
+  ul {
+    padding: 0 20px;
+
+    li {
+      font-family: monospace;
+      margin: 2px;
+    }
+  }
+}
+
+.data-card {
+  margin: 5px 0;
+}
+
+.cert {
+  width: 95px;
+  margin: auto;
+  display: block;
+}
+
+.text-muted {
+  font-size: 76%;
+}
+
+.card-body {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.cant-exp {
+  margin-top: 0px;
+  color: #a5a5a5;
+}
+
+.company-link {
+  margin-top: -5px;
+  margin-bottom: 5px !important;
+
+  a {
+    font-size: 12px;
+    line-height: 0;
+    color: #c5c5c5;
+  }
+}
+
+.mat-card {
+  background: lighten($primary-color, 10%);
+  margin-bottom: 4rem;
+  padding: 0.3rem 1rem 3rem;
+}
+
+@keyframes scale-up-hor-left {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 0% 0%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+}

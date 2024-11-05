@@ -1,0 +1,30 @@
+@import "../../../../scss/config";
+
+.cert-card {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  .card-img-top {
+    height: 3.5rem;
+    width: auto;
+  }
+}
+
+@include media-md {
+  .cert-card {
+    flex-flow: column;
+    font-size: 0.95rem;
+    box-shadow: 2px 2px 1px $secondary-color;
+    .card-img-top {
+      height: auto;
+      width: 100%;
+    }
+    .date-hours {
+      display: flex;
+    }
+  }
+}

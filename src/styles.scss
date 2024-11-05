@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./scss/config";
+@import "./scss/responsive";
+
+/* fallback */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+.main {
+  padding-bottom: 4rem !important;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+
+    a {
+      padding: 0.4rem;
+      @include transition-ease;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.head-title {
+  background-color: $secondary-color;
+  padding: 0.3em !important;
+  text-align: center;
+}
+
+.page {
+  padding-top: 2rem;
+  margin: auto;
+}
+
+.page-title {
+  margin-bottom: 25px;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+  h3 {
+    text-align: center;
+    font-weight: bolder;
+    color: $secondary-color;
+  }
+}
+
+@include media-md {
+  .page {
+    padding-top: 5rem;
+  }
+}

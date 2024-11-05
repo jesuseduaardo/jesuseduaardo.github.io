@@ -1,0 +1,14 @@
+@import "../scss/config";
+
+app-navbar {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  padding: 1rem;
+}
+
+.section {
+  height: auto;
+  min-height: 100vh; /* For 100% screen height */
+  width: 100vw; /* For 100% screen width */
+}

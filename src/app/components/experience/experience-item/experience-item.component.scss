@@ -1,0 +1,42 @@
+@import "../../../../scss/config";
+@import "../../../../scss/responsive";
+@import "../../../../scss/fonts";
+
+.card {
+  background-color: #121212;
+  box-shadow: 1px 1px 0px 2px rgb(255 255 255 / 14%);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  ul {
+    color: #c7c7c7;
+    li {
+      margin-top: 0.3rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.35;
+    }
+  }
+  #textContainer {
+    min-height: 100px;
+  }
+  .closed {
+    min-height: 84px !important;
+    height: 84px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .view-more {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: $secondary-color;
+  }
+  .card-footer {
+    .badge {
+      margin: 0.2rem;
+      padding: 0.5rem;
+      cursor: default;
+      color: #c9c9c9;
+      border: 1px solid $secondary-color;
+    }
+  }
+}

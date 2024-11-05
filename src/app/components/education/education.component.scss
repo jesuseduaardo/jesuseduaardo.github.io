@@ -1,0 +1,14 @@
+@import "../../../scss/config";
+@import "../../../scss/responsive";
+
+.view-all-cert-btn {
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  a {
+    h4 {
+      display: inline-block;
+      border-bottom: 5px solid $secondary-color;
+    }
+  }
+}

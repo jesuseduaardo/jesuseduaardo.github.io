@@ -1,0 +1,46 @@
+@import "../../../scss/config";
+@import "../../../scss/responsive";
+
+.portfolio {
+  padding: 6rem 3rem;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    color: $secondary-color;
+  }
+}
+.card {
+  max-width: 250px;
+  padding: 0.9rem;
+  p {
+    line-height: 1.3rem;
+  }
+}
+
+.mat-card-image {
+  width: 100%;
+  margin: auto;
+}
+
+.header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: #3d3d3d;
+    &:hover{
+      color: #060606;
+    }
+  }
+}
+
+.badge {
+  padding: 0.2rem;
+  color: #060606;
+  margin: 0.2rem;
+}

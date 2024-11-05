@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/scss/_config.scss", "src/app/components/footer/footer.component.scss"],
+  "sourcesContent": ["$primary-color: #01010D;\r\n$secondary-color: #316ce2;\r\n$terciary-color: #c5c5c5;\r\n\r\n* {\r\n  box-sizing: border-box;\r\n/*   margin: 0;\r\n  padding: 0; */\r\n}\r\n\r\n@mixin transition-ease {\r\n  transition: all 0.5s ease-in-out;\r\n}\r\n\r\n@function set-text-color($color) {\r\n  @if (lightness($color) > 40%) {\r\n    @return #000;\r\n  } @else {\r\n    @return #fff;\r\n  }\r\n}\r\n\r\n@mixin media-md {\r\n  @media screen and (min-width: 768px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin media-lg {\r\n  @media screen and (min-width: 1024px) {\r\n    @content;\r\n  }\r\n}\r\n@mixin media-xl {\r\n  @media screen and (min-width: 1600px) {\r\n    @content;\r\n  }\r\n}\r\n", "@import \"../../../scss/config\";\r\n@import \"../../../scss/responsive\";\r\n\r\n.social-icons {\r\n  position: fixed;\r\n  bottom: 1rem;\r\n  left: 0.5rem;\r\n  a {\r\n    color: $secondary-color;\r\n    padding: 0.4rem;\r\n  }\r\n}\r\n\r\nfooter {\r\n  font-size: 1rem;\r\n  bottom: 0.7rem;\r\n  right: 0.5rem;\r\n  text-align: right;\r\n  padding: 1rem;\r\n  color: set-text-color($primary-color);\r\n  opacity: .5;\r\n  position: fixed;\r\n}\r\n"],
+  "mappings": ";AAIA;AACE,cAAA;;ACFF,CAAA;AACE,YAAA;AACA,UAAA;AACA,QAAA;;AACA,CAJF,aAIE;AACE,SDPc;ACQd,WAAA;;AAIJ;AACE,aAAA;AACA,UAAA;AACA,SAAA;AACA,cAAA;AACA,WAAA;AACA,SAAA;AACA,WAAA;AACA,YAAA;;",
+  "names": []
+}

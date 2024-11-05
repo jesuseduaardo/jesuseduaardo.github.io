@@ -1,0 +1,11 @@
+<div class="menu-btn" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
+  <span class="menu-btn__burger" [ngClass]="{'open' : showMenu}"></span>
+</div>
+<nav class="nav" [ngClass]="{'open' : showMenu}">
+  <ul class="menu-nav" [ngClass]="{'open' : showMenu}" (click)="toggleMenu()">
+    <li *ngFor="let menu of navMenu" class="menu-nav__item" [ngClass]="{'open' : showMenu}">
+      <a href="#" class="menu-nav__link" routerLinkActive="active" [routerLink]="[menu.menu]"
+        (click)="onClickScroollTo(menu.view)">{{menu.menu}}</a>
+    </li>
+  </ul>
+</nav>

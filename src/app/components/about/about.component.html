@@ -1,0 +1,40 @@
+<section class="page">
+  <div class="container px-5">
+    <div class="row">
+      <div class="col-12 page-title">
+        <h1 class="text-center">About Me</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img id="me" class="d-block m-auto" src="../../../assets/img/about.jpg" alt="J. Eduardo Castillo" />
+        <h6 class="text-center">J. Eduardo <span>Castillo</span></h6>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="about-me">{{aboutMe}}</p>
+        <div class="row">
+          <div class="col-8">
+            <h4>Power Skills</h4>
+            <ul class="soft-skill-list">
+              <li *ngFor="let skill of sofSkills">{{skill.name}}</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <h4>Hobies</h4>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">sports_esports</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">fitness_center</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon">directions_bike</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center pt-4">
+        Let's talk about how my knowledge and experience may fit in your company's project.
+        <a target="_blank" href="https://calendly.com/jesuseduaardo/45min">
+          <h4 class="pt-2 book-meeting">Book a Meeting With Me</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
