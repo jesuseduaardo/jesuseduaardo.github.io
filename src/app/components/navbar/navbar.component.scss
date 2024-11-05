@@ -1,12 +1,16 @@
 @import "../../../styles.scss";
+@import "../../../scss/animations";
 
+.nav-container {
+  display: inline;
+}
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 9;
   right: 1rem;
   top: 1rem;
-  height: 20px;
-  width: 28px;
+  height: 2.5rem;
+  width: 3rem;
   cursor: pointer;
   @include transition-ease;
 
@@ -60,7 +64,6 @@
   width: 100vw;
   opacity: 0.95;
   visibility: hidden;
-
   &.open {
     visibility: visible;
   }
@@ -96,7 +99,7 @@
       display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;
-      padding: 2rem 0;
+      padding: 1rem 0;
       font-weight: 300;
       @include transition-ease;
 
@@ -122,6 +125,16 @@
     }
   }
 }
+.showbg {
+  background: $primary-color;
+}
+
+.hide-nav {
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.show-nav {
+  animation: slide-in-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 @for $i from 1 through 4 {
   .menu-nav__item:nth-child(#{$i}) {
@@ -144,7 +157,7 @@
       text-align: center;
       opacity: 0.75;
       background: none;
-      &:before{
+      &:before {
         background: none;
       }
       &:hover {

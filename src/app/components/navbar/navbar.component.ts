@@ -1,6 +1,6 @@
 import { NavMenu } from './../../services/nav-menu.service';
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router } from "@angular/router"
 import { NavMenuService } from '../../services/nav-menu.service';
 
@@ -11,6 +11,9 @@ import { NavMenuService } from '../../services/nav-menu.service';
 })
 export class NavbarComponent {
 
+  private lastScrollTop = 0;
+  showMenuBackground = false;
+  hideNav = false;
   showMenu = false;
   navMenu: NavMenu[];
 
@@ -30,8 +33,20 @@ export class NavbarComponent {
     this.showMenu = !this.showMenu;
   }
 
-  onClickScroollTo(elementId: string): void {
+  onClickScrollTo(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(event: Event): void {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > this.lastScrollTop) {
+      this.hideNav = true;
+    } else {
+      this.hideNav = false;
+    }
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    this.showMenuBackground = !this.hideNav && (this.lastScrollTop > window.screen.height);
   }
 
 }

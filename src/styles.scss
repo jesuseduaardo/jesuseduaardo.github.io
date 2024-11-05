@@ -10,6 +10,28 @@
   src: url(https://fonts.gstatic.com/s/materialicons/v98/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
     format("woff2");
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .main {
   padding-bottom: 4rem !important;
 }

@@ -19,7 +19,6 @@ export class ProgressbarComponent implements OnInit {
   ngOnInit(): void {
     if (this.framework.icon.length) {
       this.backgroundImage = this.sanitizer.bypassSecurityTrustStyle(`url(${this.framework.icon})`);
-      console.log(this.backgroundImage)
     }
   }
 
