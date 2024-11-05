@@ -37,7 +37,6 @@ export class AppComponent implements OnInit {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Component is visible
-          console.log('Component ID:', entry.target.id);
           const section = entry.target.id.split("-")[0];
           const hash = `/${section}`;
           const urlTree = this.router.createUrlTree([hash], {

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactItem } from './contact-item.model'
+import { NavMenuService } from '../../services/nav-menu.service';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,16 +12,26 @@ export class ContactComponent implements OnInit {
 
   location: ContactItem;
   skype: ContactItem;
-  email : ContactItem;
+  email: ContactItem;
   whatsapp: ContactItem;
+  title: string = '';
 
-  constructor() { }
+  constructor(
+    private _menuService:NavMenuService,
+    private _languageService:LanguageService
+  ) { }
 
   ngOnInit() {
     this.location = this.getLocation();
     this.skype = this.getSkype();
     this.email = this.getEmail();
     this.whatsapp = this.getWhatsapp();
+
+    this._languageService.language$.subscribe(lang => {
+      const title = this._menuService.getNavMenu(lang)[5].menu;
+      this.title = title.charAt(0).toUpperCase() + title.slice(1);
+    })
+
   }
 
   getLocation() {
@@ -30,7 +42,7 @@ export class ContactComponent implements OnInit {
     );
   }
 
-  getSkype(){
+  getSkype() {
     return new ContactItem(
       "jesus.eduaardo",
       "skype:jesus.eduaardo?chat",
@@ -38,7 +50,7 @@ export class ContactComponent implements OnInit {
     );
   }
 
-  getEmail(){
+  getEmail() {
     return new ContactItem(
       "jesuseduaardo@gmail.com",
       "mailto:jesuseduaardo@gmail.com",
@@ -46,7 +58,7 @@ export class ContactComponent implements OnInit {
     )
   }
 
-  getWhatsapp(){
+  getWhatsapp() {
     return new ContactItem(
       "+54 11 2783-4634",
       "https://api.whatsapp.com/send?phone=541127834634",
