@@ -12,7 +12,6 @@ import { LanguageService } from '../../services/language.service';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
   private lastScrollTop = 0;
   showMenuBackground = false;
   hideNav = false;
@@ -40,6 +39,11 @@ export class NavbarComponent implements OnInit {
 
   public toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  showNav() {
+    this.hideNav = false;
+    this.showMenuBackground = this.lastScrollTop > window.screen.height;
   }
 
   onClickScrollTo(elementId: string): void {

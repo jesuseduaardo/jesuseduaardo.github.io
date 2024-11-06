@@ -18,7 +18,7 @@ export class AchievementService {
     const projectsParticipation = this.getProjectParticipation();
     return [
       { number: yoe, description: language === LanguageEnum.ES ? "Años de Experiencia" : "Years Experience" },
-      { number: projectsParticipation, description: language === LanguageEnum.ES ? "Colaboracion en proyectos" : "Projects Collaboration" }
+      { number: projectsParticipation, description: language === LanguageEnum.ES ? "Proyectos a largo plazo realizados" : "Long-terms Projects Done" }
     ]
   }
 
