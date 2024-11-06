@@ -1,4 +1,4 @@
-<div class="nav-container" [ngClass]="hideNav ? 'hide-nav': 'show-nav'">
+<div class="nav-container" [ngClass]="hideNav ? 'hide-nav': 'show-nav'" (mouseover)="showNav()">
   <div class="lang-btn">
     <a class="menu-nav__link" [ngClass]="{'active': lang==='es'}" (click)="changeLang('es')">ES</a>
     |
