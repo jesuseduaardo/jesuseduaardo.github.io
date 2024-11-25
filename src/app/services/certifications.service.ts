@@ -7,6 +7,15 @@ export class CertificationsService {
 
   certifications: Certification[] = [
     {
+      titulo: "Spring Security 6 Zero to Master along with JWT,OAUTH2",
+      institucion: "Udemy",
+      fechaInicio: "",
+      fechaFin: "2024-10-10",
+      certificacionUrl: "https://www.udemy.com/certificate/UC-ba289df1-b4e2-4ee3-b4d4-0e0a00f2ea60/",
+      duracion: 13,
+      thumbnails: '/assets/img/certs/thumbnails/spring-security-6-zero-to-master-along-with-JWT-OAUTH2_tn.jpg'
+    },
+    {
       titulo: "Google Cloud - Associate Cloud Engineer Certification Course",
       institucion: "Udemy",
       fechaInicio: "",
