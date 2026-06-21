@@ -16,17 +16,37 @@
     position: absolute;
     height: 100vh;
     width: 100%;
-    background: url("../../../assets/img/me_working.png") -5rem 25rem;
-    background-size: 200%;
+    background: url("../../../assets/img/me_working.png") center center;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 0;
   }
+
   .info {
     position: absolute;
     top: 30%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: max-content;
+    h1 {
+      background-color: rgba(0, 0, 0, 0.164);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+    }
+    h2 {
+      background-color: rgba(255, 255, 255, 0.329);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+    }
+
     .typing {
       color: $secondary-color;
     }
@@ -37,27 +57,42 @@
         color: $secondary-color;
       }
     }
+    .credentialsBadgesList {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 100%);
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      z-index: 1;
+      #awsDeveloperAssociate {
+        width: 150px;
+        height: 150px;
+        background: url("../../../assets/img/certs/awsDeveloperBadge.png")
+          center center no-repeat;
+        background-size: contain;
+      }
+    }
   }
 }
 
-@include media-md {
+@include media-sm {
   .content {
     position: relative;
     overflow: hidden;
     align-items: center;
     text-align: center;
     #background {
-      height: 100vh;
-      background: $primary-color url("../../../assets/img/me_working.png") -5rem
-        0rem;
+      background: #01010d url("../../../assets/img/me_working.jpg") 30% 0rem;
       background-size: cover;
       background-repeat: no-repeat;
     }
     .info {
       position: absolute;
-      top: 30%;
-      left: 60%;
-      transform: translate(0, -50%);
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 15%);
     }
   }
 }

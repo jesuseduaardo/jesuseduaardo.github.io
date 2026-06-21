@@ -15,7 +15,7 @@ export class EducationComponent implements OnInit {
   showAllCerts: boolean = false;
   education: Education[] = [];
   certifications: Certification[] = [];
-  sixLastCertifications: Certification[] = [];
+  minorCertifications: Certification[] = [];
   viewAllCertsBtn: string = '';
   title: string = '';
 
@@ -28,15 +28,12 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
     this.certifications = this._certificationService.getCertifications();
-    for (let i = 0; i < 6; i++) {
-      const cert: Certification = this.certifications.shift();
-      this.sixLastCertifications.push(cert)
-    }
+    this.minorCertifications = this._certificationService.getMinorCertifications();
     this._languageService.language$.subscribe(lang => {
       this.education = this._educationService.getEducation(lang);
       this.viewAllCertsBtn = lang === LanguageEnum.EN
-        ? `View all others ${this.certifications.length} certifications`
-        : `Ver las ${this.certifications.length} certificaciones`;
+        ? `Show Supplementary Coursework & Deep Dives`
+        : `Mostrar aprendizaje técnico complementario`;
       const title = this._menuService.getNavMenu(lang)[4].menu;
       this.title = title.charAt(0).toUpperCase() + title.slice(1);
     })

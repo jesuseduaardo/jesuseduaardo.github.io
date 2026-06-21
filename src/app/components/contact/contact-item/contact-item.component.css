@@ -1,0 +1,9 @@
+.description {
+  padding-top: 0.5rem;
+
+  .sub-text {
+    font-style: italic;
+    color: #ffffff80;
+    font-size: .9rem;
+  }
+}

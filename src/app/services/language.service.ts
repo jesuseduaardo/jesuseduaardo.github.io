@@ -8,10 +8,10 @@ import { LocalStorageService } from './localstorage.service';
 })
 export class LanguageService {
 
-  private languageSubject: BehaviorSubject<LanguageEnum>;
+  private readonly languageSubject: BehaviorSubject<LanguageEnum>;
   language$: Observable<LanguageEnum>;
 
-  constructor(private _localStorageService: LocalStorageService) {
+  constructor(private readonly _localStorageService: LocalStorageService) {
     const lang = this._localStorageService.getItem('lang');
     this.languageSubject = new BehaviorSubject<LanguageEnum>(lang || LanguageEnum.EN);
     this.language$ = this.languageSubject.asObservable();

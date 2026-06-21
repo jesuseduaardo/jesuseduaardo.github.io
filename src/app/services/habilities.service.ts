@@ -105,10 +105,16 @@ export class HabilitiesService {
           percent: 60
         },
         {
+          name: "PostgreSQL",
+          icon: '../assets/img/pro-icon/postgresql-original.svg',
+          version: 0,
+          percent: 25
+        },
+        {
           name: "MS SQL",
           icon: '../assets/img/pro-icon/microsoft-sql-server.svg',
           version: 0,
-          percent: 40
+          percent: 20
         },
       ]
     },
@@ -119,7 +125,7 @@ export class HabilitiesService {
           name: "GIT",
           icon: '../assets/img/pro-icon/git-original.svg',
           version: 0,
-          percent: 75
+          percent: 65
         },
       ]
     },
@@ -130,7 +136,7 @@ export class HabilitiesService {
           name: "Docker",
           icon: '../assets/img/pro-icon/docker.svg',
           version: 1.5,
-          percent: 15
+          percent: 25
         },
         {
           name: "Kubernetes",
@@ -147,7 +153,7 @@ export class HabilitiesService {
           name: "AWS",
           icon: '../assets/img/pro-icon/amazon-web-services.png',
           version: 0,
-          percent: 13
+          percent: 57
         },
         {
           name: "GCP",

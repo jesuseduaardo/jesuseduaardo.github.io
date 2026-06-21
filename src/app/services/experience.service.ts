@@ -5,7 +5,7 @@ import { LanguageEnum } from "../enums/language.enum";
 export class ExperienceService {
   private experience: Experience[] = [
     {
-      empresa: "Itaú Unibanco / Macro BMA / Macro",
+      empresa: "Itaú / Macro BMA / Macro",
       puesto: "System Analyst Sr",
       fechaIngreso: "2022-03-09",
       fechaEgreso: "",
@@ -94,7 +94,7 @@ export class ExperienceService {
       web: ""
     },
     {
-      empresa: "Tecnosoftware S.A",
+      empresa: "Tecnosoftware",
       puesto: "Java Developer Jr",
       fechaIngreso: "2018-07-01",
       fechaEgreso: "2019-02-01",
@@ -110,13 +110,13 @@ export class ExperienceService {
       web: ""
     },
     {
-      empresa: "Arkiteck C.A",
+      empresa: "Arkiteck",
       puesto: "System Analyst 3",
       fechaIngreso: "2017-11-01",
       fechaEgreso: "2018-02-01",
       proyectos: [
         {
-          nombre: "Banco BBVA Provincial (Venezuela)",
+          nombre: "Banco BBVA",
           resumenProyecto: ["Collaborated with contact center team members to implement new UI. Using Spring MVC with Java7 and jQuery"],
           tecnologias: ["Java", "SpringMVC", "Bootstrap", "Javascript", "Git"]
         }
@@ -126,7 +126,7 @@ export class ExperienceService {
       web: ""
     },
     {
-      empresa: "La Victoria 3021 R.L (Venezuela)",
+      empresa: "La Victoria 3021",
       puesto: "Web Developer",
       fechaIngreso: "2013-10-01",
       fechaEgreso: "2017-11-01",
@@ -139,7 +139,7 @@ export class ExperienceService {
 
   private experienceES: Experience[] = [
     {
-      empresa: "Itaú Unibanco / Macro BMA / Macro",
+      empresa: "Itaú / Macro BMA / Macro",
       puesto: "Analista de Sistemas Sr",
       fechaIngreso: "2022-03-09",
       fechaEgreso: "",
@@ -250,7 +250,7 @@ export class ExperienceService {
       fechaEgreso: "2018-02-01",
       proyectos: [
         {
-          nombre: "Banco BBVA Provincial (Venezuela)",
+          nombre: "Banco BBVA",
           resumenProyecto: ["Collaborated with contact center team members to implement new UI. Using Spring MVC with Java7 and jQuery"],
           tecnologias: ["Java", "SpringMVC", "Bootstrap", "Javascript", "Git"]
         }
@@ -260,7 +260,7 @@ export class ExperienceService {
       web: ""
     },
     {
-      empresa: "La Victoria 3021 R.L (Venezuela)",
+      empresa: "La Victoria 3021",
       puesto: "Desarrollador Web",
       fechaIngreso: "2013-10-01",
       fechaEgreso: "2017-11-01",
@@ -270,6 +270,13 @@ export class ExperienceService {
     },
 
   ];
+
+  countYearsOfWork(experience:Experience){
+    const fechaIngreso = new Date(experience.fechaEgreso);
+    const fechaEgreso = new Date(experience.fechaEgreso);
+    const fechaDiferencia = fechaIngreso.getTime() - fechaEgreso.getTime();
+    return fechaDiferencia / (1000 * 60 * 60 * 24);
+  }
 
 
   getExperience(language?: LanguageEnum): Experience[] {

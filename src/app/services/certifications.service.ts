@@ -6,6 +6,36 @@ import { Injectable } from '@angular/core';
 export class CertificationsService {
 
   certifications: Certification[] = [
+        {
+      titulo: "AWS Certified Solutions Architect - Associate",
+      institucion: "Amazon Web Services (AWS)",
+      fechaInicio: "",
+      fechaFin: "inprogress",
+      certificacionUrl: "#",
+      duracion: 0,
+      thumbnails: '/assets/img/certs/awsArchitectBadge.png'
+    },
+    {
+      titulo: "AWS Certified Developer - Associate",
+      institucion: "Amazon Web Services (AWS)",
+      fechaInicio: "",
+      fechaFin: "2026-04-29",
+      certificacionUrl: "https://www.credly.com/badges/14df05f3-28a8-47b2-88fa-6a3485f4531b/public_url",
+      duracion: 0,
+      thumbnails: '/assets/img/certs/awsDeveloperBadge.png'
+    },
+    {
+      titulo: "AWS Certified Cloud Practitioner",
+      institucion: "Amazon Web Services (AWS)",
+      fechaInicio: "",
+      fechaFin: "2025-06-27",
+      certificacionUrl: "https://www.credly.com/badges/2c4ee24e-13e4-433e-bd1f-5a8ce6d914a2/public_url",
+      duracion: 0,
+      thumbnails: '/assets/img/certs/cloudPractitionerBadge.png'
+    },
+  ]
+
+  minorCertifications: Certification[] = [
     {
       titulo: "Spring Security 6 Zero to Master along with JWT,OAUTH2",
       institucion: "Udemy",
@@ -208,6 +238,9 @@ export class CertificationsService {
 
   constructor() { }
 
+  getMinorCertifications() {
+    return this.minorCertifications;
+  }
   getCertifications() {
     return this.certifications;
   }

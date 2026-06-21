@@ -20,6 +20,12 @@ $terciary-color: #c5c5c5;
   }
 }
 
+@mixin media-sm {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin media-md {
   @media screen and (min-width: 768px) {
     @content;

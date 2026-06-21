@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactItem } from './contact-item.model'
 import { NavMenuService } from '../../services/nav-menu.service';
 import { LanguageService } from '../../services/language.service';
+import { LanguageEnum } from '../../enums/language.enum';
 
 @Component({
   selector: 'app-contact',
@@ -11,56 +12,50 @@ import { LanguageService } from '../../services/language.service';
 export class ContactComponent implements OnInit {
 
   location: ContactItem;
-  skype: ContactItem;
+  linkedin: ContactItem;
   email: ContactItem;
   whatsapp: ContactItem;
   title: string = '';
 
   constructor(
-    private _menuService:NavMenuService,
-    private _languageService:LanguageService
+    private _menuService: NavMenuService,
+    private _languageService: LanguageService
   ) { }
 
   ngOnInit() {
-    this.location = this.getLocation();
-    this.skype = this.getSkype();
-    this.email = this.getEmail();
-    this.whatsapp = this.getWhatsapp();
 
     this._languageService.language$.subscribe(lang => {
       const title = this._menuService.getNavMenu(lang)[5].menu;
       this.title = title.charAt(0).toUpperCase() + title.slice(1);
+      this.email = this.getEmail(lang);
+      this.whatsapp = this.getWhatsapp(lang);
+      this.linkedin = this.getLinkedin(lang);
     })
 
   }
 
-  getLocation() {
+  getEmail(lang: LanguageEnum) {
     return new ContactItem(
-      "Buenos Aires - Argentina",
-      "https://www.google.com.ar/maps/place/Monserrat,+CABA/@-34.6125587,-58.3793422,13z/data=!4m2!3m1!1s0x95bccad7c271d155:0xc9f98936bbfefff5",
-      "assets/img/geo.svg"
-    );
-  }
-
-  getSkype() {
-    return new ContactItem(
-      "jesus.eduaardo",
-      "skype:jesus.eduaardo?chat",
-      "assets/img/skype.svg"
-    );
-  }
-
-  getEmail() {
-    return new ContactItem(
+      LanguageEnum.EN === lang ? "Drop Me an Email" : "Envíame un Correo",
       "jesuseduaardo@gmail.com",
       "mailto:jesuseduaardo@gmail.com",
       "assets/img/gmail.svg"
     )
   }
 
-  getWhatsapp() {
+  getLinkedin(lang: LanguageEnum) {
     return new ContactItem(
-      "+54 11 2783-4634",
+      LanguageEnum.EN === lang ? "Let's network" : "Conectemos",
+      LanguageEnum.EN === lang ? "Check out my latest goals and background." : "Echa un vistazo a mis últimos logros y experiencia.",
+      "https://www.linkedin.com/in/jesuseduaardo/",
+      "assets/img/linkedin.svg"
+    )
+  }
+
+  getWhatsapp(lang: LanguageEnum) {
+    return new ContactItem(
+      LanguageEnum.EN === lang ? "Start Instant Chat" : "Escribeme",
+      LanguageEnum.EN === lang ? "Let's Build Something Scalable" : "Construyamos algo escalable",
       "https://api.whatsapp.com/send?phone=541127834634",
       "assets/img/whatsapp.svg"
     )
