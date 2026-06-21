@@ -6,61 +6,87 @@ import { Injectable } from '@angular/core';
 })
 export class SoftSkillsService {
 
-  private aboutMe: string = `I am a creative Java developer with ${this.calculateYearsOfExperience(2018)}+ years of experience in full stack programming,  specializing in languages like Java and Javascript. I like about learning new technologies also to build solutions with great performance and intuitive design, making use of good practices and the best industry standards.`
+  private aboutMe: string = `Senior Full Stack Engineer specialized in cloud-native architectures, microservices and enterprise modernization with ${this.calculateYearsOfExperience(2018)}+ years of experience building scalable systems that process thousands of transactions securely and efficiently.`
 
-  private aboutMeES: string = `Soy un creativo desarrollador Java con ${this.calculateYearsOfExperience(2018)}+ años de experiencia en programación full stack, especializado en lenguajes como Java y Javascript. Me gusta aprender nuevas tecnologías y aplicarlas en la construccion de soluciones de gran rendimiento y diseño intuitivo, haciendo uso de las buenas prácticas y los mejores estándares de la industria.`
+  private aboutMeES: string = `Ingeniero senior Full Stack especializado en arquitecturas nativas de la nube, microservicios y modernización empresarial, con más de ${this.calculateYearsOfExperience(2018)} años de experiencia en la creación de sistemas escalables que procesan miles de transacciones de forma segura y eficiente.`
 
   private softSkills: SoftSkill[] = [
     {
-      name: "Effective communication",
-      description: "Expreso mis ideas técnicas de forma clara y concisa, tanto de forma oral como escrita. Entiendo las necesidades de los demás y respondo de manera adecuada. Expreso opiniones y preocupaciones de manera respetuosa y directa."
+      name: "Java & Spring Boot",
+      description: ""
     },
     {
-      name: "Continuous learning",
-      description: "Me mantengo, en lo posible, actualizado con las últimas tecnologías y tendencias."
+      name: "AWS Cloud Architecture",
+      description: ""
     },
     {
-      name: "Adaptability",
-      description: "Me Adapto a cambios en los requisitos y tecnologías. Tengo alta tolerancia a la ambigüedad, he trabajado en entornos con información incompleta."
+      name: "Event-Driven Systems",
+      description: ""
     },
     {
-      name: "Teamwork",
-      description: "Trabajo de manera conjunta con otros programadores y equipos. Me ajusto a los cambios y trabajo en entornos dinámicos. Manejo desacuerdos de manera constructiva."
+      name: "Microservices",
+      description: ""
     },
     {
-      name: "Resilience",
-      description: "Mantengo la calma bajo presión, persistir ante los desafíos"
-    },
-    {
-      name: "Creativity",
-      description: "Propongo soluciones y enfoques. Busco encontrar soluciones creativas a desafíos complejos."
+      name: "Angular & React",
+      description: ""
     },
   ]
 
   private softSkillsES: SoftSkill[] = [
     {
-      name: "Comunicación Efectiva",
-      description: "Expreso mis ideas técnicas de forma clara y concisa, tanto de forma oral como escrita. Entiendo las necesidades de los demás y respondo de manera adecuada. Expreso opiniones y preocupaciones de manera respetuosa y directa."
+      name: "Liderazgo y Diseño Arquitectónico (Architectural Ownership)",
+      description: "Diseño de microservicios resilientes, escalables y desacoplados. Asumo la responsabilidad total del ciclo de vida del software: desde la concepción de la arquitectura y la infraestructura cloud hasta el despliegue y su mantenimiento."
     },
     {
-      name: "Aprendizaje  Continuo",
-      description: "Me mantengo, en lo posible, actualizado con las últimas tecnologías y tendencias."
+      name: "Colaboración Remota de Alto Rendimiento",
+      description: "Integración fluida en equipos distribuidos bajo metodologías Agile/Scrum. Comunicación técnica clara y directa que garantiza la alineación con los objetivos del negocio."
     },
     {
-      name: "Adaptabilidad",
-      description: "Me Adapto a cambios en los requisitos y tecnologías. Tengo alta tolerancia a la ambigüedad, he trabajado en entornos con información incompleta."
+      name: "Procesamiento de Datos a Gran Escala (Event-Driven Data)",
+      description: "Especialista en la creación de pipelines asíncronos para la ingesta y preparación de datos masivos. Experiencia integral integrando streaming, arquitecturas orientadas a eventos y notificaciones concurrentes en la nube."
     },
     {
-      name: "Trabajo en equipo",
-      description: "Trabajo de manera conjunta con otros programadores y equipos. Me ajusto a los cambios y trabajo en entornos dinámicos. Manejo desacuerdos de manera constructiva."
+      name: "Ingeniería Continua y Evolutiva",
+      description: "Rápida adaptabilidad a frameworks modernos y requisitos técnicos complejos. Capacidad demostrada para absorber nuevas tecnologías y refactorizar sistemas críticos sin interrumpir la operación del negocio."
+    }
+  ]
+
+  private impact: SoftSkill[] = [
+    {
+      name: "Architected event-driven pipelines processing 500K+ daily transactions in retail banking.",
+      description: "End-to-end design using AWS SQS, S3 multi-part streaming and DynamoDB — zero memory overhead, high availability."
     },
     {
-      name: "Resiliencia",
-      description: "Mantengo la calma bajo presión, persistir ante los desafíos"
+      name: "Delivered secure banking applications under financial-grade compliance standards.",
+      description: "Clean Code + TDD enforced across the full stack — Java/Spring Boot backend, Angular/React frontend — in regulated environments where security isn't optional."
     },
     {
-      name: "Creatividad",
-      description: "Propongo soluciones y enfoques. Busco encontrar soluciones creativas a desafíos complejos."
+      name: "Drove architecture decisions on cloud-native microservices migration.",
+      description: "Sole technical owner of infrastructure design choices — decoupled, resilient services deployed on AWS, aligned with modern engineering standards."
+    },
+    {
+      name: "Adapted rapidly to evolving tech requirements without sacrificing delivery quality",
+      description: `${this.calculateYearsOfExperience(2018)}+ years navigating framework upgrades, new cloud services and changing business rules in fast-moving Agile/Scrum environments.`
+    },
+  ]
+
+  private impactEs: SoftSkill[] = [
+    {
+      name: "Arquitecté pipelines orientados a eventos procesando más de 500K transacciones diarias en banca retail.",
+      description: "Diseño end-to-end utilizando AWS SQS, S3 multipart streaming y DynamoDB — sin overhead de memoria, alta disponibilidad."
+    },
+    {
+      name: "Entregué aplicaciones bancarias seguras bajo estándares de cumplimiento de nivel financiero.",
+      description: "Clean Code + TDD aplicados en todo el stack — backend Java/Spring Boot, frontend Angular/React — en entornos regulados donde la seguridad no es opcional."
+    },
+    {
+      name: "Lideré decisiones de arquitectura en la migración a microservicios cloud-native.",
+      description: "Responsable técnico único de las decisiones de diseño de infraestructura — servicios desacoplados y resilientes desplegados en AWS, alineados con estándares modernos de ingeniería."
+    },
+    {
+      name: "Me adapté rápidamente a requisitos tecnológicos cambiantes sin sacrificar la calidad de entrega.",
+      description: `${this.calculateYearsOfExperience(2018)}+ años navegando actualizaciones de frameworks, nuevos servicios cloud y reglas de negocio cambiantes en entornos Agile/Scrum de ritmo acelerado.`
     },
   ]
 
@@ -72,6 +98,13 @@ export class SoftSkillsService {
     }
     return this.softSkills;
 
+  }
+
+  getImpact(language: LanguageEnum): SoftSkill[] {
+    if (language === LanguageEnum.ES) {
+      return this.impactEs;
+    }
+    return this.impact;
   }
 
   getAboutMe(language: LanguageEnum): string {

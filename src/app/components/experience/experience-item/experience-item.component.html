@@ -2,7 +2,6 @@
   <div class="card-body">
     <h5 class="card-title">{{ experience.empresa }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">
-
       <span>{{ experience.fechaIngreso | date : "MMM-y" }}</span> /
       <span *ngIf="experience.fechaEgreso">{{experience.fechaEgreso | date : "MMM-y"}}</span>
       <span *ngIf="!experience.fechaEgreso">Current</span>

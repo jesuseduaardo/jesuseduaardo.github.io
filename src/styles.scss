@@ -11,7 +11,6 @@
     format("woff2");
 }
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -59,7 +58,7 @@ body {
   color: set-text-color($primary-color);
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1;
+  line-height: 1.35;
 }
 
 h1,
@@ -128,5 +127,61 @@ main {
 @include media-md {
   .page {
     padding-top: 5rem;
+  }
+}
+
+.footer-container {
+  footer {
+    font-size: 1rem;
+    bottom: 0.7rem;
+    right: 0.5rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+    opacity: 0.5;
+    position: fixed;
+  }
+
+  .social-icons {
+    position: fixed;
+    top: 90vh;
+    left: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 1s ease-in-out;
+    margin: 0 0 0 1rem;
+    .contact-data {
+      position: relative;
+      font-size: 1rem;
+
+      .description {
+        transition: all 1s ease-in-out;
+        display: none;
+      }
+    }
+    &:not(.get-attention) {
+      background-color: rgba(0, 0, 0, 0.164);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    &:hover:not(.get-attention) {
+      .contact-data {
+        display: flex;
+        align-items: center;
+        .description {
+          padding: 0 10px 0 0px;
+          margin: 0 0 0 8px;
+          display: block !important;
+          .sub-text {
+            color: #d8d8d8;
+          }
+        }
+      }
+    }
+  }
+
+  .get-attention {
+    display: none;
   }
 }
