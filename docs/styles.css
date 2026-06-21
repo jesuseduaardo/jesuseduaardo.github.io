@@ -11949,7 +11949,7 @@ body {
     Geneva,
     Verdana,
     sans-serif;
-  line-height: 1;
+  line-height: 1.35;
 }
 h1,
 h2,
@@ -12009,6 +12009,54 @@ main .social-icons a:hover {
   .page {
     padding-top: 5rem;
   }
+}
+.footer-container footer {
+  font-size: 1rem;
+  bottom: 0.7rem;
+  right: 0.5rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+  opacity: 0.5;
+  position: fixed;
+}
+.footer-container .social-icons {
+  position: fixed;
+  top: 90vh;
+  left: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 1s ease-in-out;
+  margin: 0 0 0 1rem;
+}
+.footer-container .social-icons .contact-data {
+  position: relative;
+  font-size: 1rem;
+}
+.footer-container .social-icons .contact-data .description {
+  transition: all 1s ease-in-out;
+  display: none;
+}
+.footer-container .social-icons:not(.get-attention) {
+  background-color: rgba(0, 0, 0, 0.164);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.footer-container .social-icons:hover:not(.get-attention) .contact-data {
+  display: flex;
+  align-items: center;
+}
+.footer-container .social-icons:hover:not(.get-attention) .contact-data .description {
+  padding: 0 10px 0 0px;
+  margin: 0 0 0 8px;
+  display: block !important;
+}
+.footer-container .social-icons:hover:not(.get-attention) .contact-data .description .sub-text {
+  color: #d8d8d8;
+}
+.footer-container .get-attention {
+  display: none;
 }
 
 /* angular:styles/global:styles */
