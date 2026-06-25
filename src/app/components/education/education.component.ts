@@ -4,6 +4,10 @@ import { CertificationsService, Certification } from '../../services/certificati
 import { LanguageService } from '../../services/language.service';
 import { LanguageEnum } from '../../enums/language.enum';
 import { NavMenuService } from '../../services/nav-menu.service';
+import { RepositoryService } from '../../services/repository.service';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 @Component({
   selector: 'app-education',
@@ -12,7 +16,6 @@ import { NavMenuService } from '../../services/nav-menu.service';
 })
 export class EducationComponent implements OnInit {
 
-  showAllCerts: boolean = false;
   education: Education[] = [];
   certifications: Certification[] = [];
   minorCertifications: Certification[] = [];
@@ -21,14 +24,19 @@ export class EducationComponent implements OnInit {
 
   constructor(
     private _educationService: EducationService,
-    private _certificationService: CertificationsService,
+    //private _certificationService: CertificationsService,
+    private _repositoryService: RepositoryService,
     private _languageService: LanguageService,
     private _menuService: NavMenuService
   ) { }
 
   ngOnInit(): void {
-    this.certifications = this._certificationService.getCertifications();
-    this.minorCertifications = this._certificationService.getMinorCertifications();
+    this._repositoryService.getCertifications().subscribe(certs => {
+      this.certifications = certs;
+    });
+    this._repositoryService.getMinorCertifications().subscribe(certs => {
+      this.minorCertifications = certs;
+    });
     this._languageService.language$.subscribe(lang => {
       this.education = this._educationService.getEducation(lang);
       this.viewAllCertsBtn = lang === LanguageEnum.EN
@@ -37,10 +45,6 @@ export class EducationComponent implements OnInit {
       const title = this._menuService.getNavMenu(lang)[4].menu;
       this.title = title.charAt(0).toUpperCase() + title.slice(1);
     })
-  }
-
-  viewAllCerts() {
-    this.showAllCerts = !this.showAllCerts;
   }
 
 }

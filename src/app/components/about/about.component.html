@@ -1,4 +1,5 @@
 <div class="page about">
+
   <div class="container">
     <div class="row">
       <div class="col-12 page-title">
@@ -6,21 +7,21 @@
       </div>
     </div>
     <div class="row">
-      <div class="d-none d-md-block col-md-2"></div>
-      <div class="col-12 col-md-10">
-        <p class="about-me">{{aboutMe}}</p>
+      <div class="col-12 col-md-11 offset-md-1">
+        <p class="about-me">{{aboutMe ?? 'No information available.' }}</p>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="col-12">
+    <div class="col-12 col-md-11 offset-md-1">
       <h3>Impact</h3>
     </div>
-    <div class="col-12 col-md-10 offset-md-2" *ngFor="let skill of impact">
+    <div class="col-12 col-md-11 offset-md-1" *ngFor="let skill of impact">
       <div class="impact">
-        <strong>{{skill.name}}</strong>
+        <h5>- {{skill.name}}</h5>
         <p>{{skill.description}}</p>
       </div>
     </div>
   </div>
+  <div class="me"></div>
 </div>
