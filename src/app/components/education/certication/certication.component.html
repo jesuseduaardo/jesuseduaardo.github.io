@@ -1,9 +1,5 @@
 <div [ngClass]="{'in-progress': cert.fechaFin == 'inprogress'}">
   <div class="cert-card my-2">
-    <a *ngIf="cert.fechaFin != 'inprogress'" [href]="cert.certificacionUrl" target="_blank" title="View online">
-      <img [src]="cert.thumbnails" class="card-img-top" alt="{{ cert.titulo }}">
-    </a>
-    <img *ngIf="cert.fechaFin == 'inprogress'" [src]="cert.thumbnails" class="card-img-top" alt="{{ cert.titulo }}">
     <div class="card-body">
       <div class="card-title">
         {{ cert.titulo }}
@@ -19,5 +15,9 @@
         </div>
       </div>
     </div>
+    <a *ngIf="cert.fechaFin != 'inprogress'" [href]="cert.certificacionUrl" target="_blank" title="View online">
+      <img [src]="cert.thumbnails" class="card-img-top" alt="{{ cert.titulo }}">
+    </a>
+    <img *ngIf="cert.fechaFin == 'inprogress'" [src]="cert.thumbnails" class="card-img-top" alt="{{ cert.titulo }}">
   </div>
 </div>

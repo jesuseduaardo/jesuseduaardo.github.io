@@ -21,6 +21,16 @@ export class EducationComponent implements OnInit {
   minorCertifications: Certification[] = [];
   viewAllCertsBtn: string = '';
   title: string = '';
+  certificationTitle = {
+    en: 'Certifications',
+    es: 'Certificaciones'
+  }
+  continuousLearning = {
+    en: 'Continuous Learning',
+    es: 'Aprendizaje Continuo'
+  }
+  continuousLearningTran: string = '';
+  certificationTitleTran: string = '';
 
   constructor(
     private _educationService: EducationService,
@@ -38,10 +48,9 @@ export class EducationComponent implements OnInit {
       this.minorCertifications = certs;
     });
     this._languageService.language$.subscribe(lang => {
+      this.certificationTitleTran = this.certificationTitle[lang];
+      this.continuousLearningTran = this.continuousLearning[lang];
       this.education = this._educationService.getEducation(lang);
-      this.viewAllCertsBtn = lang === LanguageEnum.EN
-        ? `Show Supplementary Coursework & Deep Dives`
-        : `Mostrar aprendizaje técnico complementario`;
       const title = this._menuService.getNavMenu(lang)[4].menu;
       this.title = title.charAt(0).toUpperCase() + title.slice(1);
     })
