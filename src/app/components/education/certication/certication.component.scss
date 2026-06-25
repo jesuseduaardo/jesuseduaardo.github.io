@@ -19,7 +19,7 @@
     .card-title,
     .card-subtitle {
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
   }
 }
@@ -53,6 +53,12 @@
     .card-img-top {
       height: auto;
       max-width: 10rem;
+    }
+    .card-body {
+      .card-title {
+        text-align: center;
+        font-size: 1.5rem;
+      }
     }
   }
 }

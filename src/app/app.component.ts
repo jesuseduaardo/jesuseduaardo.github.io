@@ -43,7 +43,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       }
     })
     const currentSection = sectionID.split("-")[0];
-    console.log(`currentScroll: ${Math.round(currentScroll) - 3}, currentSection: ${currentSection}`);
+    //console.log(`currentScroll: ${Math.round(currentScroll) - 3}, currentSection: ${currentSection}`);
 
     this.updateUrl(currentSection);
   }

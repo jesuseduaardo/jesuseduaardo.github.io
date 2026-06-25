@@ -106,7 +106,7 @@ export class HabilitiesService {
         },
         {
           name: "PostgreSQL",
-          icon: '../assets/img/pro-icon/postgresql-original.svg',
+          icon: '../assets/img/pro-icon/postgresql_icon.png',
           version: 0,
           percent: 25
         },
