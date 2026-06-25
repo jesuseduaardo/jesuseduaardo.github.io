@@ -60,7 +60,6 @@ export class AboutComponent implements OnInit {
           // 4. Asignamos los valores finales que el HTML va a renderizar
           this.aboutMe = processedData.aboutMe;
           this.impact = processedData.impact;
-          console.log('Datos actualizados en vivo:', processedData);
         }
       },
       error: (err: any) => console.error('Error procesando datos en vivo:', err)
