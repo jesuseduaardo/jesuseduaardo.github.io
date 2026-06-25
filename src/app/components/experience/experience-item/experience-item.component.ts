@@ -9,6 +9,7 @@ import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnInit,
 export class ExperienceItemComponent implements OnInit, AfterViewInit {
 
   @Input() experience;
+  @Input() lang: string = '';
 
   @ViewChild('textContainer')
   textContainer: ElementRef;
@@ -25,8 +26,10 @@ export class ExperienceItemComponent implements OnInit, AfterViewInit {
     if (this.textContainer.nativeElement) {
       const height = this.textContainer.nativeElement.offsetHeight;
       if (height > 100) {
-        this.closed = true;
-        this.changeDetectorRef.detectChanges();
+        // setTimeout saca la mutación del ciclo actual de CD
+        setTimeout(() => {
+          this.closed = true;
+        });
       }
     }
   }

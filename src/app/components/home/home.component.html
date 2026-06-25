@@ -2,12 +2,13 @@
   <div id="background"></div>
   <div class="info">
     <h1>J. Eduardo Castillo</h1>
-    <ngx-typed-js [strings]="['Backend Developer', 'Frontend Developer', 'Cloud Developer', 'FullStack Developer^5000']" [typeSpeed]="65"
-      [backSpeed]="45" [loop]="true">
+    <ngx-typed-js [strings]="['Backend Developer', 'Frontend Developer', 'Cloud Developer', 'FullStack Developer^5000']"
+      [typeSpeed]="65" [backSpeed]="45" [loop]="true">
       <h2><span class="typing"></span></h2>
     </ngx-typed-js>
-    <div class="credentialsBadgesList">
-      <div id="awsDeveloperAssociate"></div>
+    <div *ngIf="certifications.length" class="credentialsBadgesList">
+      <div class="badge" *ngFor="let cert of certifications" [style.backgroundImage]="'url(' + cert.thumbnails + ')'">
+      </div>
     </div>
   </div>
 </div>

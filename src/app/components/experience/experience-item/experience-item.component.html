@@ -12,20 +12,26 @@
           <a href="{{ experience.web }}" target="_blank">{{ experience.web }}</a>
         </p>
         <h5>{{ experience.puesto }}</h5>
-        <p class="cant-exp" *ngIf="experience.proyectos.length > 1">
+        <p class="cant-exp" *ngIf="experience?.proyectos.length > 0">
           Participation in {{ experience.proyectos.length }} projects
         </p>
-        <div *ngIf="experience.proyectos.length > 0">
+        <div *ngIf="experience?.proyectos.length > 0">
           <div *ngFor="let project of experience.proyectos">
             <h5>{{project.nombre}}</h5>
-            <ul *ngIf="project.resumenProyecto.length > 0">
-              <li *ngFor="let resumen of project.resumenProyecto">{{resumen}}</li>
-            </ul>
+            <div *ngIf="project.resumenProyecto?.[lang] != null && project.resumenProyecto?.[lang].length > 0">
+              <ul *ngFor="let resumen of project.resumenProyecto[lang]">
+                <li>
+                  {{ resumen }}
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <ul *ngIf="experience.resumenProyecto.length > 0">
-          <li *ngFor="let resumen of experience.resumenProyecto">{{resumen}}</li>
-        </ul>
+        <div *ngIf="experience.resumenProyecto?.[lang] != null && experience.resumenProyecto?.[lang].length > 0">
+          <ul *ngFor="let resumen of experience.resumenProyecto[lang]">
+            <li>{{ resumen }}</li>
+          </ul>
+        </div>
       </div>
       <p class="text-center" *ngIf="closed">
         <a (click)="changeDescriptionLength()" class="view-more">view {{closed ? 'more' : 'less'}}</a>

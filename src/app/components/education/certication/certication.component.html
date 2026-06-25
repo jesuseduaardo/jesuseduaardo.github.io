@@ -12,9 +12,9 @@
         <div class="row">
           <div class="col date-hours">
             <div class="text-muted text-start">
-              {{ cert.institucion }} | {{ cert.fechaFin | date : "MMM-y" }}
+              {{ cert.institucion }} | {{ cert.fechaFin === 'inprogress' ? 'In Progress' : (cert.fechaFin |
+              date:'MM/yyyy') }}
             </div>
-            <div *ngIf="cert.duracion > 0" class="text-muted">&nbsp;| {{ cert.duracion }} Hours</div>
           </div>
         </div>
       </div>

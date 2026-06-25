@@ -1,6 +1,10 @@
 @import "../../../scss/config";
 @import "../../../scss/responsive";
 
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
 .view-all-cert-btn {
   text-align: center;
   padding: 1rem;
@@ -11,4 +15,51 @@
       border-bottom: 5px solid $secondary-color;
     }
   }
+}
+
+/* Contenedor principal de Swiper */
+swiper-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px; /* Espacio para los puntos de paginación */
+}
+
+/* Diapositiva individual */
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Se adapta al contenido */
+}
+
+/* Tarjeta de la certificación */
+.cert-card {
+  width: 100%;
+  max-width: 320px; /* Controla el ancho máximo en pantallas grandes */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  /* Evita selección de texto molesta al deslizar en móviles */
+  user-select: none;
+}
+
+/* Efecto feedback al tocar/pasar el mouse */
+.cert-card:active,
+.cert-card:hover {
+  transform: scale(0.98);
+}
+
+/* Customización de estilos nativos de Swiper (vía CSS Variables) */
+swiper-container::part(bullet-active) {
+  background: #007aff; /* Color del punto activo */
+}
+
+swiper-container::part(bullet) {
+  background: #cccccc; /* Color de puntos inactivos */
+  opacity: 1;
 }

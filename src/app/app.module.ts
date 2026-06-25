@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CountUpModule } from 'ngx-countup';
 
@@ -67,8 +67,9 @@ import { MaterialModule } from './material/material.module';
     ExperienceService,
     EducationService,
     HabilitiesService,
-    PortfolioService
+    PortfolioService,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
