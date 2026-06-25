@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class CertificationsService {
 
   certifications: Certification[] = [
-        {
+    {
       titulo: "AWS Certified Solutions Architect - Associate",
       institucion: "Amazon Web Services (AWS)",
       fechaInicio: "",
@@ -225,15 +225,6 @@ export class CertificationsService {
       duracion: 300,
       thumbnails: '/assets/img/certs/thumbnails/fcc-resposive_web_design.thumb.png'
     },
-    {
-      titulo: "ReactJS",
-      institucion: "Educacion IT",
-      fechaInicio: "2018-07-25",
-      fechaFin: "2018-08-25",
-      certificacionUrl: "https://www.educacionit.com/perfil/jesus-castillo-276888/certificado/32403",
-      duracion: 15,
-      thumbnails: '/assets/img/certs/thumbnails/educacionit-reactjs.thumb.png'
-    }
   ]
 
   constructor() { }

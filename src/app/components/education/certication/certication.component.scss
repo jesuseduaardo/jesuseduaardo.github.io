@@ -2,15 +2,25 @@
 
 .cert-card {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   align-items: center;
-  background-color: transparent;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  a {
+    display: block;
+  }
   .card-img-top {
     height: auto;
     width: 10rem;
+  }
+  .card-body {
+    padding: 0.5rem 0;
+    .card-title,
+    .card-subtitle {
+      text-align: center;
+      font-size: 0.85rem;
+    }
   }
 }
 
@@ -39,15 +49,10 @@
 
 @include media-sm {
   .cert-card {
-    flex-flow: column;
     font-size: 0.95rem;
-    box-shadow: 2px 2px 1px $secondary-color;
     .card-img-top {
       height: auto;
       max-width: 10rem;
-    }
-    .date-hours {
-      display: flex;
     }
   }
 }

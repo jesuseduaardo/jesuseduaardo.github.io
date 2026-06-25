@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ExperienceService, Experience } from '../../services/experience.service';
+import { Experience } from '../../services/experience.service';
 import { LanguageService } from '../../services/language.service';
 import { NavMenuService } from '../../services/nav-menu.service';
+import { RepositoryService } from '../../services/repository.service';
 
 @Component({
   selector: 'app-experience',
@@ -13,20 +14,25 @@ export class ExperienceComponent implements OnInit {
   panelOpenState: boolean = true;
 
   experiences: Experience[] = [];
-  title:string='';
+  title: string = '';
+  lang: string = '';
 
   constructor(
     private _languageService: LanguageService,
-    private _experienceService: ExperienceService,
-    private _menuService:NavMenuService
+    //private _experienceService: ExperienceService,
+    private _experienceService: RepositoryService,
+    private _menuService: NavMenuService
   ) { }
 
   ngOnInit() {
     this._languageService.language$.subscribe(lang => {
-      this.experiences = this._experienceService.getExperience(lang);
       const title = this._menuService.getNavMenu(lang)[2].menu;
       this.title = title.charAt(0).toUpperCase() + title.slice(1);
+      this.lang = lang;
     })
+    this._experienceService.getExperiences().subscribe(experiences => {
+      this.experiences = experiences;
+    });
   }
 
 }

@@ -23,15 +23,19 @@
       <div class="col-12 col-md-6" *ngFor="let cert of certifications">
         <app-certification [cert]="cert"></app-certification>
       </div>
-      <div *ngIf="!showAllCerts" class="col-12 view-all-cert-btn">
-        <a (click)="viewAllCerts()">
-          <h4>{{viewAllCertsBtn}}</h4>
-        </a>
-      </div>
     </div>
-    <div class="row" *ngIf="showAllCerts">
-      <div class="col-12 col-md-4" *ngFor="let cert of minorCertifications">
-        <app-certification [cert]="cert"></app-certification>
+    <div class="row">
+      <div class="col-12">
+        <h5 class="text-center">Continuous Learning</h5>
+      </div>
+      <div class="col-12">
+        <swiper-container slides-per-view="1" space-between="10" pagination="true" navigation="true"
+          breakpoints='{"640": {"slidesPerView": 2}, "1024": {"slidesPerView": 3}}' grab-cursor="true"
+          pagination-type="fraction">
+          <swiper-slide *ngFor="let cert of minorCertifications">
+            <app-certification [cert]="cert"></app-certification>
+          </swiper-slide>
+        </swiper-container>
       </div>
     </div>
   </div>

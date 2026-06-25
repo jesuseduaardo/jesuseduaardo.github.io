@@ -59,18 +59,19 @@
     }
     .credentialsBadgesList {
       position: absolute;
-      top: 0;
+      top: -5%;
       left: 50%;
       transform: translate(-50%, 100%);
       display: flex;
       gap: 1rem;
       padding: 1rem;
       z-index: 1;
-      #awsDeveloperAssociate {
-        width: 150px;
-        height: 150px;
-        background: url("../../../assets/img/certs/awsDeveloperBadge.png")
-          center center no-repeat;
+      .badge {
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: contain;
       }
     }
