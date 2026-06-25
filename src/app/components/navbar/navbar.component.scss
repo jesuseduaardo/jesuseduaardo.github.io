@@ -74,6 +74,7 @@
   width: 100vw;
   opacity: 0.95;
   visibility: hidden;
+  z-index: 9;
   &.open {
     visibility: visible;
   }
@@ -144,6 +145,10 @@
 }
 .show-nav {
   animation: slide-in-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: 100%;
+  height: 6rem;
+  background-color: #121212db;
+  display: block;
 }
 
 @for $i from 1 through 4 {

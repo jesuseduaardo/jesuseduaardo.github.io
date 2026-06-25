@@ -59,7 +59,7 @@ export class NavbarComponent implements OnInit {
       this.hideNav = false;
     }
     this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-    this.showMenuBackground = !this.hideNav && (this.lastScrollTop > window.screen.height);
+    this.showMenuBackground = !this.hideNav && ((this.lastScrollTop * 2) > window.screen.height);
   }
 
   changeLang(lang: string) {
