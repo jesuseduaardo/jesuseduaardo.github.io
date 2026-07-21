@@ -12,7 +12,7 @@ import { Router, ActivatedRoute } from '@angular/router';
     // slider,
     //transformer,
     //stepper
-  ]
+  ],
 })
 export class AppComponent implements OnInit, AfterViewInit {
   title = 'J. Eduardo CV online';
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.updateUrl(currentSection);
   }
 
-  updateUrl(section) {
+  updateUrl(section: string) {
     const hash = `/${section}`;
     const urlTree = this.router.createUrlTree([hash], {
       //queryParams: queryParams,

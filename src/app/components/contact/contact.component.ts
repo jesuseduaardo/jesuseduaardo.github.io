@@ -11,10 +11,10 @@ import { LanguageEnum } from '../../enums/language.enum';
 })
 export class ContactComponent implements OnInit {
 
-  location: ContactItem;
-  linkedin: ContactItem;
-  email: ContactItem;
-  whatsapp: ContactItem;
+  location!: ContactItem;
+  linkedin!: ContactItem;
+  email!: ContactItem;
+  whatsapp!: ContactItem;
   title: string = '';
 
   constructor(

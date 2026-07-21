@@ -1,0 +1,62 @@
+.twin-ia {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 25%;
+  overflow: hidden;
+  background: transparent;
+  z-index: 999;
+  .twin-head {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #4d4d4d;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    .title {
+      text-align: center;
+      width: 100%;
+      h1 {
+        font-size: 1.5rem;
+        color: #ffe200;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .button-container {
+      display: flex;
+      flex-flow: row;
+      justify-content: end;
+      button {
+        border: none !important;
+        background: transparent !important;
+        cursor: pointer;
+        margin: 0 0.15rem;
+      }
+    }
+  }
+  gradio-app {
+    background: transparent;
+    h1 {
+      display: none;
+    }
+    .gradio-container {
+      padding: 0 0.5rem 0.5rem !important;
+      border: none !important;
+      border-radius: 0 !important;
+      p {
+        color: #333;
+      }
+      .main {
+        height: auto;
+        min-height: 32rem;
+        padding: 0 0.5rem 0.5rem !important;
+        overflow: auto;
+      }
+    }
+  }
+}
