@@ -1,9 +1,10 @@
+@import "./config";
 .twin-ia {
   position: fixed;
   bottom: 0;
   right: 0;
   display: block;
-  width: 25%;
+  width: 95%;
   overflow: hidden;
   background: transparent;
   z-index: 999;
@@ -21,7 +22,7 @@
       text-align: center;
       width: 100%;
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: #ffe200;
         padding: 0;
         margin: 0;
@@ -41,10 +42,12 @@
   }
   gradio-app {
     background: transparent;
+    display: none;
     h1 {
       display: none;
     }
     .gradio-container {
+      background: #ffffff !important;
       padding: 0 0.5rem 0.5rem !important;
       border: none !important;
       border-radius: 0 !important;
@@ -58,5 +61,11 @@
         overflow: auto;
       }
     }
+  }
+}
+
+@include media-md {
+  .twin-ia {
+    width: 25%;
   }
 }
