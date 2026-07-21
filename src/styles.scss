@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./scss/config";
 @import "./scss/responsive";
+@import "./scss/twin-ia";
 
 /* fallback */
 @font-face {
@@ -54,11 +55,16 @@ html {
 }
 
 body {
-  background: $primary-color;
   color: set-text-color($primary-color);
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.35;
+}
+
+html,
+body,
+gradio-app {
+  background: $primary-color !important;
 }
 
 h1,
