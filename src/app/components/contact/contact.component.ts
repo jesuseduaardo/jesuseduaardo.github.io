@@ -56,7 +56,7 @@ export class ContactComponent implements OnInit {
     return new ContactItem(
       LanguageEnum.EN === lang ? "Start Instant Chat" : "Escribeme",
       LanguageEnum.EN === lang ? "Let's Build Something Scalable" : "Construyamos algo escalable",
-      "https://api.whatsapp.com/send?phone=541127834634",
+      "https://wa.me/@castillo_eduardo?text=Hi%20Eduardo!%20I%20found%20your%20profile%20and%20I%20would%20like%20to%20connect.",
       "assets/img/whatsapp.svg"
     )
   }
